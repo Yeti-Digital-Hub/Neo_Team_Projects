@@ -193,6 +193,7 @@ a. Dans chaque sous-dossier de projet :
      - Les technos utilisées.
      - Comment l’exécuter.
      - Qui y travaille.
+       
 b. Exemple de contenu :
    ```markdown
    # Calculatrice en Python
