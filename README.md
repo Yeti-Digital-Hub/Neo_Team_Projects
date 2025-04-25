@@ -183,6 +183,37 @@ git checkout -b Neo_team_projets/kelie/Formulaire
 2. **Travailler sur le projet individuel** :
    - Modifier les fichiers dans le dossier `Neo_team_projets/kelie/Formulaire`.
 
+3. **Créer des README.md dans chaque dossier de vos different projet**
+Pour bien documenter la structure de chaque projet :
+
+a. Dans chaque sous-dossier de projet :
+   - Crée un fichier `README.md`.
+   - Explique :
+     - L'objectif du projet.
+     - Les technos utilisées.
+     - Comment l’exécuter.
+     - Qui y travaille.
+b. Exemple de contenu :
+   ```markdown
+   # Calculatrice en Python
+
+   ## Objectif
+   Application CLI simple pour effectuer des calculs.
+
+   ## Technologies
+   - Python 3
+
+   ## Exécution
+   ```
+   python main.py
+   ```
+
+   ## Auteur
+   Joss
+   ```
+
+---
+
 3. **Valider les changements** :
 
 ```bash
@@ -211,7 +242,6 @@ git checkout Neo_team_projets/kelie/Formulaire
 git rebase main
 ```
 
----
 
 ## Conclusion
 
