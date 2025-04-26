@@ -94,6 +94,38 @@ Ce projet est un **jeu de Tic Tac Toe** (aussi appelé "Morpion"), inspiré du j
 
 ---
 
+# Étapes du plan :
+1.Créer un plateau de jeu vide :
+
+Utiliser une liste de 9 éléments ([" ", " ", " ", " ", " ", " ", " ", " ", " "]).
+
+2.Afficher le plateau :
+
+Créer une fonction afficher_plateau() pour bien afficher les cases du morpion.
+
+3.Demander au joueur de jouer :
+
+Demander un numéro de case (de 1 à 9).
+
+Vérifier si la case est vide avant de placer.
+
+4.Changer de joueur :
+
+Passer de "X" à "O" après chaque tour ou du Joueur A au Joueur B.
+
+5.Vérifier si quelqu'un gagne :
+
+Créer une fonction verifier_victoire() pour vérifier les lignes, colonnes et diagonales.
+
+6.Vérifier si égalité (match nul) :
+
+Si toutes les cases sont remplies sans gagnant.
+
+7.Boucler jusqu’à fin du jeu :
+
+Jeu continue tant qu’il n'y a pas victoire ou égalité.
+
+
 # 🖥️ Exemple d’une partie
 ```plaintext
 Bienvenue dans le jeu du Tic Tac Toe Utilisateur GuruMiT !
@@ -173,6 +205,18 @@ O | O | 9
 🎉 Félicitations ! GuruMiT 1 a gagné !
 
 ```
+
+# 🧠 Notions que tu vas apprendre :
+
+| Notion                         | Application dans ce projet                                 |
+|---------------------------------|------------------------------------------------------------|
+| Manipulation de listes (list)   | Représenter le plateau                                     |
+| Fonctions (def)                 | Séparer ton code en petites parties                       |
+| Logique conditionnelle complexe (if) | Vérifier les conditions de victoire                 |
+| Boucles (while)                 | Maintenir le jeu jusqu’à la fin                           |
+| Organisation du code            | Structurer ton programme proprement                       |
+| Gestion d’entrées utilisateur   | Vérifier que l'utilisateur entre un bon chiffre           |
+
 
 ---
 
