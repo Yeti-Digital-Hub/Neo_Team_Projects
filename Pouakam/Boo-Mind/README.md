@@ -24,4 +24,17 @@ C'est une application web simple de gestion de tâches (**To-Do-List**) sans usa
 
 ---
 
-**Boo-Mind**/ ├── index.php                  # Page pour se connecter (sign-in) ou aller vers l'inscription (sign-up) ├── signup.php                 # Page d'inscription ├── dashboard.php              # Page principale après connexion où inscription, affichant les tâches de l'utilisateur et les actions possibles ├── logout.php                 # Déconnexion de l'utilisateur ├── users.json                 # Liste des comptes utilisateurs (JSON) ├── data/ │   └── utilisateur\_XXX.json   # Fichier de tâches propre à chaque utilisateur connecté ├── assets/ │   └── css/ │       ├── bootstrap.min.css          # Bootstrap local │       ├── bootstrap-icons.css        # Icônes Bootstrap │       └── style.css                  # Ton style personnalisé └── README.md                 # Documentation du projet (Markdown)
+**Boo-Mind**/
+├── index.php                  # Page pour se connecter (sign-in) ou aller vers l'inscription (sign-up)
+├── signup.php                 # Page d'inscription
+├── dashboard.php              # Page principale après connexion, affichant les tâches de l'utilisateur et les actions possibles
+├── logout.php                 # Déconnexion de l'utilisateur
+├── users.json                 # Liste des comptes utilisateurs (JSON)
+├── data/
+│   └── utilisateur_XXX.json   # Fichier de tâches propre à chaque utilisateur connecté
+├── assets/
+│   └── css/
+│       ├── bootstrap.min.css          # Bootstrap local
+│       ├── bootstrap-icons.css        # Icônes Bootstrap
+│       └── style.css                  # Ton style personnalisé
+└── README.md                 # Documentation du projet (Markdown)
