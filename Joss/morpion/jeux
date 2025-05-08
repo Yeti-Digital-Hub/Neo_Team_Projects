@@ -1,10 +1,33 @@
 
-    p=[1,'|',2,'|',3]
-    D=[4,'|',5,'|',6]
-    T=[7,'|',8,'|',9]
-def affichage(p,D,R)
-    plateau=[p,['----------------------'],D,['-------------------'],T]
+p=[1,'|',2,'|',3]
+D=[4,'|',5,'|',6]
+T=[7,'|',8,'|',9]
+def gagnant(id):
+    if (p.count(id)==3) or (D.count(id)==3) or (T.count(id)==3) or (p[0]==id and D[0]==id and T[0]==id) or (p[2]==id and D[2]==id and T[2]==x) or (p[4]==id and D[4]==id and T[4]==id) or (p[0]==id and D[2]==id and T[4]==id) or (p[4]==id and D[2]==id and T[0]==id):
+        print("le gagnant est le joueur 1 ")
+    
+
+def affichage(p,D,T):
+    plateau=[p,['----------------------------------'],D,['----------------------------------'],T]
     for i in plateau:
         for j in i:
             print(j,end="\t")
         print()
+identifiant= 'X'
+
+def PositionnerPoint(id,p,D,T):
+    if choix in p:
+        p[p.index(choix)]=id
+    elif choix in D:
+        D[D.index(choix)]=id
+    elif choix in T:
+        T[T.index(choix)]=id
+    else: print(" ce choix ,est incorrect")
+    affichage(p,D,T)
+    gagnant(id)
+
+id='x'
+choix= int(input("ou voulez vous jouer"))
+PositionnerPoint(id,p,D,T)
+
+
