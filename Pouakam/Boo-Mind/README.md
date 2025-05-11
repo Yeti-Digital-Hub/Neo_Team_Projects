@@ -6,7 +6,6 @@ C'est une application web simple de gestion de tâches (**To-Do-List**) sans usa
 
 ## 🚀 Fonctionnalités...
 
-- 🔐 Un espace de Login(**Sign-in**) et d'incription(**Sign-up**) qui permettra de gerer les tâches en fonction de chaque utilisateur de l'application.
 - 💾 Sauvegarde automatique dans un fichier JSON.
 - ✅ Ajouter une tâche.
 - 📝 Modifier une tâche.
@@ -14,27 +13,36 @@ C'est une application web simple de gestion de tâches (**To-Do-List**) sans usa
 
 ---
 
-## 🧰 Technologies utilisées
+## 🧰 Technologies utilisées...
 
 - HTML
 - CSS
 - BOOTSTRAP (**Pour ajouter les icônes, et d'autre petits fonctionnalités...**)
 - PHP
-- JSON (pour le stockage des tâches)
+- Format JSON (pour le stockage des tâches)
+
+---
+## 🗂️ Structure du Projet(**Boo-Mind**)...
+
+Voici comment j'ai structurer mon projet :
+
+```
+├── /**Boo-Mind**
+│   ├── README.md # Markdown...
+│   ├── index.php
+│   ├── styel-project/
+│   │    ├── bootstrap-icons-1.12.1 # folder for icons bootstrap...
+│   │    └── style.css #file for CSS de Boo-Mind...
+│   ├── dataBase.json #file for CSS de Boo-Mind...
+│ 
+```
+---
+## Problèmes rencontrés Pour le moment...
 
 ---
 
-**Boo-Mind**/
-├── index.php                  # Page pour se connecter (sign-in) ou aller vers l'inscription (sign-up)
-├── signup.php                 # Page d'inscription
-├── dashboard.php              # Page principale après connexion, affichant les tâches de l'utilisateur et les actions possibles
-├── logout.php                 # Déconnexion de l'utilisateur
-├── users.json                 # Liste des comptes utilisateurs (JSON)
-├── data/
-│   └── utilisateur_XXX.json   # Fichier de tâches propre à chaque utilisateur connecté
-├── assets/
-│   └── css/
-│       ├── bootstrap.min.css          # Bootstrap local
-│       ├── bootstrap-icons.css        # Icônes Bootstrap
-│       └── style.css                  # Ton style personnalisé
-└── README.md                 # Documentation du projet (Markdown)
+Mon sérieux problèmes que j'ai eu c'est au niveau de choix de l'interface, c'est même cela qui ma peru extrêmement de temp dans l'avancer dans mon projet. C'est aujourd'huit je fait un inteface demain je le change parceque il ne me plait plus... 
+
+## Création de mon mon interface web...
+
+Vue mon problème au niveau du choix de l'interface j'ai été contrain d'utiliser un maquetes de Do-To List qui existait déjà et j'ai reproduit l'apparece esact de l'interface.
