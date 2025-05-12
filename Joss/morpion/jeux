@@ -33,7 +33,7 @@ while (recommencer != 0):
     T=[7,'|',8,'|',9]
     affichage(p,D,T)
     i=1
-    while (i<=5 and (gagnant(id)!="X" or gagnant(id)!="O")):
+    while (i<=5 and gagnant(id)!="O"):
         #LE JOUEUR x JOUE
         print( "que le joueur 1 joue: ")
         id="X"
@@ -50,15 +50,11 @@ while (recommencer != 0):
     # pour afficher le score
     if (gagnant(id) == "X") :
         score_X += 1
-    elif:
+    elif (gagnant(id) == "O") :
         score_O += 1
     else:
-        print(macht null)
+        print("macth null")
 
     print("le score est : ",score_X,"VS",score_O)
     #pour demander s'ils veullent recommencer
     recommencer=int(input("voulez vous faire une autre partie (0 = non)"))
-
-
-
-
