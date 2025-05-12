@@ -1,7 +1,7 @@
 /* style du contenu principal...*/
 body {
     font-family: sans-serif;
-    margin: 0;
+    margin: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,10 +12,10 @@ body {
 /* style du container d'ajout des tasks de l'App-web BooMind... */
 .container {
     width: 500px;
-    margin-bottom: 170px;
+    margin-bottom: 50px;
     background-color: #fff;
     padding: 40px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     border-radius: 10px;
     box-shadow: 6px 6px 8px rgba(2, 2, 2, 0.421);
 }
@@ -68,3 +68,32 @@ h1 {
     background-color: #724dd8;
 }
 
+.container-view-task {
+    width: 477px;
+    margin: 0px auto;
+    margin-top: 17px;
+    padding: 3px;
+    background-color: #ccc;
+    border-radius: 5px;
+    color: #222121;
+    font-weight: 500;
+}
+
+.deleteTaskBtn {
+    width: 10px;
+    padding: 1px;
+    margin-left: 440px;
+    margin-bottom: 8px;
+    border: none;
+    background-color: #ccc;
+}
+
+i {
+    font-size: 20px;
+    color: rgb(226, 15, 15);
+    font-weight: bolder;
+}
+
+span {
+    margin-left: 8px;
+}
