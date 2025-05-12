@@ -12,7 +12,7 @@ body {
 /* style du container d'ajout des tasks de l'App-web BooMind... */
 .container {
     width: 500px;
-    margin-bottom: 100px;
+    margin-bottom: 170px;
     background-color: #fff;
     padding: 40px;
     padding-bottom: 60px;
@@ -26,6 +26,7 @@ h1 {
     font-weight: 900;
     color: #333;
     text-shadow: 2px 0px 1px #000000;
+    margin-top: 0px;
 }
 /* style générale du formulaire d'ajout des tasks... */
 .input-container {
@@ -66,3 +67,4 @@ h1 {
 #addTaskBtn:hover {
     background-color: #724dd8;
 }
+
