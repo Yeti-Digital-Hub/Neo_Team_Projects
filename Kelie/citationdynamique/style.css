@@ -1,0 +1,45 @@
+
+body, html{
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f14f4f;
+    text-align:center;
+    font-family: 'Poppins', sans-serif;
+    padding: 50px;
+    /*  possible de chnager la couleur du texte avec un color*/
+}
+
+
+#btnQuote{
+    display: inline-block;
+    padding: 5px 10px;
+    margin-top: 10px;
+                /*la bordure doit juste être de couleur noir sans remplissage*/
+    box-sizing: border-box;
+    background:0px;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: rgb(53, 48, 48);
+    
+}
+.quote{
+    background-color: rgb(166, 182, 177); /* la couleur ici doit être transprent une fois le travailterminé*/
+    padding: 30px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 0 15px rgb(red, green, #0000ff);
+}
+blockquote{
+    font-size: 1.5em;
+    margin: 50px; /*margin tout seul augmente touus les côtés, margin-bottom augmente uniquement la largeur*/
+}
+#author {
+    margin: 10px;
+    font-style: italic;
+    text-align: right;
+}
