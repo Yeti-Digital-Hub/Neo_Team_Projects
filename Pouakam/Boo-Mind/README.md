@@ -13,7 +13,7 @@ C'est une application web simple de gestion de tâches (**To-Do-List**) sans usa
 
 - HTML
 - CSS
-- BOOTSTRAP (**Pour ajouter les icônes, et d'autre petits fonctionnalités...**)
+- BOOTSTRAP (**Pour ajouter les icônes**)
 - PHP
 - Format JSON (pour le stockage des tâches)
 
@@ -21,7 +21,6 @@ C'est une application web simple de gestion de tâches (**To-Do-List**) sans usa
 
 J'ai utiliser du paradigme fontionelle et un peut de procédurale pour l'appel de mes fonctions(Tout ceci en structurant mon travail avec de la programmation modulaire).
 
----
 ## 🗂️ Structure du Projet(**Boo-Mind**)...
 
 Voici comment j'ai structurer mon projet :
@@ -91,3 +90,16 @@ A ce niveau j'ai utiliser la programmation modulaire, ce qui ma permis de divise
         }
     }
     ```   // "ici $_GET['delete'] permet de stocker l'index de la tache à modifier, puis on vérifie son existance ensuite je le convertir en un no,bre entie à l'aide la fonction `intval();` pour la sécurité dans le cas où il peut etre un string; puis une fois que c'est j'indexe le tableau contenu dans la session pour avoir la tache à supprimer(en controlant quel existe dans le tableau de session, une fois quelle existe je là supprime, ensuite à l'aide de la fonction `array_values();` je réindexe tout le tableau car j'ai un nouveau tableau et afin je restocke en base de donnée.)"
+
+---
+
+# 📖 Comment faire fonctionner l'application(**BooMind**)
+- Clonez ou téléchargez ce dépôt, en utilisant la commande : **git clone https://github.com/Yeti-Digital-Hub/Neo_Team_Projects.git**
+- En fonction de votre environnement(Windows, Linux, Mac) téléchager et installer un serveur web local qui sont : WAMP(windows), LAMP(Linux), MAMP(Mac) et XAMPP(multiplateforme).
+- déplacer le repo clonez dans un dossier spécifique du serveur web local installer qui est : htdocs(pour MAMP, XAMPP et LAMP) ou www(pour WAMP)
+- Ouvrez votre navigateur et accédez à `localhost/Néo-Yeti-Tech/GitHub_Neo-Yeti/Neo_Team_Projects/Pouakam/Boo-Mind/`.
+- Et en fin vous pouvez ajoutez vos tâches via le champ du formulaire, visualisez-les taches en temps réel et supprimez-les si besoin.
+
+---
+## Conclusion...
+ Durant le travail sur ce projet j'ai eu à apprendre beaucoup  des choses en ce qui concerne les constituants de ma stack technologie, mais aussi été confrontée  à des difficultées surtout au niveau de la partie front-end(**Choix de l'interface**). 
