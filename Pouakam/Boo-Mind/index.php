@@ -25,18 +25,18 @@
         <form action="#" method="post">
             <div class="input-container">
                 <input type="text" name="taskText" id="taskInput" placeholder="Enter your Task..." autocomplete="off" required>
-                <button type="submit" name="addTaskBtn" id="addTaskBtn">Add Task</button>
+                <button type="submit" name="addTaskBtn" id="addTaskBtn" title="Ajouter">Add Task</button>
             </div>
         </form>
         <!-- Liste des tâches -->
-        <?php foreach ($_SESSION['taches'] as $index => $task): ?>
+        <?php foreach ($_SESSION['taches'] as $index => $task){ ?>
             <div class="container-view-task">
                 <span><?= htmlspecialchars($task) ?></span>
                 <a href="?delete=<?= $index ?>" class="deleteTaskBtn" title="Supprimer" onclick="return confirm('Voulez-vous vraiment supprimer cette tâche ?');">
                     <i class="bi bi-trash"></i>
                 </a>
             </div>
-        <?php endforeach; ?>
+        <?php } ?>
     </div>
 </body>
 </html>

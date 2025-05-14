@@ -47,11 +47,11 @@ Voici comment j'ai structurer mon projet :
 Mon sérieux problèmes que j'ai eu c'est au niveau de choix de l'interface, c'est même cela qui ma peru extrêmement de temp dans l'avancer dans mon projet. C'est aujourd'huit je fait un inteface demain je le change parceque il ne me plait plus... 
 
 ## Création de mon interface web...
----
+
 Vue mon problème au niveau du choix de l'interface j'ai été contrain d'utiliser un maquetes de To-Do List qui existait déjà et j'ai reproduit l'apparence exact de l'interface.
 
 ## Partie Backend de mon Application...
----
+
 A ce niveau j'ai utiliser la programmation modulaire, ce qui ma permis de diviser la logique métier de mon application 2 modules :
 1. **taskStorage.php :** ce module me permet de stocker les taches ajouter par l'utilisateur dans le fichier **dataBase.json**(Ma base de donnée).
 
@@ -81,3 +81,17 @@ A ce niveau j'ai utiliser la programmation modulaire, ce qui ma permis de divise
 
     # 🕹️ Fonctionnalités du module 2 **deleteTask.php :**
         Ici j'ai fonctionner avec un paradigme procédural
+    ```php
+        // Suppression via GET
+    if (isset($_GET['delete']) && is_numeric($_GET['delete'])) {
+        $index = intval($_GET['delete']);
+        if (isset($_SESSION['taches'][$index])) {
+            unset($_SESSION['taches'][$index]);
+            $_SESSION['taches'] = array_values($_SESSION['taches']); // Réindexation
+            storeTasks($_SESSION['taches']);
+            // Redirection pour éviter la suppression multiple si on recharge la page
+            header("Location: " . strtok($_SERVER["REQUEST_URI"], '?'));
+            exit();
+        }
+    }
+    ```   // "ici $_GET['delete'] permet de stocker l'index de la tache à modifier, puis on vérifie son existance ensuite je le convertir en un no,bre entie à l'aide la fonction `intval();` pour la sécurité dans le cas où il peut etre un string; puis une fois que c'est j'indexe le tableau contenu dans la session pour avoir la tache à supprimer(en controlant quel existe dans le tableau de session, une fois quelle existe je là supprime, ensuite à l'aide de la fonction `array_values();` je réindexe tout le tableau car j'ai un nouveau tableau et afin je restocke en base de donnée.)"
