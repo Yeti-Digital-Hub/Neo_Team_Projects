@@ -1,7 +1,9 @@
 <?php
     session_start();
-    //inclusion du module relative au stockage des taches ajouter dans le fichier datBase.json...
+    //inclusion du module est relative au stockage des taches ajouter dans le fichier datBase.json...
     require_once('taskStorage.php');
+    //inclusion du module est relative à la suppression des taches ajouter dans le fichier datBase.json...
+    require_once('deleteTask.php');
     // Initialiser $_SESSION['taches'] s'il n'existe pas déjà
     if (!isset($_SESSION['taches'])) {
         $_SESSION['taches'] = [];
@@ -25,17 +27,16 @@
                 <input type="text" name="taskText" id="taskInput" placeholder="Enter your Task..." autocomplete="off" required>
                 <button type="submit" name="addTaskBtn" id="addTaskBtn">Add Task</button>
             </div>
-            <?php
-                foreach($_SESSION['taches'] as $keysTasks => $lisTasks){
-                    echo '<div class="container-view-task">';
-                        echo '<span>'.$lisTasks.'</span>';          
-                        echo '<button type="submit" name="deleteTaskBtn" class="deleteTaskBtn">
-                                <i class="bi bi-trash"></i>
-                            </button>';
-                    echo '</div>';
-                }
-            ?>
         </form>
+        <!-- Liste des tâches -->
+        <?php foreach ($_SESSION['taches'] as $index => $task): ?>
+            <div class="container-view-task">
+                <span><?= htmlspecialchars($task) ?></span>
+                <a href="?delete=<?= $index ?>" class="deleteTaskBtn" title="Supprimer" onclick="return confirm('Supprimer cette tâche ?');">
+                    <i class="bi bi-trash"></i>
+                </a>
+            </div>
+        <?php endforeach; ?>
     </div>
 </body>
 </html>
