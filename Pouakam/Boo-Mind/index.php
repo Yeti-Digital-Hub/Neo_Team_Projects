@@ -32,7 +32,7 @@
         <?php foreach ($_SESSION['taches'] as $index => $task): ?>
             <div class="container-view-task">
                 <span><?= htmlspecialchars($task) ?></span>
-                <a href="?delete=<?= $index ?>" class="deleteTaskBtn" title="Supprimer" onclick="return confirm('Supprimer cette tâche ?');">
+                <a href="?delete=<?= $index ?>" class="deleteTaskBtn" title="Supprimer" onclick="return confirm('Voulez-vous vraiment supprimer cette tâche ?');">
                     <i class="bi bi-trash"></i>
                 </a>
             </div>

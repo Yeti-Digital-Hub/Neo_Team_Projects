@@ -21,6 +21,12 @@ C'est une application web simple de gestion de tâches (**To-Do-List**) sans usa
 - PHP
 - Format JSON (pour le stockage des tâches)
 
+## Paradigmes utilisés...
+
+---
+
+J'ai utiliser du paradigme fontionelle et un peut de procédurale pour l'appel de mes fonctions(Tout ceci en structurant mon travail avec de la programmation modulaire).
+
 ---
 ## 🗂️ Structure du Projet(**Boo-Mind**)...
 
@@ -45,13 +51,21 @@ Voici comment j'ai structurer mon projet :
 Mon sérieux problèmes que j'ai eu c'est au niveau de choix de l'interface, c'est même cela qui ma peru extrêmement de temp dans l'avancer dans mon projet. C'est aujourd'huit je fait un inteface demain je le change parceque il ne me plait plus... 
 
 ## Création de mon mon interface web...
-
 ---
-
 Vue mon problème au niveau du choix de l'interface j'ai été contrain d'utiliser un maquetes de To-Do List qui existait déjà et j'ai reproduit l'apparence exact de l'interface.
 
----
 ## Partie Backend de mon Application...
 ---
 A ce niveau j'ai utiliser la programmation modulaire, ce qui ma permis de diviser la logique métier de mon application 2 modules :
 1. **taskStorage.php :** ce module me permet de stocker les taches ajouter par l'utilisateur dans le fichier **dataBase.json**(Ma base de donnée).
+    # 🕹️ Fonctionnalités du module 1 **taskStorage.php :**
+        j'ai implémenter ce module à l'aide de plusieurs fonctions crées qui sont :
+    - `filterTasks();` : qui me permet de me rassurer que les data entrez dans le champs des tasks son conforme.
+    -  `stroreTasks();` : qui me permet de stoker les taches entrez par mes users dans ma dataBase(Mon file au format json).
+    - ```php
+        if(file_exists('dataBase.json')) {
+            $_SESSION['taches'] = json_decode(file_get_contents('dataBase.json'), true);
+        } else{
+            $_SESSION['taches'] = array();
+        }
+        ```   : "Tout ce ceci me permet d'initialiser ma variable $_SESSION['taches']"
