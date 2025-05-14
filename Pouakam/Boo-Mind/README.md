@@ -2,16 +2,12 @@
 
 C'est une application web simple de gestion de tâches (**To-Do-List**) sans usage de base de données.
 
----
-
 ## 🚀 Fonctionnalités...
 
 - 💾 Sauvegarde automatique dans un fichier JSON.
 - ✅ Ajouter une tâche.
 - 📝 Modifier une tâche.
 - 🗑️ Supprimer une tâche.
-
----
 
 ## 🧰 Technologies utilisées...
 
