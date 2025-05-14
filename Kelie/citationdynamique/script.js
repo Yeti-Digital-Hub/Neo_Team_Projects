@@ -45,5 +45,21 @@ function newQuote(){
     const author = document.getElementById('author');
     quote.innerText = `${Quotes[randomIndex].quote}`;
     author.innerText = `-${Quotes[randomIndex].author}`;
-}
-    
+};
+const btn = document.getElementById("btnQuote");
+let random =() => {
+  return Math.floor(Math.random()*256);
+};
+let changeColor =() =>{
+let randomColor = `rgb(${random()},${random()},${random()})`;
+document.body.style.backgroundColor =randomColor;
+};
+
+btn.addEventListener("click", () =>{ 
+   changeColor();
+   newQuote(); 
+});
+window.addEventListener("load", () =>{ 
+  changeColor();
+  newQuote(); 
+});

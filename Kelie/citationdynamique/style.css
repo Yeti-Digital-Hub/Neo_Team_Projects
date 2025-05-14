@@ -6,7 +6,7 @@ body, html{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f14f4f;
+   
     text-align:center;
     font-family: 'Poppins', sans-serif;
     padding: 50px;
@@ -28,11 +28,11 @@ body, html{
     
 }
 .quote{
-    background-color: rgb(166, 182, 177); /* la couleur ici doit être transprent une fois le travailterminé*/
+    background-color: rgba(166, 182, 177, 0.233); /* la couleur ici doit être transprent une fois le travailterminé*/
     padding: 30px;
     border-radius: 10px;
     display: inline-block;
-    box-shadow: 0 0 15px rgb(red, green, #0000ff);
+   
 }
 blockquote{
     font-size: 1.5em;
