@@ -28,7 +28,7 @@
             <?php
                 foreach($_SESSION['taches'] as $keysTasks => $lisTasks){
                     echo '<div class="container-view-task">';
-                        echo '<span>'.$lisTasks.'</span>';            
+                        echo '<span>'.$lisTasks.'</span>';          
                         echo '<button type="submit" name="deleteTaskBtn" class="deleteTaskBtn">
                                 <i class="bi bi-trash"></i>
                             </button>';
