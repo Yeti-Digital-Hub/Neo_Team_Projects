@@ -23,8 +23,6 @@ C'est une application web simple de gestion de tâches (**To-Do-List**) sans usa
 
 ## Paradigmes utilisés...
 
----
-
 J'ai utiliser du paradigme fontionelle et un peut de procédurale pour l'appel de mes fonctions(Tout ceci en structurant mon travail avec de la programmation modulaire).
 
 ---
@@ -46,11 +44,9 @@ Voici comment j'ai structurer mon projet :
 ---
 ## Problèmes rencontrés Pour le moment...
 
----
-
 Mon sérieux problèmes que j'ai eu c'est au niveau de choix de l'interface, c'est même cela qui ma peru extrêmement de temp dans l'avancer dans mon projet. C'est aujourd'huit je fait un inteface demain je le change parceque il ne me plait plus... 
 
-## Création de mon mon interface web...
+## Création de mon interface web...
 ---
 Vue mon problème au niveau du choix de l'interface j'ai été contrain d'utiliser un maquetes de To-Do List qui existait déjà et j'ai reproduit l'apparence exact de l'interface.
 
@@ -58,6 +54,7 @@ Vue mon problème au niveau du choix de l'interface j'ai été contrain d'utilis
 ---
 A ce niveau j'ai utiliser la programmation modulaire, ce qui ma permis de diviser la logique métier de mon application 2 modules :
 1. **taskStorage.php :** ce module me permet de stocker les taches ajouter par l'utilisateur dans le fichier **dataBase.json**(Ma base de donnée).
+
     # 🕹️ Fonctionnalités du module 1 **taskStorage.php :**
         j'ai implémenter ce module à l'aide de plusieurs fonctions crées qui sont :
     - `filterTasks();` : qui me permet de me rassurer que les data entrez dans le champs des tasks son conforme.
@@ -68,7 +65,7 @@ A ce niveau j'ai utiliser la programmation modulaire, ce qui ma permis de divise
         } else{
             $_SESSION['taches'] = array();
         }
-        ```   : "Tout ce ceci me permet d'initialiser ma variable $_SESSION['taches']"
+        ```   // "Tout ce ceci me permet d'initialiser ma variable $_SESSION['taches']"
     -   ```php
         if(isset($_POST['addTaskBtn'])) {
             if(isset($_POST['taskText']) && !empty($_POST['taskText'])){
@@ -77,4 +74,10 @@ A ce niveau j'ai utiliser la programmation modulaire, ce qui ma permis de divise
                 storeTasks($_SESSION['taches']);
             }    
         }
-        ```   : "A ce niveau je vérifie si le user donc la session à été créer lors du lancement de son Browser à bien remplit une tache et qu'il à soumit le bouton ['addTaskBtn'], si cela étant bien faite je stock d'abord la tache dans le dernier item du array $_SESSION['taches'] grace à l'intruction [$_SESSION['taches'][] = filterTasks($_POST['taskText']);] et puis j'appelle ma fonction `stroreTasks();` pour stocker la tache dans dataBase.json."
+        ```   // "A ce niveau je vérifie si le user donc la session à été créer lors du lancement de son Browser à bien remplit une tache et qu'il à soumit le bouton ['addTaskBtn'], si cela étant bien faite je stock d'abord la tache dans le dernier item du array $_SESSION['taches'] grace à l'intruction [$_SESSION['taches'][] = filterTasks($_POST['taskText']);] et puis j'appelle ma fonction `stroreTasks();` pour stocker la tache dans dataBase.json."
+
+---
+2. **deleteTask.php :** ce module me permet supprimer mes tasks ajouter via la méthode Get. 
+
+    # 🕹️ Fonctionnalités du module 2 **deleteTask.php :**
+        Ici j'ai fonctionner avec un paradigme procédural
