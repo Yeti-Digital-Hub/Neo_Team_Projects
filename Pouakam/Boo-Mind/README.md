@@ -62,10 +62,19 @@ A ce niveau j'ai utiliser la programmation modulaire, ce qui ma permis de divise
         j'ai implémenter ce module à l'aide de plusieurs fonctions crées qui sont :
     - `filterTasks();` : qui me permet de me rassurer que les data entrez dans le champs des tasks son conforme.
     -  `stroreTasks();` : qui me permet de stoker les taches entrez par mes users dans ma dataBase(Mon file au format json).
-    - ```php
+    -   ```php
         if(file_exists('dataBase.json')) {
             $_SESSION['taches'] = json_decode(file_get_contents('dataBase.json'), true);
         } else{
             $_SESSION['taches'] = array();
         }
         ```   : "Tout ce ceci me permet d'initialiser ma variable $_SESSION['taches']"
+    -   ```php
+        if(isset($_POST['addTaskBtn'])) {
+            if(isset($_POST['taskText']) && !empty($_POST['taskText'])){
+                $_SESSION['taches'][] = filterTasks($_POST['taskText']);
+                // stockage des taches dans le fichier dataBase.json...
+                storeTasks($_SESSION['taches']);
+            }    
+        }
+        ```   : "A ce niveau je vérifie si le user donc la session à été créer lors du lancement de son Browser à bien remplit une tache et qu'il à soumit le bouton ['addTaskBtn'], si cela étant bien faite je stock d'abord la tache dans le dernier item du array $_SESSION['taches'] grace à l'intruction [$_SESSION['taches'][] = filterTasks($_POST['taskText']);] et puis j'appelle ma fonction `stroreTasks();` pour stocker la tache dans dataBase.json."
