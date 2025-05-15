@@ -1,11 +1,11 @@
 
 const Quotes =[
      {
-        quote:"The pessimist sees difficulty in every opportunity.",
+        quote:"You must learn to see people as they are, not as you wish them to be.",
         author: "__Robert Greene"
     },
     {
-    quote: "The pessimist sees difficulty in every opportunity.The optimist sees the opportunity in every difficult!",
+    quote: "The pessimist sees difficulty in every opportunity.The optimist sees the opportunity in every difficulty!",
     author: "__Winston Churchill"
     },
     {
@@ -33,7 +33,7 @@ const Quotes =[
     author: "__Albert Einstein"
   },
   {
-    quote: "Courir et se gratter les pieds ne vont pas ensemnle!",
+    quote: "Courir et se gratter les pieds ne vont pas ensemble!",
     author: "__#Amassoka"
   },
     
