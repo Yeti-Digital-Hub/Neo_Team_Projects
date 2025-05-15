@@ -13,7 +13,10 @@ body, html{
     padding: 50px;
     /*  possible de chnager la couleur du texte avec un color*/
 }
-
+#quoteBox{
+    transition: opacity  0.5s ease;
+    opacity: 1;
+}
 
 #btnQuote{
     display: inline-block;

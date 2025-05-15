@@ -40,19 +40,31 @@ const Quotes =[
     ];
     
 function newQuote(){
-    const randomIndex=Math.floor(Math.random()*Quotes.length);
+    const quoteBox=document.getElementById('quoteBox');  
     const quote = document.getElementById('quote');
     const author = document.getElementById('author');
-    quote.innerText = `${Quotes[randomIndex].quote}`;
-    author.innerText = `-${Quotes[randomIndex].author}`;
-};
+   /*faire disparaire*/
+    quoteBox.style.opacity=0; 
+    setTimeout(() => {
+      const randomIndex=Math.floor(Math.random()*Quotes.length);
+      quote.innerText = `"${Quotes[randomIndex].quote}"`;
+      author.innerText = `__${Quotes[randomIndex].author}`;
+      quoteBox.style.opacity=2;
+    }, 500); /*reaffichage, avec la meme durée ou plus courte que la disparition ( dans le css)*/
+}
+    
 const btn = document.getElementById("btnQuote");
 let random =() => {
   return Math.floor(Math.random()*256);
 };
+
+
 let changeColor =() =>{
-let randomColor = `rgb(${random()},${random()},${random()})`;
-document.body.style.backgroundColor =randomColor;
+  const random =() => Math.floor(Math.random()*256);
+    let color1 = `rgb(${random()},${random()},${random()})`;
+    let color2 = `rgb(${random()},${random()},${random()})`;
+    let angle =Math.floor(Math.random()*360); // choisir l'angle du dégradé
+document.body.style.background =`linear-gradient(${angle}deg, ${color1}, ${color2})`;
 };
 
 btn.addEventListener("click", () =>{ 
