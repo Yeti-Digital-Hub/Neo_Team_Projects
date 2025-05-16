@@ -15,7 +15,7 @@ const Quotes =[
     {
     quote: "Le voyage de mille lieues commence par un pas!",
     author:"__Lao Tseu"
-},
+    },
   {
     quote: "Le succès n'est pas final, l'échec n'est pas fatal: C'est le courage de continuer qui compte.",
     author:"__Winston Churchill"
@@ -75,3 +75,9 @@ window.addEventListener("load", () =>{
   changeColor();
   newQuote(); 
 });
+
+
+setInterval(() =>{ //permet de changer ls citations automatiquement après un temps défini.
+  changeColor();
+  newQuote();
+}, 5000);
