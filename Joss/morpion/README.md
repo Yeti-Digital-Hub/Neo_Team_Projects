@@ -27,3 +27,17 @@ et permet de verifier si un joueur a gagner apres qu'il est jouer
 - Puis la fonction gagnant verifie s'il y a trois meme points aligne. Si c'est le cas le jeux s'arrete
 - Au cas contraire on passe au joueur 2 et on fait la meme chose 
 - Si aucun des n'a gagner a ce tour on recommence jusqu'a ce que le plateau soit remplit
+
+# TECHNOLOGIE UTILISER
+pour realiser notre jeux de morpion on aura principalement besion de :
+- D'un ordinateur, ou d'une tablette
+
+- Un IDE (Enviroennement de Devellopement Integre): on peut utiliser n'importe quel (sublime texte,vs code ...). Moi j'ai utiliser VS code.
+
+# COMMENT EXECUTER LE CODE DU JEUX
+Pour executer le code il sufi de le metre dans un IDE ou un interpreteur
+et executerle code
+
+# INTERVANT
+
+Je suis le seul a avoir travailler sur ce jeux 
