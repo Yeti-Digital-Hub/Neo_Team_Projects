@@ -9,7 +9,7 @@ def affichage(p,D,T):
             print(j,end="\t")
         print()
 def PositionnerPoint(id,p,D,T):
-    choix=int(input("ou voulez vous jouer"))
+    choix=int(input("ou voulez vous jouer :"))
     if choix in p:
         p[p.index(choix)]=id
     elif choix in D:
