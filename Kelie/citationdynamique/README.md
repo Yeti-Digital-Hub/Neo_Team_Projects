@@ -21,7 +21,7 @@ Ce projet est un **générateur de citations** qui est developper en utlisant du
 
 # COMMENT EXECUTER
 
-  Pour l'exécuter il suffit d'être muni d'un navigateur lorsque la page est déjà hebergée, il suffit d'avoir éditeur de texte et un navigateur. une fois la page web ouvertre, les citations changeront après un temps prédéfini avec des effets de disparitions/apparitions avec des couleurs de pages qui changent automatiquement également. Grâce à une touche **New Quote** on peut aussi allé à la citation suivante les couleurs de fond de page changeront automatiquement. 
+  Pour l'exécuter il suffit d'être muni d'un navigateur lorsque la page est déjà hébergée, il suffit d'avoir éditeur de texte et un navigateur lorsau'il n'est hébergé. une fois la page web ouvertre, les citations changeront après un temps prédéfini avec des effets de disparitions/apparitions avec des couleurs de pages qui changent automatiquement également. Grâce à une touche **New Quote** on peut aussi allé à la citation suivante les couleurs de fond de page changeront automatiquement. 
 
 # QUI Y TRAVAIL
 

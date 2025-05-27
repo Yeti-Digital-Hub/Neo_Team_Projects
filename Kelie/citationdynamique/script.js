@@ -36,8 +36,8 @@ const Quotes =[
     quote: "Courir et se gratter les pieds ne vont pas ensemble!",
     author: "__#Amassoka"
   },
-    
-    ];
+];
+
     
 function newQuote(){
     const quoteBox=document.getElementById('quoteBox');  
@@ -46,8 +46,8 @@ function newQuote(){
    /*faire disparaire*/
     quoteBox.style.opacity=0; 
     setTimeout(() => {
-      const randomIndex=Math.floor(Math.random()*Quotes.length);
-      quote.innerText = `"${Quotes[randomIndex].quote}"`;
+      const randomIndex=Math.floor(Math.random()*Quotes.length);  //math.random(): génère un nbre entre 0 et 1; math.floor: arrondit à l'entier <.
+      quote.innerText = `"${Quotes[randomIndex].quote}"`;        // quote.innerText = : met à jour du texte de l'ID quote
       author.innerText = `__${Quotes[randomIndex].author}`;
       quoteBox.style.opacity=2;
     }, 500); /*reaffichage, avec la meme durée ou plus courte que la disparition ( dans le css)*/
@@ -71,13 +71,20 @@ btn.addEventListener("click", () =>{
    changeColor();
    newQuote(); 
 });
+
 window.addEventListener("load", () =>{ 
   changeColor();
   newQuote(); 
 });
 
 
-setInterval(() =>{ //permet de changer ls citations automatiquement après un temps défini.
+setInterval(() =>{ //permet de changer les citations automatiquement après un temps défini.
   changeColor();
   newQuote();
 }, 5000);
+
+
+/* Math.random: return un nombre alétoire compris entre 0 et 1
+Math.floor: arrondir vers le bas. cette function permet d'arrondir les nombres qui ne sont pas entiers car on ne peut pas utiliser un nombre à virgule pour acceder à un élément d'un tableau
+randomIdex est une variable qui permet de stocker un élément d'un tableau (exple: un numéro de tableau est donné au hasard tab[0...N] il est ensuite stocker dans la variables randomIndex (indice tab)).
+*/

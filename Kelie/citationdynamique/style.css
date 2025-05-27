@@ -1,7 +1,7 @@
 
 body, html{
     height: 100vh;
-    margin: 0%;
+    margin: 0;
     padding: 0%;
     display: flex;
     justify-content: center;
@@ -14,7 +14,7 @@ body, html{
 }
 #quoteBox{
     transition: opacity  0.5s ease;
-    opacity: 1;
+    opacity: 1;  
 }
 
 #btnQuote{
@@ -31,11 +31,16 @@ body, html{
     
 }
 .quote{
-    background-color: rgba(166, 182, 177, 0.233); /* la couleur ici doit être transprente une fois le travailterminé*/
+    background-color: rgba(120, 127, 125, 0.123); /* la couleur ici peut être transprente mais pour eviter une légère confusion, une couleur est définie pour la div*/
     padding: 30px;
     border-radius: 10px;
     display: inline-block;
     color: black;
+    max-width: 70%;
+    width: 500%;
+    border: 2px solid black;
+    padding: 5px;
+    flex-direction: column;
 }
 blockquote{
     font-size: 1.5em;
