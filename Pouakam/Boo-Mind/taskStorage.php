@@ -2,7 +2,7 @@
     //fonction pour le filtrage des taches à ajouter...
     function filterTasks($tasks) {
         $tasks = trim($tasks);
-        $tasks = htmlspecialchars($tasks);
+        $tasks = ($tasks);
         $tasks = stripslashes($tasks);
         return $tasks;
     }

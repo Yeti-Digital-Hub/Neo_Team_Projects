@@ -4,7 +4,7 @@
     require_once('taskStorage.php');
     //inclusion du module est relative à la suppression des taches ajouter dans le fichier datBase.json...
     require_once('deleteTask.php');
-    // Initialiser $_SESSION['taches'] s'il n'existe pas déjà
+    // initialiser $_SESSION['taches'] s'il n'existe pas déjà
     if (!isset($_SESSION['taches'])) {
         $_SESSION['taches'] = [];
     }
@@ -31,7 +31,7 @@
         <!-- Liste des tâches -->
         <?php foreach ($_SESSION['taches'] as $index => $task){ ?>
             <div class="container-view-task">
-                <span><?= htmlspecialchars($task) ?></span>
+                <span><?= $task ?></span>
                 <a href="?delete=<?= $index ?>" class="deleteTaskBtn" title="Supprimer" onclick="return confirm('Voulez-vous vraiment supprimer cette tâche ?');">
                     <i class="bi bi-trash"></i>
                 </a>
