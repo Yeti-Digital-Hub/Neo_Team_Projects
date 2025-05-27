@@ -1,7 +1,7 @@
 
 # 🎯 Defie : GENERATEUR DE CITATIONS DYNAMIQUES
 
-Ce projet est un **générateur de citations** qui est developper en utlisant du **Html, Css & JavaScript**, il propose à chaque clic une nouvelle citation accompagnée du nom de son auteur, tout en changeant la couleur du fond et en animant l'apparition/disparition de la citation (effets *fade-in* et *fade-out*).
+Ce projet est un **générateur de citations dynamique** qui est developper en utlisant du **Html, Css & JavaScript**, il propose à chaque clic une nouvelle citation accompagnée du nom de son auteur, tout en changeant la couleur du fond et en animant l'apparition/disparition de la citation (effets *fade-in* et *fade-out*).
     ---
 
 # OBJECTIF DU PROJET

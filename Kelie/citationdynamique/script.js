@@ -37,7 +37,7 @@ const Quotes =[
     author: "__#Amassoka"
   },
    {
-    quote: "Ce n'est pas la Montagne que nous conquérons, mais nous-mêmes",
+    quote: "Ce n'est pas la Montagne que nous Conquérons, mais Nous-Mêmes",
     author: "__Sir Edmund Hillary"
   },
 ];
