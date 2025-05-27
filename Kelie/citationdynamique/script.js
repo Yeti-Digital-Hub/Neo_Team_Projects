@@ -36,6 +36,10 @@ const Quotes =[
     quote: "Courir et se gratter les pieds ne vont pas ensemble!",
     author: "__#Amassoka"
   },
+   {
+    quote: "Ce n'est pas la montagne que nous conquérons, mais nous-mêmes",
+    author: "__Sir Edmund Hillary"
+  },
 ];
 
     

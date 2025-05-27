@@ -10,7 +10,7 @@ body, html{
     text-align:center;
     font-family: 'Poppins', sans-serif;
     padding: 50px;
-    /*  possible de chnager la couleur du texte avec un color*/
+    /*  possible de changer la couleur du texte avec une color*/
 }
 #quoteBox{
     transition: opacity  0.5s ease;
@@ -21,7 +21,6 @@ body, html{
     display: inline-block;
     padding: 5px 10px;
     margin-top: 10px;
-                /*la bordure doit juste être de couleur noir sans remplissage*/
     box-sizing: border-box;
     background:0px;
     color: black;
