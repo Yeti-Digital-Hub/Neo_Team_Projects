@@ -25,4 +25,4 @@ Ce projet est un **générateur de citations** qui est developper en utlisant du
 
 # QUI Y TRAVAIL
 
-Le défie **GENERATEUR DE CITATIONS DYNAMIQUES** a été réaliser par le concepteur de ce README.md (Kelie).
+Le défie **GENERATEUR DE CITATIONS DYNAMIQUES** a été réaliser par le concepteur de ce README.md (KELIE).
