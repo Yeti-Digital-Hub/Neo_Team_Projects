@@ -159,7 +159,7 @@ Réaliser une **série de projets en ligne de commande (terminal)** avec Python,
 
 
 ## 📚 Détail sur le projet principal : Application Web en utilisant flask 
-Ce projet consiste à suivre et reproduire intégralement le tutoriel "Flask (Français) - Découverte du microframework Web Python" disponible sur la chaîne LES TEACHERS DU NET .
+Ce projet consiste à suivre et reproduire intégralement le tutoriel "Flask (Français) - Découverte du microframework Web Python" disponible sur la chaîne LES TEACHERS DU NET (https://youtu.be/ajrfDEi8F7Y?si=xW8PsR36syqnezfp) .
 
 Objectifs pédagogiques :
 
