@@ -26,7 +26,8 @@ Chaque dossier de projet **doit contenir un fichier `README.md`** clair et compl
 - 🎯 L’objectif du projet
 - 🧰 Les technologies utilisées
 - 🛠️ Les instructions pour exécuter le projet
-- 👤 Les membres impliqués 
+- 👤 Les membres impliqués
+
 ---
 
 ## ✅ Flux de travail recommandé
@@ -40,7 +41,6 @@ Chaque nouveau projet doit suivre ce protocole :
    git checkout main
    git pull origin main
    ```
-   
 2. Créer une nouvelle branche dédiée au projet :
 
 ```bash
@@ -55,9 +55,9 @@ Neo_team_projets/Joss/Nom_du_projet/
 
 4. Travailler à l'intérieur :
 
-* Scripts Python
-* README.md
-* Ressources (JSON, .txt, etc)
+- Scripts Python
+- README.md
+- Ressources (JSON, .txt, etc)
 
 5. Ajouter, committer et push :
 
@@ -73,23 +73,20 @@ git push origin Neo_team_projets/Joss/Nom_du_projet
 
 ## 📦 Projets prévus
 
-| Nom du projet         | Thématique                       | Délai imparti | Langages                            | Dossier                                            |
-| --------------------- | -------------------------------- | ------------- | ------------------------------------| -------------------------------------------------- |
-| `Generateur_QR_Code`  | Terminal / Génération d’image    | /             | Python (`qrcode`)                   | `Neo_team_projets/Joss/Generateur_QR_Code/`        |
-| `Hangman`             | Jeu / Logique conditionnelle     | /             | Python                              | `Neo_team_projets/Joss/Hangman/`                   |
-| `Password_Manager`    | Sécurité / Stockage local        |/              | Python                              | `Neo_team_projets/Joss/Password_Manager/`          |
-| `Email_Formatter`     | Automatisation / Formatage email | /             | Python                              | `Neo_team_projets/Joss/Email_Formatter/`           |
-| `User_Login_System`   | Authentification / Hashing       | /             | Python                              | `Neo_team_projets/Joss/User_Login_System/`         |
-| `Inventory_Tracker`   | Terminal / CRUD                  | /             | Python                              | `Neo_team_projets/Joss/Inventory_Tracker/`         |
-| `NBA_API_Stats`       | API / Traitement JSON            | /             | Python (requests, json)             | `Neo_team_projets/Joss/NBA_API_Stats/`             |
-| `Terminal_Chat`       | Simulateur de discussion         | 1 mois        | Python                              | `Neo_team_projets/Joss/Terminal_Chat/`             |
-| `REST_API_JSON_Local` | Simulation API / Backend local   | /             | Python                              | `Neo_team_projets/Joss/REST_API_JSON_Local/`       |
-| `Appli_Flask`         | Web / Framework Flask            | 1 mois        | Python (Flask, Jinja, SQLite)       | `Neo_team_projets/Joss/Appli_Flask_TeachersDuNet/` |
-
-
+| Nom du projet         | Thématique                       | Délai imparti | Langages                      | Dossier                                            |
+| --------------------- | -------------------------------- | ------------- | ----------------------------- | -------------------------------------------------- |
+| `Generateur_QR_Code`  | Terminal / Génération d’image    | /             | Python (`qrcode`)             | `Neo_team_projets/Joss/Generateur_QR_Code/`        |
+| `Hangman`             | Jeu / Logique conditionnelle     | /             | Python                        | `Neo_team_projets/Joss/Hangman/`                   |
+| `Password_Manager`    | Sécurité / Stockage local        | /             | Python                        | `Neo_team_projets/Joss/Password_Manager/`          |
+| `Email_Formatter`     | Automatisation / Formatage email | /             | Python                        | `Neo_team_projets/Joss/Email_Formatter/`           |
+| `User_Login_System`   | Authentification / Hashing       | /             | Python                        | `Neo_team_projets/Joss/User_Login_System/`         |
+| `Inventory_Tracker`   | Terminal / CRUD                  | /             | Python                        | `Neo_team_projets/Joss/Inventory_Tracker/`         |
+| `NBA_API_Stats`       | API / Traitement JSON            | /             | Python (requests, json)       | `Neo_team_projets/Joss/NBA_API_Stats/`             |
+| `Terminal_Chat`       | Simulateur de discussion         | 1 mois        | Python                        | `Neo_team_projets/Joss/Terminal_Chat/`             |
+| `REST_API_JSON_Local` | Simulation API / Backend local   | /             | Python                        | `Neo_team_projets/Joss/REST_API_JSON_Local/`       |
+| `Appli_Flask`         | Web / Framework Flask            | 1 mois        | Python (Flask, Jinja, SQLite) | `Neo_team_projets/Joss/Appli_Flask_TeachersDuNet/` |
 
 ---
-
 
 ## 📌 Objectif général des projets
 
@@ -125,7 +122,7 @@ Réaliser une **série de projets en ligne de commande (terminal)** avec Python,
 
 **Technos utilisées** : Python, manipulation de chaînes, templates.
 
-### 5. User Login System *(projet commun avec Alex)*
+### 5. User Login System _(projet commun avec Alex)_
 
 **Objectif** : Système d'authentification avec inscription, login et vérification de mots de passe.
 
@@ -143,13 +140,13 @@ Réaliser une **série de projets en ligne de commande (terminal)** avec Python,
 
 **Technos utilisées** : Python, API REST, `requests`, manipulation de JSON.
 
-### 8. Terminal Chat *(projet commun avec Alex)*
+### 8. Terminal Chat _(projet commun avec Alex)_
 
 **Objectif** : Simuler une messagerie en ligne de commande entre deux utilisateurs.
 
 **Technos utilisées** : Python, lecture/écriture de fichiers, timestamps.
 
-### 9. REST API Simulation with JSON *(projet commun avec Alex)*
+### 9. REST API Simulation with JSON _(projet commun avec Alex)_
 
 **Objectif** : Simuler localement le comportement d’une API REST via manipulation de fichiers JSON.
 
@@ -157,8 +154,8 @@ Réaliser une **série de projets en ligne de commande (terminal)** avec Python,
 
 ---
 
+## 📚 Détail sur le projet principal : Application Web en utilisant flask
 
-## 📚 Détail sur le projet principal : Application Web en utilisant flask 
 Ce projet consiste à suivre et reproduire intégralement le tutoriel "Flask (Français) - Découverte du microframework Web Python" disponible sur la chaîne LES TEACHERS DU NET (https://youtu.be/ajrfDEi8F7Y?si=xW8PsR36syqnezfp) .
 
 Objectifs pédagogiques :
@@ -178,7 +175,6 @@ Objectifs pédagogiques :
 - Organiser le code pour une meilleure lisibilité et maintenabilité
 
 ⚠️ Ce projet doit reproduire fidèlement le contenu du tutoriel et être réalisé en 1 mois maximum.
-
 
 ## 🗂️ À faire dans chaque projet
 
@@ -202,9 +198,13 @@ python main.py
 
 Et les prérequis s’il y en a (`pip install` etc.).
 
-### 🔹 Auteur
+### 🔹 Auteur : Joss
 
-Ton prénom (Joss) + date du début du projet.
+📅 Début du projet : 3 juin 2025
+
+📅 Date limite : 3 juillet 2025
+
+🧑‍🏫 Suivi par : [Mentor_ GuruMiT]
 
 ---
 
@@ -232,5 +232,3 @@ Ton prénom (Joss) + date du début du projet.
 
 Bonne chance Joss 💪🚀
 Tu as 1 mois pour tous les finaliser, amuse-toi et applique-toi !
-
-
