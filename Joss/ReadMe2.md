@@ -229,6 +229,5 @@ Et les prérequis s’il y en a (`pip install` etc.).
 | Communication          | Capacité à documenter & expliquer            |
 
 ---
-
 Bonne chance Joss 💪🚀
 Tu as 1 mois pour tous les finaliser, amuse-toi et applique-toi !
