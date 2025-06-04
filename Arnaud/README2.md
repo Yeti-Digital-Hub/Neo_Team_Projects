@@ -116,11 +116,11 @@ Avant la reproduction d’interface, il est impératif de comprendre les bases s
 
 > ▶️ [La minute de code – Introduction au design web](https://youtu.be/MEg05ZOFKtY?si=iY0wiWRSbFER48os)
 
-📝 **À faire :**
+📝 **A faire** :
 
-- Prendre des notes personnelles
-- Identifier 3 principes essentiels à appliquer
-- Rédiger une synthèse en 10 lignes max
+* Prend des notes pendant le visionnage.
+* Releve 3 principes que vous jugez essentiels.
+* Fait une synthèse écrite (10 lignes max).
 
 ---
 
