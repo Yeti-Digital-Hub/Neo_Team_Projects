@@ -117,11 +117,11 @@ Avant de commencer la partie pratique ( partie 2 ), il est important de comprend
 
 > ▶️ [La minute de code – Introduction au design web (YouTube)](https://youtu.be/MEg05ZOFKtY?si=iY0wiWRSbFER48os)
 
-📝 **Consigne** :
+📝 **A faire** :
 
-* Prenez des notes pendant le visionnage.
-* Relevez 3 principes que vous jugez essentiels.
-* Faites une synthèse écrite (10 lignes max).
+* Prend des notes pendant le visionnage.
+* Releve 3 principes que vous jugez essentiels.
+* Fait une synthèse écrite (10 lignes max).
 
 ---
 
