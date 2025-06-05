@@ -72,18 +72,15 @@ Chaque projet de Pouakam est rangé dans un **sous-dossier propre**, avec l’ob
 
 # 📦 Projets terminaux à réaliser
 
-| Nom du projet             | Objectif                                                                 | Délai imparti | Langages                      | Dossier                                             |
-| ------------------------- | ------------------------------ ------------------------------------------|---------------| ------------------------------| ----------------------------------------------------|
-| `Formulaire_Contact`      | Création d’un formulaire simple en PHP avec validation                   | /             | PHP, HTML/CSS                 | `Neo_team_projets/Pouakam/Formulaire_Contact/`      |
-| `Authentification_Simple` | Gestion d’un système login/logout minimal en PHP                         | /             | PHP, HTML/CSS                 | `Neo_team_projets/Pouakam/Authentification_Simple/` |
-| `Blog_PHP_Dynamique`      | Blog simple avec création dynamique de posts                             | /             | PHP, Json , HTML/CSS          | `Neo_team_projets/Pouakam/Blog_PHP_Dynamique/`      |
-| `Todo_List_Txt`           | Application en ligne de commande avec fichiers `.txt`                    | /             | PHP, HTML/CSS                 | `Neo_team_projets/Pouakam/Todo_List_Txt/`           |
-| `Generateur_Mot_de_Passe` | Générateur de mots de passe sécurisés avec options personnalisables      | /             | PHP, HTML/CSS                 | `Neo_team_projets/Pouakam/Generateur_Mot_de_Passe/` |
-| `Questionnaire_Quiz`      | Quiz simple en ligne ou en terminal avec notation finale automatique     | /             | Python ou PHP                 | `Neo_team_projets/Pouakam/Questionnaire_Quiz/`      |
-
----
-
-Parfait ! Voici la mise à jour de la section **Projet principal** de Pouakam, incluant la source de la vidéo tutorielle à reproduire :
+| Nom du Projet             | Objectif                                                             | Délai Imparti | Langages Utilisés   | Dossier Local                                       |
+| ------------------------- | -------------------------------------------------------------------- | ------------- | ------------------- | --------------------------------------------------- |
+| `Formulaire_Contact`      | Création d’un formulaire simple en PHP avec validation               | /             | PHP, HTML/CSS       | `Neo_team_projets/Pouakam/Formulaire_Contact/`      |
+| `Authentification_Simple` | Gestion d’un système login/logout minimal en PHP                     | /             | PHP, HTML/CSS       | `Neo_team_projets/Pouakam/Authentification_Simple/` |
+| `Blog_PHP_Dynamique`      | Blog simple avec création dynamique de posts                         | /             | PHP, JSON, HTML/CSS | `Neo_team_projets/Pouakam/Blog_PHP_Dynamique/`      |
+| `Todo_List_Txt`           | Application en ligne de commande avec fichiers `.txt`                | /             | PHP, HTML/CSS       | `Neo_team_projets/Pouakam/Todo_List_Txt/`           |
+| `Generateur_Mot_de_Passe` | Générateur de mots de passe sécurisés avec options personnalisables  | /             | PHP, HTML/CSS       | `Neo_team_projets/Pouakam/Generateur_Mot_de_Passe/` |
+| `Questionnaire_Quiz`      | Quiz simple en ligne ou en terminal avec notation finale automatique | /             | Python ou PHP       | `Neo_team_projets/Pouakam/Questionnaire_Quiz/`      |
+| `Forum Web`               | Mise en oeuvre d'une replique de forum web basé sur le PHP CSS HTML ET SQL | /       | Python ou PHP       | `Neo_team_projets/Pouakam/Forum_web/`            |
 
 ---
 
@@ -154,9 +151,8 @@ Pour reproduire ce forum, vous utiliserez les technologies et outils suivants :
     *   **Commentaires de code :** Il est fortement recommandé d'ajouter des commentaires pour une meilleure lisibilité et compréhension du code.
 
 ---
-**Conseil Important :** Reproduisez chaque ligne de code et chaque explication du tutoriel **fidèlement**. Ne sautez aucune étape, car la compréhension de chaque composant est cruciale pour le fonctionnement global du forum et votre apprentissage. N'oubliez pas de coder **uniquement en anglais** pour les noms de variables, fonctions et champs de base de données, c'est une pratique essentielle dans le développement web [16, 17, 30].
+**Conseil Important :** Reproduit chaque ligne de code et chaque explication du tutoriel **fidèlement**. Ne saute aucune étape, car la compréhension de chaque composant est cruciale pour le fonctionnement global du forum et ton apprentissage. N'oublie pas de coder **uniquement en anglais** pour les noms de variables, fonctions et champs de base de données, c'est une pratique essentielle dans le développement web .
 
-Bonne formation !
 
 ## 🗂️ À faire dans chaque projet
 
