@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire Contact</title>
-    <!-- importation de la biliothèque font-awersome...-->
+    <!-- importation de la biliothèque bootstrap-icons...-->
     <link rel="stylesheet" href="assets/icons/bootstrap-icons.css">
-    <link rel="stylesheet" href="assets/Style/style.css">
+    <link rel="stylesheet" href="assets/Folder_style/style.css">
 </head>
 <body>
     <!-- formulaire de contact...-->
@@ -49,7 +49,7 @@
             </div>
         </div>
         <div class="footer-form" align="center">
-            <button type="submit" name="send">Send your message</button>
+            <button type="submit" name="send">Send a message</button>
         </div>
     </form>
 </body>

@@ -16,12 +16,17 @@ form {
     background-color: #FFF;
     padding: 60px;
     border-radius: 15px;
+    box-shadow: 6px 6px 8px rgba(2, 2, 2, 0.421);
 }
 
 /* mise en forme du titre du formulaire...*/
 form h1 {
-    font-size: 34px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 900;
+    font-size: 35px;
+    color: #333;
+    text-shadow: 2px 0px 1px #424242;
+    margin-top: 0px;
 }
 
 /* mise en forme de la ligne de séparation du formulaire...*/
@@ -49,9 +54,17 @@ form .body-form .body-left-form .group input {
     margin-top: 5px;
     padding: 15px 5px 15px 30px;
     background-color: #ecebeb;
-    border: none;
+    border: 2px solid #4753f8;
     outline: none;
-    border-radius: 15px;
+    border-radius: 10px;
+}
+label {
+    color: #333;
+    text-shadow: 2px 0px 1px #e6e6e6;
+}
+form .body-form .body-left-form .group input:focus {
+    border-color: rgb(31, 163, 64) ;
+    outline: none;
 }
 
 /* mise en forme des icones du coté gauche...*/
@@ -59,7 +72,7 @@ form .body-form .body-left-form .group i {
     position: absolute;
     left: 0;
     top: 25px;
-    padding: 11px 10px;
+    padding: 9px 8px;
     font-size: 18px;
     font-weight: bolder;
     color: #4753f8;
@@ -76,28 +89,34 @@ form .body-right-form .group textarea {
     margin-top: 5px;
     padding: 10px;
     background-color: #ecebeb;
-    border: 2px solid #4753f8;
+    border: 2px solid  #4753f8;
     outline: none;
     border-radius: 15px;
     resize: none;
-    height: 78%;
+    height: 81%;
+}
+form .body-right-form .group textarea:focus {
+    border-color: rgb(31, 163, 64);
+    outline: none;
 }
 
 /* mise en forme du footer du formulaire...*/
 form .footer-form button {
-    margin-top: 10px;
+    margin-top: 15px;
     background-color: #4753f8;
+    border: none;
     color: #FFF;
     font-size: 15px;
     font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 15px;
+    border-radius: 15px;
     outline: none;
     cursor: pointer;
     transition: transform 0.5s;
 }
 form .footer-form button:hover {
     transform: scale(1.05);
+    background-color: rgb(31, 163, 64);
 }
 
 /* responsive...*/
