@@ -17,7 +17,7 @@ Puisque le projet n'était pas clair au début pour nous, nous avons opté pour 
 
 - HTML
 - CSS
-- Bootstrap(qui nous permettra d'inserer des icones)
+- La Biliothèque bootstrap-icons(qui nous permettra d'inserer des icones)
 - PHP
 - Format JSON (Pour le stockage des données du systèmes)
 - Git/GitHub (Pour le versionning)
