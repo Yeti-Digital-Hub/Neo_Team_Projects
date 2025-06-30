@@ -1,0 +1,111 @@
+/* mise en forme du body de toute la page...*/
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #4753f8;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* mise en formulaire générale...*/
+
+form {
+    background-color: #FFF;
+    padding: 60px;
+    border-radius: 15px;
+}
+
+/* mise en forme du titre du formulaire...*/
+form h1 {
+    font-size: 34px;
+    font-weight: 900;
+}
+
+/* mise en forme de la ligne de séparation du formulaire...*/
+form .row-purple {
+    width: 100%;
+    height: 1px;
+    background-color: #4753f8;
+}
+
+/* mise en forme du corps du formulaire...*/
+form .body-form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+form .body-form .group {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* mise en forme des champs du corps gauche du formulaire...*/
+form .body-form .body-left-form .group input {
+    margin-top: 5px;
+    padding: 15px 5px 15px 30px;
+    background-color: #ecebeb;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+}
+
+/* mise en forme des icones du coté gauche...*/
+form .body-form .body-left-form .group i {
+    position: absolute;
+    left: 0;
+    top: 25px;
+    padding: 11px 10px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #4753f8;
+}
+
+/* mise en forme du champ du corps droit du formulaire...*/
+form .body-right-form {
+    margin-left: 40px;
+}
+form .body-right-form .group {
+    height: 100%;
+}
+form .body-right-form .group textarea {
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #ecebeb;
+    border: 2px solid #4753f8;
+    outline: none;
+    border-radius: 15px;
+    resize: none;
+    height: 78%;
+}
+
+/* mise en forme du footer du formulaire...*/
+form .footer-form button {
+    margin-top: 10px;
+    background-color: #4753f8;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+form .footer-form button:hover {
+    transform: scale(1.05);
+}
+
+/* responsive...*/
+@media screen and (max-width: 920px) {
+    form .body-right-form {
+    margin-left: 0px;
+}
+}
+
+
+
