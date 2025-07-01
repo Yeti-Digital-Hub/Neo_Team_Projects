@@ -70,7 +70,7 @@ git push origin Neo_team_projets/Alex/Nom_du_projet
 
 ## 📦 Projets prévus
 
-| Nom du projet           | Thématique                     | Délai imparti | Langages                      | Dossier                                              |
+| Nom du projet           | Thématique  Pierre_Papier_Ciseaux                   | Délai imparti | Langages                      | Dossier                                              |
 | ----------------------- | ------------------------------ | ------------- | ----------------------------- | ---------------------------------------------------- |
 | `Pierre_Papier_Ciseaux` | Jeu simple / Logique           | /             | Python                        | `Neo_team_projets/Alex/Pierre_Papier_Ciseaux/`       |
 | `Password_Generator`    | Terminal / Sécurité            | /             | Python                        | `Neo_team_projets/Alex/Password_Generator/`          |
