@@ -43,12 +43,12 @@
                 <div class="body-right-form">
                     <div class="group">
                         <label for="label-message">Message</label>
-                        <textarea name="message" id="label-message"placeholder="Enter your message..." autocomplete="off"></textarea>
+                        <textarea name="message" id="label-message" placeholder="Enter your message..." autocomplete="off"></textarea>
                         <i class="fas fa-user"></i>
                     </div>
                 </div>
             </div>
-            <div class="footer-form" align="center">
+            <div class="footer-form">
                 <button type="submit" name="send">Send a message</button>
             </div>
         </form>
