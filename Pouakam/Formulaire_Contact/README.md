@@ -41,7 +41,8 @@ Voici comment nous avons structuré les dossiers du projet :
 │   ├── data/
 │   │    └── dataBase.json
 │   ├── includes/
-│   │    └── ... 
+│   │    ├── traitement-data-form.php
+│   │    └── security-form.php
 │   ├── maquettes/
 │   │    ├── maquette_admin_dashboard.png
 │   │    ├── maquette_logique.png 
