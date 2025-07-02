@@ -1,10 +1,13 @@
+/*
+    style de la page index.php....
+*/
 /* mise en forme du body de toute la page...*/
 body {
     margin: 0px;
     padding: 0px;
-    background-color: #4753f8;
+    background-color: #ecebeb;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: poppins, sans-serif;
@@ -53,7 +56,7 @@ form .body-form .group {
 form .body-form .body-left-form .group input {
     margin-top: 5px;
     padding: 15px 5px 15px 30px;
-    background-color: #ecebeb;
+    background-color: #f3f3f3;
     border: 1px solid #4753f8;
     outline: none;
     border-radius: 10px;
@@ -88,7 +91,7 @@ form .body-right-form .group {
 form .body-right-form .group textarea {
     margin-top: 5px;
     padding: 10px;
-    background-color: #ecebeb;
+    background-color: #f3f3f3;
     border: 1px solid  #4753f8;
     outline: none;
     border-radius: 15px;
@@ -136,3 +139,19 @@ form .footer-form button:hover {
 
 
 
+/*
+    style de la page security-form.php....
+*/
+body strong{
+    display: block;
+    width: 94%;
+    margin-bottom: 8px;
+    background-color: rgb(245, 109, 109);
+    text-align: center;
+    border-radius: 8px;
+    padding: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    color: #4e4e4e;
+    font-weight: 100;
+}

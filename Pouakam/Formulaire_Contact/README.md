@@ -25,7 +25,7 @@ Puisque le projet n'était pas clair au début pour nous, nous avons opté pour 
 
 ## Paradigmes utilisés...
 
-Nous utiliserons le paradigme fontionelle et un peut de procédurale pour l'appel des fonctions(Tout ceci en structurant notre travail avec de la programmation modulaire).
+Nous utiliserons le paradigme procédurale (Tout ceci en structurant notre travail avec de la programmation modulaire).
 
 ## 🗂️ Structure des dossier du Projet(**Formulaire de Contact**)...
 

@@ -9,6 +9,10 @@
         <link rel="stylesheet" href="assets/Folder_style/style.css">
     </head>
     <body>
+        <!-- Logique du système...-->
+        <?php
+            require_once("includes/traitement-data-form.php");
+        ?>
         <!-- formulaire de contact...-->
         <form action="#" method="post">
             <h1>Contact Us</h1>
@@ -20,7 +24,7 @@
                 <div class="body-left-form">
                     <div class="group">
                         <label for="label-name">Name</label>
-                        <input type="text" name="name" id="label-name" placeholder="Enter your name" required autocomplete="off">
+                        <input type="text" name="name" id="label-name" placeholder="Enter your name" autocomplete="off">
                         <i class="bi bi-person"></i>
                     </div>
                     <div class="group">
@@ -30,12 +34,12 @@
                     </div>
                     <div class="group">
                         <label for="label-email">Email</label>
-                        <input type="text" name="email" id="label-email" placeholder="Enter your email @gmail.com" required autocomplete="off">
+                        <input type="text" name="email" id="label-email" placeholder="Enter your email @gmail.com" autocomplete="off">
                         <i class="bi bi-envelope"></i>
                     </div>
                     <div class="group">
-                        <label for="label-tel">Phone</label>
-                        <input type="tel" name="tel" id="label-tel" placeholder="Enter your phone (eg.+237)" required autocomplete="off">
+                        <label for="label-phone">Phone</label>
+                        <input type="tel" name="phone" id="label-phone" placeholder="Enter your phone (eg.+237)" autocomplete="off">
                         <i class="bi bi-phone"></i>
                     </div>
                 </div>
