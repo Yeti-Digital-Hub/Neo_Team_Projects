@@ -2,18 +2,14 @@
 def gagnant(id):
     if (p.count(id)==3) or (D.count(id)==3) or (T.count(id)==3) or (p[0]==id and D[0]==id and T[0]==id) or (p[2]==id and D[2]==id and T[2]==id) or (p[4]==id and D[4]==id and T[4]==id) or (p[0]==id and D[2]==id and T[4]==id) or (p[4]==id and D[2]==id and T[0]==id):
         return (id)
-    
-
 def affichage(p,D,T):
     plateau=[p,['----------------------------------'],D,['----------------------------------'],T]
     for i in plateau:
         for j in i:
             print(j,end="\t")
         print()
-
-
 def PositionnerPoint(id,p,D,T):
-    choix=int(input("ou voulez vous jouer :"))
+    choix=int(input("ou voulez vous jouer"))
     if choix in p:
         p[p.index(choix)]=id
     elif choix in D:
@@ -24,10 +20,10 @@ def PositionnerPoint(id,p,D,T):
         print(" cette case etait deja prise.Rejouer")
         affichage(p,D,T)
         PositionnerPoint(id,p,D,T)
+        print()
+        print()
     affichage(p,D,T)
     gagnant(id)
-
-    
 score_X=0
 score_O=0
 recommencer=1
