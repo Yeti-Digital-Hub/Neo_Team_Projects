@@ -1,0 +1,99 @@
+/* style du contenu principal...*/
+body {
+    font-family: sans-serif;
+    margin: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    background: no-repeat center / cover url('./fond.jpg');
+}
+/* style du container d'ajout des tasks de l'App-web BooMind... */
+.container {
+    width: 500px;
+    margin-bottom: 50px;
+    background-color: #fff;
+    padding: 40px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 8px rgba(2, 2, 2, 0.421);
+}
+/* style du title... */
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: 900;
+    color: #333;
+    text-shadow: 2px 0px 1px #000000;
+    margin-top: 0px;
+}
+/* style générale du formulaire d'ajout des tasks... */
+.input-container {
+    display: flex;
+    margin-bottom: 10px;
+}
+/* style du field add task...*/
+#taskInput {
+    flex: 1;
+    padding: 10px;
+    margin-right: 3px;
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
+    transition: border-color 0.2s ease-in-out;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+/* style du field add task...[ focus]*/
+#taskInput:focus {
+    border-color: #724dd8;
+    outline: none;
+}
+/* style du btn add tasks...*/
+#addTaskBtn {
+    width: 120px;
+    margin-left: 5px;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
+}
+/* Couleur de fond au survol */
+#addTaskBtn:hover {
+    background-color: #724dd8;
+}
+
+.container-view-task {
+    width: 477px;
+    margin: 0px auto;
+    margin-top: 17px;
+    padding: 3px;
+    background-color: #ccc;
+    border-radius: 5px;
+    color: #222121;
+    font-weight: 500;
+}
+
+.deleteTaskBtn {
+    width: 10px;
+    padding: 1px;
+    margin-left: 440px;
+    margin-bottom: 8px;
+    border: none;
+    background-color: #ccc;
+}
+
+i {
+    font-size: 20px;
+    color: rgb(226, 15, 15);
+    font-weight: bolder;
+}
+
+span {
+    margin-left: 8px;
+}
