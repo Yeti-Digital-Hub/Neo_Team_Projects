@@ -1,0 +1,75 @@
+*{          /*étoile utilisée pour que le style s'applique à tous les éléments*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100vh;
+    color: white;
+}
+.loader
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 60%;
+    background: linear-gradient(45deg, transparent, transparent 40%, #e5f403);   
+    animation: animate 2s linear infinite;
+}
+@keyframes animate{     /*@keyframes est une règle css qui permet de definir une animation (elle change au fil du temps): rotation, glissement...)*/
+    0% {
+        transform: rotate(0deg);
+        filter: hue-rotate(0deg); /*filter: propiété css pour appliquer des effets visuels(flou,luminosité,contraste,noir&blanc, ombrage...) */
+    }100%{
+        transform: rotate(360deg);
+        filter: hue-rotate(360deg); /*-hue-rotate estunefunction- de -filter- qui fait tourner la teinte des couleurs. A 0deg seule la couleur prédéfinie est appliquée, plus le degré augmente plus la variation des couleurs augmente*/
+    }
+}
+.loader::before
+{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: #000;
+    border-radius: 50%;
+    z-index: 1000;
+}
+.loader::after
+{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: #000;
+    border-radius: 50%;
+    background: linear-gradient(45deg, transparent, transparent 40%, #e5f403);   
+    z-index: 1000;
+    z-index: 1;
+    filter: blur(30px);
+}
+.loader-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.loader-text
+{
+    margin-top: 20px;
+    font-size: 1.2rem; /**/
+    letter-spacing: 2px;
+    color: white;
+}
+
