@@ -1,0 +1,52 @@
+
+body, html{
+    height: 100vh;
+    margin: 0;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-align:center;
+    font-family: 'Poppins', sans-serif;
+    padding: 50px;
+    /*  possible de changer la couleur du texte avec une color*/
+}
+#quoteBox{
+    transition: opacity  0.5s ease;
+    opacity: 1;  
+}
+
+#btnQuote{
+    display: inline-block;
+    padding: 5px 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    background:0px;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: rgb(53, 48, 48);
+    
+}
+.quote{
+    background-color: rgba(120, 127, 125, 0.123); /* la couleur ici peut être transprente mais pour eviter une légère confusion, une couleur est définie pour la div*/
+    padding: 30px;
+    border-radius: 10px;
+    display: inline-block;
+    color: black;
+    max-width: 70%;
+    width: 500%;
+    border: 2px solid black;
+    padding: 5px;
+    flex-direction: column;
+}
+blockquote{
+    font-size: 1.5em;
+    margin: 50px; /*margin tout seul augmente touus les côtés, margin-bottom augmente uniquement la largeur*/
+}
+#author {
+    margin: 10px;
+    font-style: italic;
+    text-align: right;
+}
