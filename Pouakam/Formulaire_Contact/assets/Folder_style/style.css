@@ -96,7 +96,7 @@ form .body-right-form .group textarea {
     outline: none;
     border-radius: 15px;
     resize: none;
-    height: 81%;
+    height: 75%;
 }
 form .body-right-form .group textarea:focus {
     border-color: rgb(31, 163, 64);

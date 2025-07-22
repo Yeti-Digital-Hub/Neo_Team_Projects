@@ -54,7 +54,8 @@ Voici comment nous avons structuré les dossiers du projet :
 │ 
 ```
 
-🙋‍♀️ Auteur : Pouakam 
+🙋‍♀️ Auteur : Pouakam
+ 
 🧑‍🏫 Suivi par : \[Mentor\_ GuruMiT]
 
 ---

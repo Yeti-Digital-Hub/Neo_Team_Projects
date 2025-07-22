@@ -1,3 +1,6 @@
+<?php
+    require_once('../Debug.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -11,7 +14,7 @@
     <body>
         <!-- Logique du système...-->
         <?php
-            require_once("includes/traitement-data-form.php");
+            require_once('includes/traitement-data-form.php');
         ?>
         <!-- formulaire de contact...-->
         <form action="#" method="post">
@@ -25,11 +28,6 @@
                     <div class="group">
                         <label for="label-name">Name</label>
                         <input type="text" name="name" id="label-name" placeholder="Enter your name" autocomplete="off">
-                        <i class="bi bi-person"></i>
-                    </div>
-                    <div class="group">
-                        <label for="label-surname">Surname</label>
-                        <input type="text" name="surname" id="label-surname" placeholder="Enter your surname" autocomplete="off">
                         <i class="bi bi-person"></i>
                     </div>
                     <div class="group">

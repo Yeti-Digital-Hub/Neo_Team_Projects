@@ -4,14 +4,14 @@
      */
 
     // Inclusion du module 1 du sytème...
-    require_once ("security-form.php");
+    require_once ('file-function-project.php');
 
     // Script d'intéraction entre les modules...
     if(isset($_POST['send'])){
         $name = security($_POST['name']);
-        $surname = security($_POST['surname']);
         $phone = securityPhone($_POST['phone']);
         $email = securityEmail($_POST['email']);
         $message = securityMessage($_POST['message']);
+        saveUserToJson($name, $phone, $email, $message);
     }
 ?>
