@@ -15,7 +15,7 @@ C'est un système simple (**Formulaire de Contact**) qui permettra aux utilisate
 
 Puisque le projet n'était pas clair au début pour nous, nous avons opté pour la méthode scrum avec une approche agile.
 
-## 🧰 Technologies utilisées...
+## 🧠 Technologies utilisées...
 
 - HTML
 - CSS
@@ -53,3 +53,8 @@ Voici comment nous avons structuré les dossiers du projet :
 │   ├── README.md
 │ 
 ```
+
+🙋‍♀️ Auteur : Pouakam 
+🧑‍🏫 Suivi par : \[Mentor\_ GuruMiT]
+
+---
