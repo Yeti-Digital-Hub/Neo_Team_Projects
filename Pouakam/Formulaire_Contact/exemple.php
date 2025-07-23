@@ -50,7 +50,7 @@
             font-size: 1.08em;
         }*/
         .container {
-            max-width: 900px;
+            max-width: 950px;
             margin: 40px auto;
             background: #fff;
             border-radius: 15px;
