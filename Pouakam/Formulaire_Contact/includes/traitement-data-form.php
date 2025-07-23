@@ -8,10 +8,12 @@
 
     // Script d'intéraction entre les modules...
     if(isset($_POST['send'])){
-        $name = security($_POST['name']);
-        $phone = securityPhone($_POST['phone']);
-        $email = securityEmail($_POST['email']);
-        $message = securityMessage($_POST['message']);
-        saveUserToJson($name, $phone, $email, $message);
+        if(security($_POST['name']) && securityPhone($_POST['phone']) && $email = securityEmail($_POST['email']) && $message = securityMessage($_POST['message'])){
+            $name = security($_POST['name']);
+            $phone = securityPhone($_POST['phone']);
+            $email = securityEmail($_POST['email']);
+            $message = securityMessage($_POST['message']);
+            saveUserToJson($name, $phone, $email, $message);
+        }
     }
 ?>

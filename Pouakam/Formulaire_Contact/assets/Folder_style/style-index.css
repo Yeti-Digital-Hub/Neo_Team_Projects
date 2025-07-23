@@ -1,5 +1,5 @@
 /*
-    style de la page index.php....
+    *style de la page index.php....
 */
 /* mise en forme du body de toute la page...*/
 body {
@@ -19,7 +19,7 @@ form {
     background-color: #FFF;
     padding: 60px;
     border-radius: 15px;
-    box-shadow: 6px 6px 8px rgba(2, 2, 2, 0.421);
+    box-shadow: 0 8px 24px rgba(71,83,248,0.13);
 }
 
 /* mise en forme du titre du formulaire...*/
@@ -27,8 +27,8 @@ form h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 900;
     font-size: 35px;
-    color: #333;
-    text-shadow: 2px 0px 1px #424242;
+    color: #4753f8;
+    text-shadow: 2px 0px 1px #4753f8;
     margin-top: 0px;
 }
 
