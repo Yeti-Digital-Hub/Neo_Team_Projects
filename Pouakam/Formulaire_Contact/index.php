@@ -9,9 +9,16 @@
         <title>Formulaire Contact</title>
         <!-- importation de la biliothèque bootstrap-icons...-->
         <link rel="stylesheet" href="assets/icons/bootstrap-icons.css">
-        <link rel="stylesheet" href="assets/Folder_style/style-index.css?v=1.0">
+        <link rel="stylesheet" href="assets/Folder_style/style-index.css?v=1.1">
     </head>
     <body>
+        <header class="header">
+            <div class="dashboard-title">Home</div>
+            <div class="admin-info">
+                <div class="avatar">U</div>
+                <div class="admin-name">Utilisateur</div>
+            </div>
+        </header>
         <!-- Logique du système...-->
         <?php
             require_once('includes/traitement-data-form.php');

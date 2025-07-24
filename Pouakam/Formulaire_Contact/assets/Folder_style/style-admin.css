@@ -48,13 +48,14 @@ body {
     padding: 40px;
 }
 h1 {
-    text-align: center;
-    color: #4753f8;
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    font-weight: 900;
+    margin-top: 0px;
     letter-spacing: 2px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+    color: #4753f8;
+    text-shadow: 2px 0px 1px #4753f8;
+    text-align: center;
 }
 table {
     width: 100%;
@@ -73,17 +74,18 @@ th {
     color: #fff;
     font-size: 1.1em;
     font-weight: 700;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 tfoot td{
     background: #4753f8;
     color: #fff;
+    text-align: center;
     font-size: 1.1em;
     font-weight: 700;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 tr:nth-child(even) {
-        background: #ecebeb;
+    background: #ecebeb;
 }
 tr:hover {
     background: #d1e7dd;

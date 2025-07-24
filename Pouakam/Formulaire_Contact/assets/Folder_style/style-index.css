@@ -6,16 +6,46 @@ body {
     margin: 0px;
     padding: 0px;
     background-color: #ecebeb;
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-family: poppins, sans-serif;
 }
+.header {
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 22px 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 12px rgba(71,83,248,0.07);
+}
+.header .admin-info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.header .avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #4753f8;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4em;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(71,83,248,0.13);
+}
+.header .admin-name {
+    font-weight: 700;
+    color: #4753f8;
+    font-size: 1.08em;
+} 
 
 /* mise en formulaire générale...*/
 
 form {
+    max-width: 500px;
+    margin: 40px auto;
     background-color: #FFF;
     padding: 60px;
     border-radius: 15px;
@@ -143,10 +173,12 @@ form .footer-form button:hover {
     style de la page security-form.php....
 */
 body strong{
+    margin-top: 15px;
     display: block;
-    width: 94%;
+    width: 46%;
+    margin: 0px auto;
     margin-bottom: 8px;
-    background-color: rgb(245, 109, 109);
+    background-color: rgb(247, 165, 165);
     text-align: center;
     border-radius: 8px;
     padding: 15px;

@@ -1,15 +1,27 @@
 <?php
     /*Ce module est utiliser pour vérifier si les données du formulaire,soumises sont conformes avant de leurs traitements; 
     elle va reposer sur l'utilisation de 04 fonctions indépendantes.*/
-
+    /**
+     * Fontion pour vérifier si les variables champs existe et si elle ne sont pas vide
+     *
+     * @param string $donnee
+     * @return bool true 
+     */
+    function verify($donnee){
+        if(isset($donnee)){
+            if(!empty($donnee)){
+                return $donnee;
+            }
+        }
+    }
     /**
      * Fontion pour la filtrage du nom
      *
      * @param string $donnee
      * @return bool true si le nom à été bien filtrer
      */
-    function security($donnee){
-        if(isset($donnee) && !empty($donnee)){
+    function securityName($donnee){
+        if(verify($donnee)){
             // Contre les attaques XSS(injections HTML et JavaScript)....
             $donnee = htmlspecialchars($donnee);
             // Suppression des espaces en début et fin d'une chaine...
@@ -20,8 +32,28 @@
             $donnee = stripslashes($donnee);
             return $donnee;
         }else{
-            echo '<strong><i class="bi bi-exclamation-triangle-fill text-danger"></i> One or more fields are empty. Please fill them in!</strong>';
-        }
+            echo '<strong><i class="bi bi-exclamation-triangle-fill text-danger"></i> Le champ du nom est vide!</strong>';
+        }        
+    }
+    /** 
+     * Fonction de vérification du format de l'adresse email.
+     * @param string $donnee 
+     * @return bool true si l'email à été filtrer
+    */
+    function securityEmail($donnee){
+        if(verify($donnee)){
+            if(function_exists('securityName')){
+                $donnee = securityName($donnee);
+                // vérification du format de l'adresse email...
+                if(preg_match("/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/", $donnee)){
+                    return $donnee;
+                }else{
+                    echo '<strong><i class="bi bi-exclamation-triangle-fill text-danger"></i> l\'email entrez est invalide (example@gmail.com)!</strong>';
+                }
+            }
+        }else{
+            echo '<strong><i class="bi bi-exclamation-triangle-fill text-danger"></i> Le champ d\'email est vide!</strong>';
+        }  
     }
     /**
      * Fonction de vérification du format du numéro de téléphone.
@@ -30,30 +62,18 @@
      * @return bool true si le phone à été filtrer
      */
     function securityPhone($donnee){
-        if(function_exists('security')){
-            $donnee = security($donnee);
-            // Vérification du format du numéro de téléphone...
-            if(preg_match("/^\+?[0-9]{1,3}[-. ]?[0-9]{1,14}$/", $donnee)){
-                return $donnee;
-            }else{
-                echo '<strong><i class="bi bi-exclamation-triangle-fill text-danger"></i> The phone number entered is not valid (eg.+237)!</strong>';
+        if(verify($donnee)){
+            if(function_exists('securityName')){
+                $donnee = securityName($donnee);
+                // Vérification du format du numéro de téléphone...
+                if(preg_match("/^\+?[0-9]{1,3}[-. ]?[0-9]{1,14}$/", $donnee)){
+                    return $donnee;
+                }else{
+                    echo '<strong><i class="bi bi-exclamation-triangle-fill text-danger"></i> Le numéro de téléphone entrez est invalide (eg.+237)!</strong>';
+                }
             }
-        }
-    }
-    /** 
-     * Fonction de vérification du format de l'adresse email.
-     * @param string $donnee 
-     * @return bool true si l'email à été filtrer
-    */
-    function securityEmail($donnee){
-        if(function_exists('security')){
-            $donnee = security($donnee);
-            // vérification du format de l'adresse email...
-            if(preg_match("/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/", $donnee)){
-                return $donnee;
-            }else{
-                echo '<strong><i class="bi bi-exclamation-triangle-fill text-danger"></i> The email address entered is not valid (example@gmail.com)!</strong>';
-            }
+        }else{
+            echo '<strong><i class="bi bi-exclamation-triangle-fill text-danger"></i> Le champ du numéro de téléphone est vide!</strong>';
         }
     }
     /**
@@ -64,14 +84,14 @@
      */
     // fonction de sécurité pour le message...
     function securityMessage($donnee){
-        if(isset($donnee) && !empty($donnee)){
+        if(verify($donnee)){
             // Protection contre les attaques XSS(injection de html et javascript)
             $donnee = htmlspecialchars($donnee);
             // suppression des antislashes...
             $donnee = stripslashes($donnee);
             return $donnee;
         }else{
-            echo '<strong><i class="bi bi-exclamation-triangle-fill text-danger"></i> Please enter a message!</strong>';
+            echo '<strong><i class="bi bi-exclamation-triangle-fill text-danger"></i> le champs du message est vide!</strong>';
         }
     }
     /**
@@ -89,7 +109,7 @@
         if(file_exists($file)){
             $tableauData = json_decode(file_get_contents($file), true); // récupération des données du fichier JSON...
         }else{
-            $tableauData = array(); // initialisation du tableau vide...
+            $tableauData = []; // initialisation du tableau vide...
         }
         $dataEnterUser = array($name, $phone, $email, $message); // nouvelle données à ajouter dans le tableau...
         $tableauData[] = $dataEnterUser; // ajouter la donner en fin de tableau...

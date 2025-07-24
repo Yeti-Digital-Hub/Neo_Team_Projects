@@ -17,13 +17,13 @@
         <link rel="stylesheet" href="assets/Folder_style/style-admin.css?v=1.2">
     </head>
     <body>
-        <div class="header">
+        <header class="header">
             <div class="dashboard-title">Dashboard</div>
             <div class="admin-info">
                 <div class="avatar">A</div>
                 <div class="admin-name">Admin</div>
             </div>
-        </div>
+        </header>
         <div class="container">
             <h1>Admin Dashboard</h1>
             <!-- tableau afficher les données des utilisateurs à l'admin...-->
