@@ -19,7 +19,7 @@
         /*ici si toutes le fonctions de sécurité existe alors on insère dans le fichier json */
         if(isset($name) && isset($email) && isset($phone) && isset($message)){
             saveUserToJson($name, $phone, $email, $message);
-            echo '<strong style="background-color :rgb(168, 235, 205)"><i class="bi bi-check-circle-fill text-success"></i> vos données ont été envoyer avec sucess</strong>';
+            echo '<strong style="background-color :rgb(168, 235, 205)"><i class="bi bi-check-circle-fill text-success"></i> vos données ont été envoyer avec sucèss</strong>';
         }
     }
 ?>
