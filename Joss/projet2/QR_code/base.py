@@ -26,20 +26,17 @@ def chaine_binaire(liste) :
     chaine = "0b"
     for i in (liste) :
         chaine = chaine + str(i)
-    
     return chaine
 print(" maintenan c'est le nombre  relatif")
 
-def nbr_relatif(nbr_decimal):
-    nbr_binaire = nbr_entier(nbr_decimal)
-    liste = nbr_entier(nbr_decimal)
-    liste_binaire = int(chaine_binaire(liste))
 
-    complement1 = (0b100000000 - 1 ) - liste_binaire
-    complement2 = complement1 + 1
-    return complement2
+nbr_decim = int(input("entrer le nombre negatif aconvrtir"))
+#nb comme on a pri le nombre de bit egale a 8 les nombres a convertir doivent estre inferieur a 256 2^n
+def nbr_relatif(nbr_decim):
+    somme = 256 +nbr_decim #formule donner dans le docunment de monsieur Amougou
+    liste_binaire = nbr_entier(somme)
+    return liste_binaire
 
+print(nbr_relatif(nbr_decim))
 
-nbr_decim = int(input("wntrer un nombre relatif"))
-print(nbr_relatif(-nbr_decim))
 
