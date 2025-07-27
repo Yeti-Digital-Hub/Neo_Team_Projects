@@ -5,4 +5,5 @@
     ini_set('display_errors', 1);
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL);
-?>
+    // Markdown Preview Enhanced: Open Preview to the Side (Ctrl+K V)
+

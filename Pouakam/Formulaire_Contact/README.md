@@ -122,7 +122,7 @@ la méthode scrum avec une approche agile.
             * Télécharger le fichier mhsendmail_windows_amd64.exe
             * Renommer en mhsendmail.exe
             * Placer mhsendmail.exe dans un dossier
-                ```
+                ``Markdown All in One`
                 C:\mhsendmail\
                 ```
             * Ouvrer le fichier php.ini utilisé par WAMP
