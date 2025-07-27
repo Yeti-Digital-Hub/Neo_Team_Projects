@@ -148,7 +148,7 @@ la méthode scrum avec une approche agile.
 - Taper : `http://localhost/http://localhost/Neo_Team_Projects/Pouakam/Formulaire_Contact/admin.php` pour consulter lapage admin
 - Consulter le fichier Json(data/dataBase.json) pour voir vos données stocker
 
-## 🤝 Contribuers
+## 🤝 Contributeurs
 
     🙋‍♀️ Auteur : Pouakam Brele Vanelle   Backend (Pseudo GitHub)
     
