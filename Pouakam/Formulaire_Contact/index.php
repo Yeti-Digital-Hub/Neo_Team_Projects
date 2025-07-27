@@ -13,7 +13,7 @@
     </head>
     <body>
         <header class="header">
-            <div class="dashboard-title">Home</div>
+            <div class="dashboard-title"><i class="bi bi-facebook"></i></div>
             <div class="admin-info">
                 <div class="avatar">U</div>
                 <div class="admin-name">Utilisateur</div>

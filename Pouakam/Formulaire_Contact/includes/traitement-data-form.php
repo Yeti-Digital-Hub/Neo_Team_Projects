@@ -13,13 +13,17 @@
             $email = securityEmail($_POST['email']);
             $phone = securityPhone($_POST['phone']);
             $message = securityMessage($_POST['message']);
+            /*ici si toutes le fonctions de sécurité existe alors on insère dans le fichier json */
+            if(isset($name) && isset($email) && isset($phone) && isset($message)){
+                saveUserToJson($name, $phone, $email, $message);
+                    // inclusion du fichier d'envoi de mail.
+                    require_once('send-email-admin.php');
+                echo '<strong style="background-color :rgb(168, 235, 205)"><i class="bi bi-check-circle-fill text-success"></i> vos données ont été envoyer avec sucèss</strong>';
+            }else{
+                echo '<strong><i class="bi bi-exclamation-triangle-fill text-danger"></i> vos données n\'ont pas été envoyer nous rencontrons un problème lors de l\'envoi!</strong>';
+            }
         }else{
             echo '<strong><i class="bi bi-exclamation-triangle-fill text-danger"></i> Tous les champs sont vides</strong>';
-        }
-        /*ici si toutes le fonctions de sécurité existe alors on insère dans le fichier json */
-        if(isset($name) && isset($email) && isset($phone) && isset($message)){
-            saveUserToJson($name, $phone, $email, $message);
-            echo '<strong style="background-color :rgb(168, 235, 205)"><i class="bi bi-check-circle-fill text-success"></i> vos données ont été envoyer avec sucèss</strong>';
         }
     }
 ?>
