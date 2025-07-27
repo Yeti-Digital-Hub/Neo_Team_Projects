@@ -24,7 +24,7 @@ la méthode scrum avec une approche agile.
     - Format JSON (Pour le stockage des données du systèmes)
     - Git/GitHub (Pour le versionning)
     - MailHog (Serveur de simulation d'envoi d'emails, qui sera utiliser pour simuler un signal d'envoi d'email à l'admin de système.)
-    - Mhsendmail(Outil qui vva permettre de transférer les mails envoyer par php à MailHog.)
+    - Mhsendmail(Outil qui va permettre de transférer les mails envoyer par php à MailHog.)
 
 ## Paradigmes utilisés...
 
