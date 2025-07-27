@@ -2,6 +2,7 @@
 
 
 ## 🎯 Objectif Principale:
+
 C'est un système simple (**Formulaire de Contact**) qui permettra aux utilisateurs ou visiteurs de pouvoir contacter le propriétaire ou administrateur d'un site internet.
 
 ## 🚀 Fonctionnalités...
@@ -146,7 +147,7 @@ la méthode scrum avec une approche agile.
 - Cliquez sur **Send a message**
 - Aller dans l'interface de MailHog pour voir le message envoyer
 - Taper : `http://localhost/http://localhost/Neo_Team_Projects/Pouakam/Formulaire_Contact/admin.php` pour consulter lapage admin
-- Consulter le fichier Json(data/dataBase.json) pour voir vos données stocker
+- Consulter le fichier Json(**data/dataBase.json**) pour voir vos données stocker
 
 ## 🤝 Contributeurs
 
