@@ -1,4 +1,3 @@
-
 # 🚀 Référentiel des projets d'équipe – [Neo_Team_Projects]
 
 Bienvenue au cœur du parcours de formation et de développement de notre équipe en ingénierie !
@@ -169,7 +168,6 @@ git pull origin main
 git checkout Neo_team_projets/kelie/Formulaire
 git rebase main
 ```
-
 ---
 
 ## Exemple de flux de travail simplifié pour un membre :
@@ -212,7 +210,6 @@ b. Exemple de contenu :
    ## Auteur
    Joss
    ```
-
 ---
 
 3. **Valider les changements** :
@@ -242,7 +239,22 @@ git pull origin main
 git checkout Neo_team_projets/kelie/Formulaire
 git rebase main
 ```
+### 9.  🚨 🚨🚨🚨 Mise à jour du statut des sessions de Projet 
 
+1. **Session 1 terminer ✅**
+
+- Delais de reaslisation 📅 2 semaine 
+
+- Projets approuvé et fusionner a la branche principale(main) : 3
+    - Kelie - Citation dynamique
+    - Paukam - To-do list
+    - Joss - jeu de Morpion
+    
+2. **Session 2 en cours ⏳**
+
+- Delais de reaslisation 📅 1mois -> du 21/07/2025 au 21/08/2025
+  
+- Projets approuvé et fusionner a la branche principale (main) : 0
 
 ## Conclusion
 
