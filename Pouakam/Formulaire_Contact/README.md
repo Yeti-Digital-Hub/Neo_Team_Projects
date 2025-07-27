@@ -37,19 +37,20 @@ la méthode scrum avec une approche agile.
         ```
         ├── Formulaire_Contact
         │   ├── assets/
-        │   │    ├── style/
-        │   │    │     └── style.css
         │   │    ├── icons/
-        │   │    └──     └── bootstrap-icons.css
+        │   │    ├──     └── bootstrap-icons.css
+        │   │    └── maquettes/
+        |   |            ├── maquette_logique.png 
+        │   │            └── Maquette_UI.png
         │   ├── data/
         │   │    └── dataBase.json
+        │   ├── files_style/
+        │   │    ├── style-index.css
+        │   │    └──  style-admin.css
         │   ├── includes/
         │   │    ├── file-function-project.php
         │   │    ├── send-email-admin.php
         │   │    └── traitement-data-form.php
-        │   ├── maquettes/
-        │   │    ├── maquette_logique.png 
-        │   │    └── Maquette_UI.png
         │   ├── admin.php     
         │   ├── index.php 
         │   ├── README.md
@@ -149,7 +150,7 @@ la méthode scrum avec une approche agile.
 
 ## 🤝 Contribuers
 
-    🙋‍♀️ Auteur : Pouakam
+    🙋‍♀️ Auteur : Pouakam Brele Vanelle   Backend (Pseudo GitHub)
     
     🧑‍🏫 Suivi par : \[Mentor\_ GuruMiT]
 

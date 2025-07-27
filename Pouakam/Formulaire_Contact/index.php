@@ -9,7 +9,7 @@
         <title>Formulaire Contact</title>
         <!-- importation de la biliothèque bootstrap-icons...-->
         <link rel="stylesheet" href="assets/icons/bootstrap-icons.css">
-        <link rel="stylesheet" href="assets/Folder_style/style-index.css?v=1.1">
+        <link rel="stylesheet" href="files_style/style-index.css?v=1.1">
     </head>
     <body>
         <header class="header">

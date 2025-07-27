@@ -16,7 +16,7 @@
         <title>Admin</title>
         <!-- importation de la biliothèque bootstrap-icons...-->
         <link rel="stylesheet" href="assets/icons/bootstrap-icons.css">
-        <link rel="stylesheet" href="assets/Folder_style/style-admin.css?v=1.2">
+        <link rel="stylesheet" href="files_style/style-admin.css?v=1.2">
     </head>
     <body>
         <header class="header">
