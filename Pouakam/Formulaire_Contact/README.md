@@ -135,9 +135,19 @@ la méthode scrum avec une approche agile.
                 ```
             * Redémarre les services WAMP
 
+## 🚀 Utilisation
 
+    - Sur Windows taper la commande si dan le terminale : cd C:\MailHog 
+    et sur Ubuntu plutôt ceci : cd C:\MailHog. Pour lancer Mailhog
+- Ouvrir votre navigateur et taper : `http://localhost/http://localhost/Neo_Team_Projects/Pouakam/Formulaire_Contact/index.php`
+- taper ausi : http://localhost:8025 pour accéder à l'interface de MailHog
+- Remplissez le formulaire avec : Nom, l'email, Le Numéro de téléphone et Message
+- Cliquez sur **Send a message**
+- Aller dans l'interface de MailHog pour voir le message envoyer
+- Taper : `http://localhost/http://localhost/Neo_Team_Projects/Pouakam/Formulaire_Contact/admin.php` pour consulter lapage admin
+- Consulter le fichier Json(data/dataBase.json) pour voir vos données stocker
 
-## 🤝 Contribuer
+## 🤝 Contribuers
 
     🙋‍♀️ Auteur : Pouakam
     
