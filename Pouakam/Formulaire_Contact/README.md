@@ -5,7 +5,7 @@
 
 C'est un système simple (**Formulaire de Contact**) qui permettra aux utilisateurs ou visiteurs de pouvoir contacter le propriétaire ou administrateur d'un site internet.
 
-## 🚀 Fonctionnalités...
+
 
 - ✅ Afficher un formulaire permettant aux visiteurs de remplir leurs informations via des champs (Nom, email, numero, message).
 - ✅ Envoyer ses informations remplis dans la base de donnée(fichier JSON) du site internet.
@@ -27,7 +27,7 @@ la méthode scrum avec une approche agile.
     - MailHog (Serveur de simulation d'envoi d'emails, qui sera utiliser pour simuler un signal d'envoi d'email à l'admin de système.)
     - Mhsendmail(Outil qui va permettre de transférer les mails envoyer par php à MailHog.)
 
-## Paradigmes utilisés...
+## 🟢 Paradigmes utilisés...
 
     Nous utiliserons le paradigme procédurale (Tout ceci en structurant notre travail avec de la programmation modulaire).
 
