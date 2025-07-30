@@ -1,12 +1,10 @@
-nbr=  float(input("entrer"))
-chaine = str(nbr)
-print("nombre de chiffre est ",  len(chaine.split('.')[1]))
+import math 
 
-decimal_part = float(input("entrer un nombre"))
-chaine = str(decimal_part)
-liste_decimal=[]
-i = 2
-for i in  range(len(chaine) - 2):
-    print("\n", i)
-    liste_decimal.insert((i+2),( chaine[i]))
-print(liste_decimal)
+nbr = float(input("entrer le nombre decimal"))
+int_part = int(nbr)
+decimal_part = nbr - int_part
+chaone = str(nbr)
+arrondi = len(chaone.split( ".")[1])
+print(arrondi)
+print("la partie entier est : ", int_part)
+print("la partie decimale est : ", round(decimal_part,arrondi ))

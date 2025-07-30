@@ -1,4 +1,4 @@
-
+import math 
 
 def nbr_entier(nbr_decimal) :
     nbr_binaire = []
@@ -17,9 +17,7 @@ def nbr_entier(nbr_decimal) :
     return nbr_converti
 
 
-nbr_decimal = int(input("entrer le nombre a convertir : "))
 
-print(nbr_entier(nbr_decimal))
 # on converti d'abord en chaine pour pouvoir utiliser facilen=ment dans les fonctions qui suivent
 
 def chaine_binaire(liste) :
@@ -27,16 +25,38 @@ def chaine_binaire(liste) :
     for i in (liste) :
         chaine = chaine + str(i)
     return chaine
-print(" maintenan c'est le nombre  relatif")
 
 
-nbr_decim = int(input("entrer le nombre negatif aconvrtir"))
 #nb comme on a pri le nombre de bit egale a 8 les nombres a convertir doivent estre inferieur a 256 2^n
 def nbr_relatif(nbr_decim):
     somme = 256 +nbr_decim #formule donner dans le docunment de monsieur Amougou
     liste_binaire = nbr_entier(somme)
     return liste_binaire
 
-print(nbr_relatif(nbr_decim))
+# cette partie permet de determiner la partie decimal et la parti entier des reels que l'utilisateur veut coder
+nbr= float(input("enter le reel a convertir "))
+int_part = int(nbr)
+chaine = str(nbr)
+arrondi = len(chaine.split( ".")[1])
+decimal_part = nbr - int_part
+decimal_part =  round(decimal_part,arrondi)
 
+#cette fonction va servir a convertir les parties decima;s des nombre en binaire 
+def decimal(DECIMAL_PART):
+    mantisse = ""
+    if (DECIMAL_PART == 0.0):
+        mantisse = "0"
+        return mantisse
+    else :
+        nbr= int(DECIMAL_PART * 2)
+        mantisse = str(nbr)
+        decimal_part, int_part = math.modf(DECIMAL_PART * 2)
+        arrondi= len ((DECIMAL_PART * 2).split(".")[1])
 
+        return mantisse + decimal(round(decimal_part, arrondi))
+
+d =float(input("nisccccccssert"))
+
+print( decimal (d))
+def nbr_reel(nbr):
+    integer_part= int (nbr)
