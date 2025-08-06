@@ -1,7 +1,9 @@
+def decimal(decimal_part):
+    mantisse = ""
 
-nombre = float(input("entrer le reel a convertir"))
-chaine = str(nombre)
-partie_entiere = chaine.split('.')[0]
-partie_decimale = chaine.split('.')[1]
-print("Partie entière :", partie_entiere)   # "452" (chaîne)
-print("Partie décimale :", partie_decimale) # "1253" (chaîne)
+    while ():
+        nbr= int(DECIMAL_PART * 2)
+        mantisse =  mantisse  + str(nbr)
+        decimal_part, int_part = math.modf(decimal*2)
+        
+        

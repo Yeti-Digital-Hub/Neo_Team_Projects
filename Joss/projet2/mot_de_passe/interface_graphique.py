@@ -1,19 +1,35 @@
+
 import tkinter as tk
-from tkinter import *
 fenetre = tk.Tk()
-fenetre.geometry('400x555')
-fenetre.title('fenetre_pour_le_mot_de_pas')
-fenetre['bg'] = 'yellow'
-fenetre.resizable(height=True,width=True)
+fenetre.geometry('300x300')
+fenetre.title('ACCEUIL')
+fenetre['bg'] = 'gray'
+fenetre.resizable(height=True , width=True)
 
-def function():
-    label['text'] = ma_variable.get()
+label=tk.Label(fenetre, text=" IDENTIFIER VOUS ") 
+label.place(x =100 , y= 50) 
+label['bg']= 'sky blue'
 
-ma_variable = StringVar()
-label = Label(fenetre, text = "texte modifieble")
-label.pack()
-entree = Entry(fenetre, fg='blue',bg='red',textvariable= ma_variable)
-entree.pack()
-bouton = tk.Button( fenetre, text=" a'inscrire ", fg= 'blue',bg='yellow',command= function)
-bouton.place(x='350' , y='400')
+def incription():
+    
+
+    if (nbr == 5):
+        fenetre = tk.Tk()
+        fenetre.geometry('300x300')
+        fenetre.title('ACCEUIL')
+        fenetre['bg'] = 'blue'
+        fenetre.resizable(height=True , width=True)
+
+        label=tk.Label(fenetre, text=" IDENTIFIER VOUS ") 
+        label.place(x =100 , y= 90) 
+        fenetre.mainloop
+
+
+boutton_inscription = tk.Button(fenetre, text="inscrivez vous", bg='sky blue' , fg = 'black',command= bonjour)
+boutton_inscription.place(x = 105 , y = 130)
+boutton_connexion = tk.Button(fenetre, text="connedctez vous", bg='sky blue' , fg = 'black',command= bonjour )
+boutton_connexion.place(x = 100 , y = 90)
+
 fenetre.mainloop()
+
+

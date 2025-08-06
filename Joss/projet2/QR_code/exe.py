@@ -8,3 +8,6 @@ arrondi = len(chaone.split( ".")[1])
 print(arrondi)
 print("la partie entier est : ", int_part)
 print("la partie decimale est : ", round(decimal_part,arrondi ))
+
+while  (round(decimal_part,arrondi ) != 0.0) :
+    

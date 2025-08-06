@@ -47,16 +47,17 @@ def decimal(DECIMAL_PART):
     if (DECIMAL_PART == 0.0):
         mantisse = "0"
         return mantisse
-    else :
-        nbr= int(DECIMAL_PART * 2)
-        mantisse = str(nbr)
-        decimal_part, int_part = math.modf(DECIMAL_PART * 2)
-        arrondi= len ((DECIMAL_PART * 2).split(".")[1])
+    
+    nbr= int()
+    mantisse = str(nbr)
+    produit = str(DECIMAL_PART * 2)
 
-        return mantisse + decimal(round(decimal_part, arrondi))
+    decimal_part, int_part = math.modf( DECIMAL_PART * 2)
+    arrondi= len (produit.split(".")[1])
+    
+    return mantisse + decimal(round(decimal_part, arrondi))
 
-d =float(input("nisccccccssert"))
 
-print( decimal (d))
+print( "",decimal(nbr))
 def nbr_reel(nbr):
     integer_part= int (nbr)
