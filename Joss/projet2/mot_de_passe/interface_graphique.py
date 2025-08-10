@@ -1,5 +1,4 @@
-
-import tkinter as tk
+import avant as bk
 
 fenetre = tk.Tk()
 fenetre.geometry('300x300')
@@ -40,18 +39,15 @@ def inscription():
     securite.place( x=60 , y=200)
     mot_de_passe=tk.Entry(fenetre)
     mot_de_passe.place(x=100 ,y=200)
-
-
-    def inscription():
-        with open("inscription.txt","a+") as fille :
+    def inscript():
             nom= nom_utilisateur.get()
-            fille.write(nom)
-            
+            prenom = prenom_utilisateur.get()
+            mot_de_pass=mot_de_passe.get()
+            bk.enregistrer(nom,prenom,mot_de_pass)
 
-    boutton = tk.Button(fenetre, text= "VALIDER", command=inscription)
+    boutton = tk.Button(fenetre, text= "VALIDER", command=inscript)
     boutton['bg']='sky blue'
     boutton.place(x = 120, y= 250 )
-
     fenetre.mainloop()
 
 
@@ -87,9 +83,7 @@ def connexion():
 
 
     def connexion():
-        with open("inscription.txt","a+") as fille :
-            nom= nom_utilisateur.get()
-            fille.write(nom)
+            print(nom_utilisateur.get())
             
     # boutton de connexion
     boutton = tk.Button(fenetre, text= "connexion", command=connexion)
@@ -111,3 +105,5 @@ boutton_connexion = tk.Button(fenetre, text="connedctez vous", bg='sky blue' , f
 boutton_connexion.place(x = 100 , y = 90)
 
 fenetre.mainloop()
+
+

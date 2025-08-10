@@ -75,7 +75,7 @@ git push origin Neo_team_projets/Joss/Nom_du_projet
 | --------------------- | -------------------------------- | ------------- | ----------------------------- | -------------------------------------------------- |
 | `Generateur_QR_Code`  | Terminal / Génération d’image    | /             | Python (`qrcode`)             | `Neo_team_projets/Joss/Generateur_QR_Code/`        |
 | `Hangman`             | Jeu / Logique conditionnelle     | /             | Python                        | `Neo_team_projets/Joss/Hangman/`                   |
-| `Password_Manager`    | Sécurité / Stockage local        | /             | Python                        | `Neo_team_projets/Joss/Password_Manager/`          |
+|z| /             | Python                        | `Neo_team_projets/Joss/Password_Manager/`          |
 | `Email_Formatter`     | Automatisation / Formatage email | /             | Python                        | `Neo_team_projets/Joss/Email_Formatter/`           |
 | `User_Login_System`   | Authentification / Hashing       | /             | Python                        | `Neo_team_projets/Joss/User_Login_System/`         |
 | `Inventory_Tracker`   | Terminal / CRUD                  | /             | Python                        | `Neo_team_projets/Joss/Inventory_Tracker/`         |
