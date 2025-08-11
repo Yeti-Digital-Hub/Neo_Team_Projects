@@ -143,3 +143,13 @@ main .main-droite p {
 main .main-droite p span {
     font-size: 16px;
 }
+strong {
+    color: rgb(252, 38, 74);
+    font-weight: normal;
+    font-size: 20px;
+    margin-left: 15%;
+    margin-top: 15%;
+}
+strong i {
+    margin-right: 5px;
+}

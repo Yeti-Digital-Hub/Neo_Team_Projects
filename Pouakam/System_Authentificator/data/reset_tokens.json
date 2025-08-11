@@ -1,0 +1,17 @@
+[
+    {
+        "email": "bob@example.com",
+        "token": "31672e288446eefa80af859c577aae88d8cebbe27596f2a4231747957da57fff",
+        "expires_at": "2025-08-11 13:54:23"
+    },
+    {
+        "email": "backend@gmail.com",
+        "token": "950a0851df0a98266c8459b0e3c362da0925e722af85fd481679a95b66667ac9",
+        "expires_at": "2025-08-11 14:20:56"
+    },
+    {
+        "email": "darc@yahoo.com",
+        "token": "7f88ac7b4235486d28926668eabdf28cf650b7eef31254fa11a9eff8c82d3147",
+        "expires_at": "2025-08-11 20:08:47"
+    }
+]

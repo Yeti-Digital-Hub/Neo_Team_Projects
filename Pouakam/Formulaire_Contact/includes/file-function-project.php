@@ -6,7 +6,7 @@
      *
      * @param string $donnee
      * @return bool true 
-     */
+     * */
     function verify($donnee){
         if(isset($donnee)){
             if(!empty($donnee)){
@@ -69,7 +69,7 @@
                 if(preg_match("/^\+?[0-9]{1,3}[-. ]?[0-9]{1,14}$/", $donnee)){
                     return $donnee;
                 }else{
-                    echo '<strong><i class="bi bi-exclamation-triangle-fill text-danger"></i> Le numéro de téléphone entrez est invalide (eg.+237)!</strong>';
+                    echo '<strong>c Le numéro de téléphone entrez est invalide (eg.+237)!</strong>';
                 }
             }
         }else{

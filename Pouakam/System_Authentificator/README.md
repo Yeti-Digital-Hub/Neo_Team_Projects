@@ -31,7 +31,7 @@ la méthode scrum avec une approche agile.
 
     Nous utiliserons le paradigme procédurale (Tout ceci en structurant notre travail avec de la programmation modulaire).
 
-## 🗂️ Structure des dossier du Projet(**Formulaire de Contact**)...
+## 🗂️ Structure des dossier du Projet(**Système d'authentification simple**)...
 
     Voici comment nous avons structuré les dossiers du projet :
         ```
@@ -43,7 +43,7 @@ la méthode scrum avec une approche agile.
         |   |    |       └── webfonts/
         │   │    └── maquettes/
         |   |            ├── forget-password.png
-        |   |            ├── img-index.png
+        |   |            ├── index-login.png
         |   |            ├── Logout.png
         │   │            └── reset-password.png
         │   ├── data/
@@ -51,11 +51,16 @@ la méthode scrum avec une approche agile.
         │   ├── files_style/
         │   │    └──  style.css
         │   ├── includes/
-        │   │    ├── file-function-project.php
-        │   │    ├── send-email.php
-        │   │    └── traitement-form.php    
-        │   ├── index.php 
+        │   │    ├── auth_main.php
+        │   │    ├── function_forget_password.php
+        │   │    ├── function_login.php
+        │   │    └── function_reset_password.php    
+        │   ├── consult_email.php
+        │   ├── dashboard_user.php
+        │   ├── forget_password.php
+        │   ├── index.php
         │   ├── README.md
+        │   ├── reset_password.php 
         │ 
         ```
 
