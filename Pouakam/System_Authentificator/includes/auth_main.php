@@ -1,14 +1,12 @@
 <?php
     /**
      * ce fichier contient toute la logique métier principale du système;
-     * et est inclut dans : index.php, forget_password.php, reset_password.php;
+     * et est inclut dans : index.php
      * il va permettre aux différentes fonctions créées d'intéragir entre eux  
      * inclut: function_login.php
      */
 
     require_once('function_login.php');
-    require_once('function_forget_password.php');
-
 
     /**
      * Logique métier de la connexion et déconnexion utilisateur
@@ -51,37 +49,3 @@
         }
     }
 
-
-    /**
-     * Logique métier du forget password
-     */
-    if(isset($_POST['btn-forget']))
-    {
-        if(verify($_POST['email-forget']))
-        {
-            if(security_email($_POST['email-forget']))
-            {
-                $emailForget = security_email($_POST['email-forget']);
-                if(auth_forget($emailForget))
-                {
-                    $_SESSION['email_forget_valide'] = $emailForget;
-                    header('Location: consult_mail.php');
-                    exit;
-                }
-                else
-                {
-                    header('Location: forget_password.php?error-4=Identifiants incorrects');
-                }
-            }
-            else
-            {
-                header('Location: forget_password.php?error-5=Email invalide');
-                exit;
-            }
-        }
-        else
-        {
-            header('Location: forget_password.php?error-6=Veuillez remplir tous les champs');
-            exit;
-        }
-    }

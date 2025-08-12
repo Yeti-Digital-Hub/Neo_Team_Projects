@@ -59,7 +59,6 @@
                         <i class="fa-solid fa-lock"></i>
                         <input type="password" name="password-login" placeholder="Enter your password" autocomplete="new-password"/>
                     </div>
-                    <a href="forget_password.php">Forget password ?</a><br>
                     <button type="submit" name="btn-login">Login</button>    
                 </form>
             </div>

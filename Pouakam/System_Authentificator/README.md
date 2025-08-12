@@ -9,12 +9,9 @@ C'est un système d'**athentification simple** permettant à un utilisateur d'en
 
 - ✅ Affiche un formulaire de login permettant à un utilisateur de remplir son adresse email et mot de passe valide afin de se connecter 
 - ✅ Vérifie si les informations remplir correspondent à ceux en base de  donnée (Fichier JSON), si oui connecte l'utilisateur
-- ✅ Demande de mot de passe oublier
-- ✅ Possibilité de réinitialisation d'email
+- ✅ button de déconnexion
 
-## 🧰 Méthodoligie de gestion de projet utilisées...
 
-la méthode scrum avec une approche agile.
 
 ## 🧠 Technologies utilisées...
 
@@ -24,8 +21,6 @@ la méthode scrum avec une approche agile.
     - La librerie font Awersome(Qui nous permettra d'inserer des icones.)
     - Format JSON (Pour le stockage des données du systèmes.)
     - Git/GitHub (Pour le versionning.)
-    - MailHog (Serveur de simulation d'envoi d'emails, qui sera utiliser pour simuler un signal d'envoi d'email à l'admin de système.)
-    - PHPMailer (C'est une librerie php pou l'envoi des mail.)
 
 ## 🟢 Paradigmes utilisés...
 
@@ -42,25 +37,17 @@ la méthode scrum avec une approche agile.
         |   |    |       ├──   └── all.min.css
         |   |    |       └── webfonts/
         │   │    └── maquettes/
-        |   |            ├── forget-password.png
-        |   |            ├── index-login.png
-        |   |            ├── Logout.png
-        │   │            └── reset-password.png
+        │   │            └── index-login.png
         │   ├── data/
-        │   │    └── dataBase.json
+        │   │    └── data_base.json
         │   ├── files_style/
-        │   │    └──  style.css
+        │   │    └──  style-index.css
         │   ├── includes/
         │   │    ├── auth_main.php
-        │   │    ├── function_forget_password.php
-        │   │    ├── function_login.php
-        │   │    └── function_reset_password.php    
-        │   ├── consult_email.php
+        │   │    └── function_login.php  
         │   ├── dashboard_user.php
-        │   ├── forget_password.php
         │   ├── index.php
         │   ├── README.md
-        │   ├── reset_password.php 
         │ 
         ```
 
@@ -87,18 +74,6 @@ la méthode scrum avec une approche agile.
                 ```
                 https://github.com/Yeti-Digital-Hub/Neo_Team_Projects.git
                 ```
-
-    3. Installation de MailHog (Faux serveur SMTP)
-        - Sur Windows 
-            * Va ici : https://github.com/mailhog/MailHog/releases
-            * Télécharge MailHog_windows_amd64.exe.
-            * Renomme en MailHog.exe et place-le dans un dossier
-        - Sur Linux(Ubuntu)
-            ```
-            sudo apt install golang-go
-            go install github.com/mailhog/MailHog@latest
-            ```
-
 
 ## 🚀 Utilisation
 

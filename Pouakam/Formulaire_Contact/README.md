@@ -5,7 +5,7 @@
 
 C'est un système simple (**Formulaire de Contact**) qui permettra aux utilisateurs ou visiteurs de pouvoir contacter le propriétaire ou administrateur d'un site internet.
 
-
+## Fonctionnalités
 
 - ✅ Afficher un formulaire permettant aux visiteurs de remplir leurs informations via des champs (Nom, email, numero, message).
 - ✅ Envoyer ses informations remplis dans la base de donnée(fichier JSON) du site internet.
@@ -141,13 +141,13 @@ la méthode scrum avec une approche agile.
 
     - Sur Windows taper la commande si dan le terminale : cd C:\MailHog 
     et sur Ubuntu plutôt ceci : cd C:\MailHog. Pour lancer Mailhog
-- Ouvrir votre navigateur et taper : `http://localhost/http://localhost/Neo_Team_Projects/Pouakam/Formulaire_Contact/index.php`
-- taper ausi : http://localhost:8025 pour accéder à l'interface de MailHog
-- Remplissez le formulaire avec : Nom, l'email, Le Numéro de téléphone et Message
-- Cliquez sur **Send a message**
-- Aller dans l'interface de MailHog pour voir le message envoyer
-- Taper : `http://localhost/http://localhost/Neo_Team_Projects/Pouakam/Formulaire_Contact/admin.php` pour consulter lapage admin
-- Consulter le fichier Json(**data/dataBase.json**) pour voir vos données stocker
+    - Ouvrir votre navigateur et taper : `http://localhost/http://localhost/Neo_Team_Projects/Pouakam/Formulaire_Contact/index.php`
+    - taper ausi : http://localhost:8025 pour accéder à l'interface de MailHog
+    - Remplissez le formulaire avec : Nom, l'email, Le Numéro de téléphone et Message
+    - Cliquez sur **Send a message**
+    - Aller dans l'interface de MailHog pour voir le message envoyer
+    - Taper : `http://localhost/http://localhost/Neo_Team_Projects/Pouakam/Formulaire_Contact/admin.php` pour consulter lapage admin
+    - Consulter le fichier Json(**data/dataBase.json**) pour voir vos données stocker
 
 ## 🤝 Contributeurs
 
