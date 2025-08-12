@@ -130,7 +130,8 @@ Réaliser une **série de projets en ligne de commande (terminal)** avec Python,
 
 **Objectif** : Gérer dynamiquement un petit inventaire avec ajout/suppression/modification.
 
-**Technos utilisées** : Python, fichiers `.json`, dictionnaires, menus dynamiques.
+**Technos utilisées** : Python, fichi
+ers `.json`, dictionnaires, menus dynamiques.
 
 ### 7. NBA Stats & Current Scores
 
