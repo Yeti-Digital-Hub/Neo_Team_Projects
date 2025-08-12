@@ -1,4 +1,5 @@
 import avant as bk
+import tkinter as tk
 
 fenetre = tk.Tk()
 fenetre.geometry('300x300')
@@ -37,7 +38,8 @@ def inscription():
     securite = tk.Label(fenetre, text="Mot de passe", fg='black')
     securite['bg'] = 'gray'
     securite.place( x=60 , y=200)
-    mot_de_passe=tk.Entry(fenetre)
+    mot_de_passe=tk.Entry(fenetre, show="*")
+    mot_de_passe.pack
     mot_de_passe.place(x=100 ,y=200)
     def inscript():
             nom= nom_utilisateur.get()

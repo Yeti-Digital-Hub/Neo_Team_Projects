@@ -59,6 +59,12 @@ nom.place(x=60 ,y=100)
 nom_utilisateur = tk.Entry(fenetre)
 nom_utilisateur.place(x=110, y= 100) 
 
+    
+mo = tk.Label(fenetre, text="votre compte n'existe pas", fg='black')
+mo['bg']='gray'
+mo.place(x=60,y=100)
+        
+
 #cette partie est pour les prenom
 prenom_utilisateur  = tk.StringVar()
 prenom = tk.Label(fenetre, text="Prenom", fg='black')
@@ -80,6 +86,7 @@ def connexion():
     with open("inscription.txt","a+") as fille :
         nom= nom_utilisateur.get()
         fille.write(nom)
+    fonc()
         
 # boutton de connexion
 boutton = tk.Button(fenetre, text= "connexion", command=connexion)
