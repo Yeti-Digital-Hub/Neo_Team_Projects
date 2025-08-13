@@ -3,11 +3,12 @@
 
 ## 🎯 Objectif Principale:
 
-C'est un système simple (**Generator password**) qui permet de générer des mots de passe par simple clique de button.
+C'est un système (**Generator password**) qui permet de générer de façon automatique et fiable des mots de passes par simple clique de button, tout en laissant le choix à un utilisateur de choisir forme de son mot de passe (Longueur, Caractères majuscules ou mininuscle, Nombres, Caractère spéciaux) .
 
 ## Fonctionnalités
 
 - ✅ Button de génération de mot de passe aléatoire et sécuriser
+- ✅ Option de personalisation de mot de passe
 - ✅ Espace d'affichage de mot de passe générer
 
 ## 🧠 Technologies utilisées...
