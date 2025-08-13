@@ -25,6 +25,14 @@ C'est un système (**Generator password**) qui permet de générer de façon aut
 
         ```
         ├── System_Genetor_Password/
+        |   ├── css/
+        │   │     └── style.css
+        │   ├── img/
+        │   │     └── background.jpg
+        │   ├── includes/
+        │   │    ├── switch_case_4.php
+        │   │    ├── switch_case_6.php
+        │   │    └── switch_case_8.php  
         │   ├── index.php
         │   ├── README.md
         │   ├── traitement_index.php 
@@ -57,15 +65,10 @@ C'est un système (**Generator password**) qui permet de générer de façon aut
 
 ## 🚀 Utilisation
 
-    - Sur Windows taper la commande si dan le terminale : cd C:\MailHog 
-    et sur Ubuntu plutôt ceci : cd C:\MailHog. Pour lancer Mailhog
-    - Ouvrir votre navigateur et taper : `http://localhost/http://localhost/Neo_Team_Projects/Pouakam/Formulaire_Contact/index.php`
-    - taper ausi : http://localhost:8025 pour accéder à l'interface de MailHog
-    - Remplissez le formulaire avec : Nom, l'email, Le Numéro de téléphone et Message
-    - Cliquez sur **Send a message**
-    - Aller dans l'interface de MailHog pour voir le message envoyer
-    - Taper : `http://localhost/http://localhost/Neo_Team_Projects/Pouakam/Formulaire_Contact/admin.php` pour consulter lapage admin
-    - Consulter le fichier Json(**data/dataBase.json**) pour voir vos données stocker
+    - Ouvrir votre navigateur et taper : `http://localhost/http://localhost/Neo_Team_Projects/Pouakam/System_Generator_Password/index.php`
+    - Personaliser votre mot de passe en fonction de vos besions(taille du passe, forme...)
+    - Cliquez sur **Generate Password*
+    - Et le mot de passe vas s'afficher coimme suit : The generated password is: **Password Generate**
 
 ## 🤝 Contributeurs
 

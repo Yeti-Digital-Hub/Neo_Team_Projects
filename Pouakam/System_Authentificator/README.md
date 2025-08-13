@@ -77,7 +77,10 @@ C'est un système d'**athentification simple** permettant à un utilisateur d'en
 
 ## 🚀 Utilisation
 
-
+    - Ouvrir votre navigateur et taper : `http://localhost/http://localhost/Neo_Team_Projects/Pouakam/System_Authentificator/index.php`
+    - Entrer votre email et password de connexion valide
+    - Appuyer sur le button Login 
+    - Si les identifiants sont corrects vous accéder automatiquement à votre dashboad utilisateur
 
 ## 🤝 Contributeurs
 
