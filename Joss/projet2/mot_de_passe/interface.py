@@ -44,14 +44,14 @@ def inscription():
     mot_de_passe=tk.Entry(fenetre, show="*")
     mot_de_passe.pack()
     mot_de_passe.place(x=110 ,y=150)
-    def inscript():
+    def inscrit():
         nom= nom_utilisateur.get()
         prenom = prenom_utilisateur.get()
         mot_de_pass=mot_de_passe.get()
         bk.enregistrer(nom,prenom,mot_de_pass)
 
 
-    boutton = tk.Button(fenetre, text= "VALIDER", command=inscript)
+    boutton = tk.Button(fenetre, text= "VALIDER", command=inscrit)
     boutton['bg']='sky blue'
     boutton.place(x = 120, y= 200 )
     fenetre.mainloop()
@@ -93,7 +93,7 @@ def connexion():
     label = tk.Label(fenetre, fg='black', text="")
     label.place(x=50 , y=250)
     label['bg']='gray'
-    def connexion():
+    def connect():
         with open("data.json","r",encoding="utf-8") as file:
             data = json.load(file)
             i=0
@@ -106,7 +106,7 @@ def connexion():
                 mots =(hl.sha256(code.encode()).hexdigest())
                 if mots==((compte["mot de pass"])):
                     fenetre = tk.Tk()
-                    fenetre.geometry ('300x300')
+                    fenetre.geometry ('1800x1800')
                     fenetre.title('connecte')
                     fenetre.resizable(height= true , width=true)
                     image = PhotoImage( file='image.png')
@@ -123,12 +123,10 @@ def connexion():
 
         data[0]["nom"]
     # boutton de connexion
-    boutton = tk.Button(fenetre, text= "connexion", command=connexion)
+    boutton = tk.Button(fenetre, text= "connexion", command=connect)
     boutton['bg']='sky blue'
     boutton.place(x = 120, y= 200 )
 
-    #bouton pour le mot de passe oublie
-    boutton = tk.Button(fenetre, text="CONNEXION", command=connexion)
 
     fenetre.mainloop()
 
