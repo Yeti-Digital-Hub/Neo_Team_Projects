@@ -25,9 +25,11 @@ def qrcodex():
     fenetre = tk.Tk()
     fenetre.geometry ('1800x1800')
     fenetre.title('connecte')
-    fenetre.resizable(height= true , width=true)
-    image = tk.PhotoImage( file='qrcode.png')
-    labele = tk.Label(fenetre, image=image)
+    fenetre.resizable(height= True , width=True)
+    image = tk.PhotoImage( file="image.png")
+    img = image.subsample(2,2)
+    label = tk.Label(fenetre, image=image)
+    label.pack()
     fenetre.mainloop()
 
 

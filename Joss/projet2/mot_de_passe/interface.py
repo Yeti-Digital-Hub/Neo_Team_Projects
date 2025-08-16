@@ -28,7 +28,7 @@ def inscription():
     nom_utilisateur = tk.Entry(fenetre)
     nom_utilisateur.place(x=110, y= 75) 
 
-    #cette partie est pour les prenom
+    #cette partie est pour les prenom entry
     prenom_utilisateur  = tk.StringVar()
     prenom = tk.Label(fenetre, text="Prenom", fg='black')
     prenom['bg'] = 'gray'
@@ -109,7 +109,7 @@ def connexion():
                     fenetre.geometry ('1800x1800')
                     fenetre.title('connecte')
                     fenetre.resizable(height= true , width=true)
-                    image = PhotoImage( file='image.png')
+                    image = tk.PhotoImage( file='image.png')
                     labele = tk.Label(fenetre, image=image)
                     fenetre.mainloop()
                 else:

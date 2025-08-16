@@ -1,4 +1,4 @@
-# jeu de Tic Tac Toe
+POUR EXAEX# jeu de Tic Tac Toe
 
 
 # description 
@@ -38,6 +38,6 @@ pour realiser notre jeux de morpion on aura principalement besion de :
 Pour executer le code il sufi de le metre dans un IDE ou un interpreteur
 et executerle code
 
-# INTERVANT
+# INTERVENANT
 
-Je suis le seul a avoir travailler sur ce jeux 
+Je suis le seul a avoir travaille sur ce jeux 
