@@ -54,5 +54,19 @@
         "date_publication": "2025-08-17 03-23-08",
         "contenu": "Java est un langage de programmation orient\u00e9 objet, cr\u00e9\u00e9 en 1995 par Sun Microsystems (aujourd\u2019hui d\u00e9tenu par Oracle). C\u2019est un langage portable, robuste et largement utilis\u00e9 pour le d\u00e9veloppement d\u2019applications, allant des logiciels d\u2019entreprise aux applications mobiles.\r\n\r\nJava est connu pour sa philosophie \u201c\u00e9crire une fois, ex\u00e9cuter partout\u201d, ce qui signifie que les applications Java peuvent fonctionner sur n\u2019importe quelle plateforme dot\u00e9e d\u2019une machine virtuelle Java (JVM).",
         "img-article": "Java.png"
+    },
+    {
+        "titre_article": "Linux : le syst\u00e8me d\u2019exploitation open source incontournable",
+        "auteur": "Boogie",
+        "date_publication": "2025-08-17 11-27-58",
+        "contenu": "Linux est un syst\u00e8me d\u2019exploitation libre et open source, bas\u00e9 sur le noyau Linux cr\u00e9\u00e9 par Linus Torvalds en 1991. Il est reconnu pour sa stabilit\u00e9, sa s\u00e9curit\u00e9 et sa flexibilit\u00e9, ce qui en fait le choix privil\u00e9gi\u00e9 pour les serveurs, les syst\u00e8mes embarqu\u00e9s et m\u00eame certains postes de travail. Linux propose de nombreuses distributions comme Ubuntu, Fedora, Debian ou CentOS, adapt\u00e9es \u00e0 diff\u00e9rents besoins et niveaux d\u2019expertise.",
+        "img-article": "Linux.png"
+    },
+    {
+        "titre_article": "Comprendre JSON : le langage de présentation de donn\u00e9es modernes et flexibles",
+        "auteur": "Boogie",
+        "date_publication": "2025-08-17 19-16-22",
+        "contenu": "Le JSON (JavaScript Object Notation) est un format de donn\u00e9es l\u00e9ger, lisible par l\u2019homme et facilement interpr\u00e9table par les machines. Il est utilis\u00e9 pour \u00e9changer des informations entre un client et un serveur, notamment dans les applications web. Sa structure repose sur des paires cl\u00e9-valeur, ce qui le rend tr\u00e8s proche de la mani\u00e8re dont les objets sont manipul\u00e9s en JavaScript. Contrairement \u00e0 XML, JSON est plus simple, moins verbeux et plus rapide \u00e0 analyser.",
+        "img-article": "JSON.png"
     }
 ]
