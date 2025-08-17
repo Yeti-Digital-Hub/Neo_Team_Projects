@@ -68,7 +68,7 @@ C'est un système (**Generator password**) qui permet de générer de façon aut
     - Ouvrir votre navigateur et taper : `http://localhost/http://localhost/Neo_Team_Projects/Pouakam/System_Generator_Password/index.php`
     - Personaliser votre mot de passe en fonction de vos besions(taille du passe, forme...)
     - Cliquez sur **Generate Password*
-    - Et le mot de passe vas s'afficher coimme suit : The generated password is: **Password Generate**
+    - Et le mot de passe vas s'afficher comme suit : The generated password is: **Password Generate**
 
 ## 🤝 Contributeurs
 
