@@ -32,7 +32,7 @@ with open("base.csv","r", encoding="utf-8") as f:
 print("\n")
 
 
-nouveau_message= input("voulez vous laisser un nouveua message ?? (repondre par oui ou par non) \n")
+nouveau_message= input("voulez vous laisser un nouvaue message ?? (repondre par oui ou par non) \n")
 
 if nouveau_message == "oui" :
     with open("base.csv","a",newline="", encoding="utf-8") as f:
