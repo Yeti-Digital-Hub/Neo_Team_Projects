@@ -15,7 +15,7 @@
     - ✅ Affichage des différentes questions avec leurs réponses possibles dans CLI
     - ✅ Possibité de choisir une réponse pour chaque question
     - ✅ Après le choix de chaque réponse correction (Bonne/Mauvais)
-    - ✅ Affichage du score finale à la fin du quiz
+    - ✅ Affichage du score final à la fin du quiz
 
 ## 🧠 Technologie utilisée...
 
