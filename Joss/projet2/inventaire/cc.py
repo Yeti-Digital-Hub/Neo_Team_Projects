@@ -1,0 +1,68 @@
+import json
+
+data ={
+    "classe1":{
+        "nom":"6",
+        "eleve":{
+            "garcon":[
+                {"nom":"alex","prenom":"jo","age":44},
+                {"nom":"alex","prenom":"jo","age":44},
+                {"nom":"alex","prenom":"jo","age":44}
+            ],
+            "fille":[
+                {"nom":"ale","prenom":"jo","age":44},
+                {"nom":"ale","prenom":"jo","age":44},
+                {"nom":"ale","prenom":"jo","age":44}
+            ]
+        },
+        "enseignant":{
+            "garcon":[
+                {"nom":"al","prenom":"jo","age":44},
+                {"nom":"al","prenom":"jo","age":44},
+                {"nom":"al","prenom":"jo","age":44}
+            ],
+            "fille":[
+                {"nom":"a","prenom":"jo","age":44},
+                {"nom":"a","prenom":"jo","age":44},
+                {"nom":"a","prenom":"jo","age":44}
+            ]
+        },
+
+    },
+    "classe2":{
+        "nom":"5",
+        "eleve":{
+            "garcon":[
+                {"nom":"alssex","prenom":"jo","age":44},
+                {"nom":"alssex","prenom":"jo","age":44},
+                {"nom":"alex","prenom":"jo","age":44}
+            ],
+            "fille":[
+                {"nom":"alessx","prenom":"jo","age":44},
+                {"nom":"alssex","prenom":"jo","age":44},
+                {"nom":"alssex","prenom":"jo","age":44}
+            ]
+        },
+        "enseignant":{
+            "gacon":[
+                {"nom":"alssex","prenom":"jo","age":44},
+                {"nom":"alssssex","prenom":"jo","age":44},
+                {"nom":"alssex","prenom":"jo","age":44}
+            ],
+            "fille":[
+                {"nom":"alssex","prenom":"jo","age":44},
+                {"nom":"asslex","prenom":"jo","age":44},
+                {"nom":"asslex","prenom":"jo","age":44}
+            ]
+        }
+    }
+}
+
+with open("data.json","w") as file:
+    json.dump(data,file, indent=4)
+
+with open("data.json","r",encoding="utf-8") as  file :
+    dato= json.load()
+
+print(dato)
+
