@@ -1,4 +1,3 @@
-import datetime as TD
 import csv
 import time as T
 USERNAME = input("entrer votre nom :")

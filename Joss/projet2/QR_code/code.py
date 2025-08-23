@@ -21,6 +21,7 @@ URL= tk.StringVar()
 URL= tk.Entry(fenetre,fg='red')
 URL.place(x=75,y=75)
 
+
 def qrcodex():
     fenetre = tk.Tk()
     fenetre.geometry ('1800x1800')
