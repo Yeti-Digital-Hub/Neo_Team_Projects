@@ -2,5 +2,6 @@
     "Faire mes devoirs \u00e0 21h",
     "R\u00e9union avec le PDG de Meta",
     "Allez faire les course avec des pots",
-    "S&#039;appr\u00eater pour alller \u00e0 l&#039;\u00e9cole pendant 1h30 de temps"
+    "Aller d\u00e9jeuner \u00e0 12h",
+    "Pr\u00e9parer le cont\u00f4le de demain \u00e0 19h"
 ]
