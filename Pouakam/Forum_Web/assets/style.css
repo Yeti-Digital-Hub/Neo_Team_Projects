@@ -5,7 +5,7 @@ textarea {
     resize: none;
     height: 150px;
 }
-.navbar-nav .nav-link:hover {
+.navbar-nav .active{
   color: #ff9800 !important;   /* Couleur au survol */
   background-color: rgba(255, 255, 255, 0.1); /* Fond léger */
   border-radius: 5px; /* optionnel */

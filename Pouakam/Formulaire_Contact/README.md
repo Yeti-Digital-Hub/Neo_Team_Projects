@@ -5,6 +5,9 @@
 
 C'est un système simple (**Formulaire de Contact**) qui permettra aux utilisateurs ou visiteurs de pouvoir contacter le propriétaire ou administrateur d'un site internet.
 
+## Environnement de travail
+    Linux: Ubuntu
+
 ## Fonctionnalités
 
 - ✅ Afficher un formulaire permettant aux visiteurs de remplir leurs informations via des champs (Nom, email, numero, message).
@@ -12,9 +15,6 @@ C'est un système simple (**Formulaire de Contact**) qui permettra aux utilisate
 - ✅  Signaler l'admin du site internet via son email (ici on va utiliser un simulateur de serveur de messagerie) à chaque fois qu'un visiteur soumis le formulaire.
 - ✅  Afficher les informations de chaque utilisateur dans une interface admin.
 
-## 🧰 Méthodoligie de gestion de projet utilisées...
-
-la méthode scrum avec une approche agile.
 
 ## 🧠 Technologies utilisées...
 

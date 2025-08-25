@@ -36,7 +36,7 @@
                                     <?= $value['description']; ?>
                                 </div>
                                 <div class="card-footer">
-                                    Publier par <span class="text-primary"><?= $value['pseudo_author']; ?></span>, le <span class="text-secondary"><?= $value['date_publish']; ?></span>
+                                    Publier par <a href="profile.php?id=<?= $value['id_author']; ?>"><span><?= $value['pseudo_author']; ?></span></a>, le <span class="text-secondary"><?= $value['date_publish']; ?></span>
                                 </div>
                             </div>
                     <?php endforeach; ?>

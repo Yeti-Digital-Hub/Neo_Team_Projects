@@ -4,6 +4,10 @@
 
 C'est un mini site web de blog (**e-Blog**) qui permet la publication des articles (posts) sur les technologies logicielles (thématiques), et leurs affichages dynamiques sur une interface dédiée.
 
+## Environnement de travail
+    Linux: Ubuntu
+
+
 ## Fonctionnalités
 
 - ✅ Inteface principale d'affichage des articles publiés
@@ -71,6 +75,8 @@ C'est un mini site web de blog (**e-Blog**) qui permet la publication des articl
                 ```
 
 ## 🚀 Utilisation
+
+        NB: Rassurer vous d'être connecter à internet afin de pouvoir afficher les textes avec les police Google fonts
 
     - Ouvrir votre navigateur et taper : `http://localhost/http://localhost/Neo_Team_Projects/Pouakam/System_Blog_PHP/index.php`
     - Vous verez dans la page d'acceuil avec les articles déjà publiés si possible.
