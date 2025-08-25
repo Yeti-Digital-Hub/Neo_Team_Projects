@@ -5,7 +5,7 @@
 
 C'est un système (**Generator password**) qui permet de générer de façon automatique et fiable des mots de passes par simple clique de button, tout en laissant le choix à un utilisateur de choisir forme de son mot de passe (Longueur, Caractères majuscules ou mininuscle, Nombres, Caractère spéciaux) .
 
-## Environnement de travail
+## 🖥️ Environnement de travail
     Linux: Ubuntu
 
 ## Fonctionnalités

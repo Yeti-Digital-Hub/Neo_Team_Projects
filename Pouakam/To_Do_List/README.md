@@ -4,7 +4,7 @@
 
     C'est une mini Application permettant à un utilisateur d'ajouter, afficher et supprimer des tâches à faire via une interface web.
 
-## Environnement de travail
+## 🖥️ Environnement de travail
     Linux: Ubuntu
 
 ## ⚙️ Fonctionnalités

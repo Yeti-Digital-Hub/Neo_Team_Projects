@@ -4,7 +4,7 @@
     
     C'est une mini plateforme de forum web permettant à tout utilisateur inscrit ou authenfier de pouvoir créer un lieu de discussion où il pourra: Publier, Répondre, Modifier, Supprmier et accéder à des questions d'un forum web.
 
-## Environnement de travail
+## 🖥️ Environnement de travail
     Linux: Ubuntu
 
 ## ⚙️ Fonctionnalités

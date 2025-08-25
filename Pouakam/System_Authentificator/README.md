@@ -5,7 +5,7 @@
 
 C'est un système d'**athentification simple** permettant à un utilisateur d'entrer son adresse email et son mot de passe valide afin de vérifier l'identiter de celui pour le connecter au système.
 
-## Environnement de travail
+## 🖥️ Environnement de travail
     Linux: Ubuntu
 
 ## 🚀 Fonctionnalités...
