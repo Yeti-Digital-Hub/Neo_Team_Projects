@@ -46,5 +46,17 @@
             "quantite": 5,
             "prix_unitaire": 5
         }
+    ],
+    "voi": [
+        {
+            "marque": "toyota",
+            "quantite": 71,
+            "prix_unitaire": 4
+        },
+        {
+            "nom": "JESUS",
+            "quantite": 4,
+            "prix_unitaire": 55
+        }
     ]
 }
