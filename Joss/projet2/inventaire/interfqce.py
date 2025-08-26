@@ -55,7 +55,7 @@ def creer_inventaire():
         
         
 
-    enregistrer=tk.Button(fenetre,text='enregistrer',command=)
+    enregistrer=tk.Button(fenetre,text='enregistrer',command=inventaire)
     enregistrer.place(x=400,y=180)
     enregistrer['bg']='green'
     

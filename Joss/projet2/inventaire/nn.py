@@ -1,45 +1,75 @@
 import json
-
-nom_inventaire = input ("donner le nom de l'inventaire que vous voulez modifier: ")
-
-marque = input ("entrer la marque que vous voulez changer ")
-quantite_ajoute = input ("entrer la quantite a ajouter ")
-nouv_prix = input("entrer le nouveauprix ")
-quantite_suprime = input("entrer la quantite a ajoute")
 with open("data.json","r",encoding="utf-8") as file :
     data =json.load(file)
 
+nom_inventaire = input ("donner le nom de l'inventaire que vous voulez modifier: ")
 
 
-def ajouter_qantite (nom_inventaire,marque,quantite_ajoute):
-        for inventaire in data :
-            if nom_inventaire == inventaire and marque ==data[inventaire][1]['marque']:
-                data[inventaire][1]['quantite_ajoute']= data[inventaire][1]['quantite_ajoute'] + quantite_ajoute
+def ajouter_qantite (nom_inventairedqtq):
+        marque = input ("entrer la marque que vous voulez changer ")
+        i=0
+        for elem in (data[nom_inventaire]):  
+            if elem["marque"] == marque:
+                elem['quantite']= elem['quantite']+quantite_ajoute
                 print("\n")
                 break
             else:
-                print("jdjjjjjj")
+                i=i+1
+        if i == int(len (data[nom_inventaire])):
+            print(f"la marque {marque}, que voulez modifier n'existe pas dans l'inventaire {nom_inventaire} ")
+        print(data)
+
+
 
 def suprimer_qantite (nom_inventaire,marque,quantite_suprime):
-    with open("data.json","r",encoding="utf-8") as file :
-        data =json.load(file)
-
-        for inventaire in data :
-            if nom_inventaire == inventaire and marque ==data[inventaire][1]['marque']:
-                data[inventaire][1]['quantite_suprime']= data[inventaire][1]['quantite_suprime'] - quantite_suprime
-                print("\n")
-                break
-            else:
-                print("jdjjjjjj")
+    for inventaire in data :
+        if nom_inventaire == inventaire:
+            print("ddddddddddddddddddddddddddddddddd")
+            for elem in (data[nom_inventaire]):  
+                if elem["marque"] == marque:
+                    elem['quantite']= elem['quantite'] - quantite_suprime
+                    print("\n")
+                        
+                else:
+                    i=i+1
+    if i == int(len (data[nom_inventaire])):
+        print(f"la marque {marque}, que voulez modifier n'existe pas dans l'inventaire {nom_inventaire} ")
+    print(data)
 
 def nouvel_element(nom_inventaire):
+    elem={
+        "nom":"l",
+        "quantite":0,
+        "prix":0}
+    
+    elem['nom']= input("entrer le nom de l'elementa ajouter")
+    elem['quantite']= int(input(f"entrer la quantitede {elem['nom']} que vous avez"))
+    elem['prix']= int(input(f"entrer le prix de {elem['nom']} que vous avez"))
+    data['nom_inventaire'].append(elem)
+
+def changer_prix(nom_inventaire ):
+    i=0
+    marque = input("entrer la marque que vous voulez modifier ")
     nom_element = input("entrer le nom de l'elementa ajouter")
-    quantite = int(input(f"entrer la quantitede {nom_element} que vous avez"))
     nouv_prix = int(input(f"entrer le prix de {nom_element} que vous avez"))
-    data[inventaire][1]['prix'] = nouv_prix
-    data[inventaire][1]['quantite'] = nouv_prix
+    for inventaire in data :
+        if nom_inventaire == inventaire:
+            print("ddddddddddddddddddddddddddddddddd")
+            for elem in (data[nom_inventaire]):  
+                if elem["marque"] == marque:
+                    elem['prix']= nouv_prix
+                    print("\n")
+                    
+                else:
+                    i=i+1
+    if i == int(len (data[nom_inventaire])):
+        print(f"la marque {marque}, que voulez modifier n'existe pas dans l'inventaire {nom_inventaire} ")
+    print(data)
 
 
 
 
-ajouter(nom_inventaire,marque,quantite_ajoute,nouv_prix)
+
+
+
+ajouter_qantite(nom_inventaire)
