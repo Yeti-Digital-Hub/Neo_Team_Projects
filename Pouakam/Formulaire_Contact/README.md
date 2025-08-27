@@ -63,7 +63,7 @@ C'est un système simple (**Formulaire de Contact**) qui permettra aux utilisate
     1. Installer un serveur web local php en fonction de votre environnement(WAMP, LAMP, XAMP, MAMP)
 
     2. cloner le repo :
-        - Sur Windows
+        - Sur Windows(WAMP)
             * Ouvir le terminal et taper :
                 ```
                 cd C:\wamp64\www
@@ -72,7 +72,7 @@ C'est un système simple (**Formulaire de Contact**) qui permettra aux utilisate
                 ```
                 https://github.com/Yeti-Digital-Hub/Neo_Team_Projects.git
                 ```
-        - Sur Linux
+        - Sur Linux(LAMP)
             *Ouvir le terminal et taper :
                 ```
                 cd /var/www/html
@@ -86,68 +86,72 @@ C'est un système simple (**Formulaire de Contact**) qui permettra aux utilisate
         - Sur Windows 
             * Va ici : https://github.com/mailhog/MailHog/releases
             * Télécharge MailHog_windows_amd64.exe.
-            * Renomme en MailHog.exe et place-le dans un dossier
-        - Sur Linux(Ubuntu)
+            * Renomme le fichier(.exe) en MailHog.exe, par exemple et place-le dans un dossier de votre choix
+        - Sur Linux(Ubuntu): ouvrez le terminal et taper les commandes
             ```
-            sudo apt install golang-go
+            sudo apt update && sudo apt install golang-go -y
             go install github.com/mailhog/MailHog@latest
             ```
     
-    4. Installation de mhsendmail
-        - Sur Linux(Ubuntu)
-            * Télécharger mhsendmail
-                ```
-                wget https://github.com/mailhog/mhsendmail/releases/download/v0.2.0/mhsendmail_linux_amd64 -O mhsendmail
-                ```
-            * Rendre exécutable
-                ```
-                chmod +x mhsendmail
-                ```
-            * Déplacer mhsendmail dans un dossier accessible
-                ```
-                sudo mv mhsendmail /usr/local/bin/mhsendmail
-                ```
-            * Configurer PHP pour utiliser mhsendmail
-                ```
-                sudo nano /etc/php/7.x/apache2/php.ini
-                ```
-            * Cherche la ligne sendmail_path et modifie là par :
-                ```
-                sendmail_path = /usr/local/bin/mhsendmail
-                ```
-            * Redémarre Apache
-                ```
-                sudo systemctl restart pache2
-                ```
-        -Sur Windows
-            * Aller sur la page des releases de mhsendmail
-            * Télécharger le fichier mhsendmail_windows_amd64.exe
-            * Renommer en mhsendmail.exe
-            * Placer mhsendmail.exe dans un dossier
-                ``Markdown All in One`
-                C:\mhsendmail\
-                ```
-            * Ouvrer le fichier php.ini utilisé par WAMP
-                ```
-                C:\wamp64\bin\php\phpX.X.X\php.ini
-                ```
-            * Chercher la ligne sendmail_path et modifier par :
-                ```
-                sendmail_path = "C:\mhsendmail\mhsendmail.exe -smtp=localhost:1025"
-                ```
-            * Redémarre les services WAMP
+    4. Installation de mhsendmail (Outil pour envoyer les mail sur MailHog)
+        - Sur Linux(LAMP)
+
+            1- Installer mhsendmail
+                -Télécharge et installe mhsendmail avec Go : go install github.com/mailhog/mhsendmail@latest
+            2- Configurer PHP pour utiliser mhsendmail
+                - Ouvre ton php.ini (selon ta version de PHP, par exemple PHP 8.3) en tapant : sudo nano //etc/php/8.3/apache2/php.ini
+                - Trouve la ligne "sendmail_path" et configure : sendmail_path = "/home/<username>/go/bin/mhsendmail"
+                    NB: Veuillez remplace <username> par ton nom d’utilisateur Linux.
+            3- Redémarrer Apache:
+                - sudo systemctl restart apache2
+
+        -Sur Windows(WAMP)
+
+            1- Télécharger mhsendmail : 
+                - Ouvrez Votre navigateur et tapez (https://github.com/mailhog/mhsendmail/releases) GitHub de mhsendmail
+                - Télécharge : mhsendmail_windows_amd64.exe. 
+
+            2- Renommer et placer le fichier:
+                - Renomme-le en : mhsendmail.exe
+                - Place-le dans un dossier : C:\mhsendmail\
+
+            3- Ouvrir le fichier php.ini : 
+                - Ouvrir le l'invite de commande 
+                - Taper : C:\wamp64\bin\php\php8.2.0\php.ini
+
+            4- Configurer sendmail_path :
+                - Cherche la ligne "sendmail_path" dans php.ini.
+                - Modifie-la ainsi : sendmail_path = "C:\mhsendmail\mhsendmail.exe -smtp=localhost:1025"
+            5- Redémarrer WAMP :
+                - Clique sur l’icône WAMP (en bas à droite de Windows).
+                - Clique sur Restart All Services. 
 
 ## 🚀 Utilisation
 
-    - Sur Windows taper la commande si dan le terminale : cd C:\MailHog 
-    et sur Ubuntu plutôt ceci : cd C:\MailHog. Pour lancer Mailhog
-    - Ouvrir votre navigateur et taper : `http://localhost/http://localhost/Neo_Team_Projects/Pouakam/Formulaire_Contact/index.php`
+    - Lancer MailHog: 
+
+        * sur windows : Ouvrez l'invite de commandes exécutez la commande : C:\MailHog\MailHog.exe. NB: C:\MailHog\: c’est le dossier où tu as placé l’exécutable.
+        * Sur linux : ouvri le terminal et taper : ~/go/bin/MailHog
+
+    - Ouvrir votre navigateur et taper : 
+
+        `http://localhost/http://localhost/Neo_Team_Projects/Pouakam/Formulaire_Contact/index.php`
+
     - taper ausi : http://localhost:8025 pour accéder à l'interface de MailHog
+
     - Remplissez le formulaire avec : Nom, l'email, Le Numéro de téléphone et Message
+
     - Cliquez sur **Send a message**
+
     - Aller dans l'interface de MailHog pour voir le message envoyer
-    - Taper : `http://localhost/http://localhost/Neo_Team_Projects/Pouakam/Formulaire_Contact/admin.php` pour consulter lapage admin
+
+    - Taper : `http://localhost/http://localhost/Neo_Team_Projects/Pouakam/Formulaire_Contact/admin.php` pour consulter la page admin
+
     - Consulter le fichier Json(**data/dataBase.json**) pour voir vos données stocker
+
+### Exigence (Uniquement pour Linux)
+    Pour que les fichier se lise dans le fichier json (data/dataBase.json), veuillez d'abord donner tous les droits à votre fichier json en tapant la commande : chmod 777 /var/www/html/Neo_Team_Projects/Pouakam/data/dataBase.json
+
 
 ## 🤝 Contributeurs
 

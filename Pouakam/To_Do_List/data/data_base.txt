@@ -1,7 +1,4 @@
 [
     "Faire mes devoirs \u00e0 21h",
-    "R\u00e9union avec le PDG de Meta",
-    "Allez faire les course avec des pots",
-    "Aller d\u00e9jeuner \u00e0 12h",
-    "Pr\u00e9parer le cont\u00f4le de demain \u00e0 19h"
+    "R\u00e9union avec le PDG de Meta"
 ]
