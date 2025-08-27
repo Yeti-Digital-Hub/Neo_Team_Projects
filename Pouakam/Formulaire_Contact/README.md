@@ -150,7 +150,7 @@ C'est un système simple (**Formulaire de Contact**) qui permettra aux utilisate
     - Consulter le fichier Json(**data/dataBase.json**) pour voir vos données stocker
 
 ### Exigence (Uniquement pour Linux)
-    Pour que les fichier se lise dans le fichier json (data/dataBase.json), veuillez d'abord donner tous les droits à votre fichier json en tapant la commande : chmod 777 /var/www/html/Neo_Team_Projects/Pouakam/data/dataBase.json
+    Pour que les données soit  luent dans le fichier json (data/dataBase.json), veuillez d'abord donner tous les droits à votre fichier json en tapant la commande : chmod 777 /var/www/html/Neo_Team_Projects/Pouakam/data/dataBase.json
 
 
 ## 🤝 Contributeurs
