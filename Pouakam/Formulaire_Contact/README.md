@@ -39,6 +39,7 @@ C'est un système simple (**Formulaire de Contact**) qui permettra aux utilisate
         ├── Formulaire_Contact
         │   ├── assets/
         │   │    ├── icons/
+        |   |    |       ├── fonts/
         │   │    ├──     └── bootstrap-icons.css
         │   │    └── maquettes/
         |   |            ├── maquette_logique.png 
