@@ -85,6 +85,9 @@ C'est un système d'**athentification simple** permettant à un utilisateur d'en
     - Appuyer sur le button Login 
     - Si les identifiants sont corrects vous accéder automatiquement à votre dashboad utilisateur
 
+### Exigence (Uniquement pour Linux)
+    Pour que les données soit  luent dans le fichier json (data/dataBase.json), veuillez d'abord donner tous les droits à votre fichier json en tapant la commande : chmod 777 /var/www/html/Neo_Team_Projects/Pouakam/data/dataBase.json
+
 ## 🤝 Contributeurs
 
     🙋‍♀️ Auteur : Pouakam Brele Vanelle   Backend (Pseudo GitHub)

@@ -1,6 +1,6 @@
 <?php
 
-    require('actions/data_base.php');
+    require_once __DIR__ . '/../../config/config.php';
 
     // recuperer un nombres de 6 questions par defaut sans recherche
     $getAllQuestions = $bdd->query('SELECT * FROM questions ORDER BY id DESC LIMIT 0,6');

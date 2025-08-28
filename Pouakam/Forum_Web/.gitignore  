@@ -1,0 +1,5 @@
+
+
+  # Ignorer le vrai fichier de configuration MySQL
+
+        config/config.php

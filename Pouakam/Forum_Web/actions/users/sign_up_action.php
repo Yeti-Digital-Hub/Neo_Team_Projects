@@ -1,6 +1,6 @@
 <?php
 
-    require('actions/data_base.php');
+    require_once __DIR__ . '/../../config/config.php';
     session_start();
     if(isset($_POST['validate']))
     {

@@ -1,6 +1,6 @@
 <?php
 
-    require('actions/data_base.php');
+    require_once __DIR__ . '/../../config/config.php';
 
     // verifier si l'id est rentrer dans la l'URL
     if(isset($_GET['id']) AND !empty($_GET['id']))

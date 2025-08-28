@@ -65,6 +65,8 @@
     - Ensuite consulter la liste en bas du champs pour visualiser l'ensemble de vos tâches ajoutées
     - Une fois sur la liste de vos tâches vous pouvez supprimer une tâche, en cliquant sur l'icône de suppression
 
+### Exigence (Uniquement pour Linux)
+    Pour que les données soit  luent dans le fichier json (data/dataBase.json), veuillez d'abord donner tous les droits à votre fichier json en tapant la commande : chmod 777 /var/www/html/Neo_Team_Projects/Pouakam/data/dataBase.json
 
 ## 🤝 Contributeurs
 
