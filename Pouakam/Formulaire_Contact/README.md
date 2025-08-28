@@ -135,10 +135,9 @@ C'est un système simple (**Formulaire de Contact**) qui permettra aux utilisate
         * Sur linux : ouvri le terminal et taper : ~/go/bin/MailHog
 
     - Ouvrir votre navigateur et taper : 
+    - taper ausi : http://localhost:8025 pour accéder à l'interface de MailHog
 
         `http://localhost/http://localhost/Neo_Team_Projects/Pouakam/Formulaire_Contact/index.php`
-
-    - taper ausi : http://localhost:8025 pour accéder à l'interface de MailHog
 
     - Remplissez le formulaire avec : Nom, l'email, Le Numéro de téléphone et Message
 
