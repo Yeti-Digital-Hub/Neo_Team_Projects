@@ -54,7 +54,7 @@ C'est un système (**Generator password**) qui permet de générer de façon aut
                 ```
             * Puis taper
                 ```
-                https://github.com/Yeti-Digital-Hub/Neo_Team_Projects.git
+                git clone https://github.com/Yeti-Digital-Hub/Neo_Team_Projects.git
                 ```
         - Sur Linux
             *Ouvir le terminal et taper :
@@ -63,7 +63,7 @@ C'est un système (**Generator password**) qui permet de générer de façon aut
                 ```
             * Puis taper
                 ```
-                https://github.com/Yeti-Digital-Hub/Neo_Team_Projects.git
+                git clone https://github.com/Yeti-Digital-Hub/Neo_Team_Projects.git
                 ```
 
 ## 🚀 Utilisation

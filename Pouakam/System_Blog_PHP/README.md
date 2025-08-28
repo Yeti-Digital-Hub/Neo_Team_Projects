@@ -62,7 +62,7 @@ C'est un mini site web de blog (**e-Blog**) qui permet la publication des articl
                 ```
             * Puis taper
                 ```
-                https://github.com/Yeti-Digital-Hub/Neo_Team_Projects.git
+                git clone https://github.com/Yeti-Digital-Hub/Neo_Team_Projects.git
                 ```
         - Sur Linux
             *Ouvir le terminal et taper :
@@ -71,7 +71,7 @@ C'est un mini site web de blog (**e-Blog**) qui permet la publication des articl
                 ```
             * Puis taper
                 ```
-                https://github.com/Yeti-Digital-Hub/Neo_Team_Projects.git
+                git clone https://github.com/Yeti-Digital-Hub/Neo_Team_Projects.git
                 ```
 
 ## 🚀 Utilisation

@@ -122,12 +122,12 @@
                     - A l'intérieur de ce fichier Modifier si necesaire les variable $username et $password avec vos identifiants MySQL
                     - Et enfin renommer le fichier config.example.php en config.php
 
-            2- Sur Windows (WAMP):
+            2- Sur Windows (XAMP):
                 a- Créer une base vide dans MySQL 
                     -  Lancer le serveur mysql de Wamp et ourir le navigateur et taper : http://localhost/phpmyadmin/
                     -  Allez dans l'option sql pour creer une base de données en saississant : CREATE DATABASE forum CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
                 b- Importer le fichier forum.sql dans cette base
-                    - Dans ton invite commande, va dans ton projet(Forum_Web) et tape : mysql -u root -p forum < data_base_sql/forum.sql
+                    - Dans ton invite commande, va dans ton projet(Forum_Web) et tape : "C:\xampp\mysql\bin\mysql.exe" -u root -p forum < data_base_sql\forum.sql
                 c- Configurer la connexion à la base 
                     - Ouvrir le fichier 'config.example.php' qui est dans le dossier 'config'
                     - A l'intérieur de ce fichier Modifier si necesaire les variable $username et $password avec vos identifiants MySQL

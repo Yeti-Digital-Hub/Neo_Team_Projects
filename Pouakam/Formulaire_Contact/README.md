@@ -70,7 +70,7 @@ C'est un système simple (**Formulaire de Contact**) qui permettra aux utilisate
                 ```
             * Puis taper
                 ```
-                https://github.com/Yeti-Digital-Hub/Neo_Team_Projects.git
+                git clone https://github.com/Yeti-Digital-Hub/Neo_Team_Projects.git
                 ```
         - Sur Linux(LAMP)
             *Ouvir le terminal et taper :
@@ -79,7 +79,7 @@ C'est un système simple (**Formulaire de Contact**) qui permettra aux utilisate
                 ```
             * Puis taper
                 ```
-                https://github.com/Yeti-Digital-Hub/Neo_Team_Projects.git
+                git clone https://github.com/Yeti-Digital-Hub/Neo_Team_Projects.git
                 ```
 
     3. Installation de MailHog (Faux serveur SMTP)

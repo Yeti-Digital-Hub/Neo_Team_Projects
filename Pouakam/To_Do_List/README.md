@@ -55,7 +55,7 @@
                 ```
             * Puis taper
                 ```
-                https://github.com/Yeti-Digital-Hub/Neo_Team_Projects.git
+                git clone https://github.com/Yeti-Digital-Hub/Neo_Team_Projects.git
                 ```
 
 ## 🚀 Utilisation

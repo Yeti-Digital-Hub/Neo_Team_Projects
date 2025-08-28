@@ -66,7 +66,7 @@ C'est un système d'**athentification simple** permettant à un utilisateur d'en
                 ```
             * Puis taper
                 ```
-                https://github.com/Yeti-Digital-Hub/Neo_Team_Projects.git
+               git clone https://github.com/Yeti-Digital-Hub/Neo_Team_Projects.git
                 ```
         - Sur Linux
             *Ouvir le terminal et taper :
@@ -75,7 +75,7 @@ C'est un système d'**athentification simple** permettant à un utilisateur d'en
                 ```
             * Puis taper
                 ```
-                https://github.com/Yeti-Digital-Hub/Neo_Team_Projects.git
+               git clone https://github.com/Yeti-Digital-Hub/Neo_Team_Projects.git
                 ```
 
 ## 🚀 Utilisation
