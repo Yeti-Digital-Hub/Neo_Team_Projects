@@ -1,5 +1,5 @@
 
 
-  # Ignorer le vrai fichier de configuration MySQL
+# Ignorer le fichier de connexion à la bd avec mes identifiant
+config/config.php
 
-        config/config.php
