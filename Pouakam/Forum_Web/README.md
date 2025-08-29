@@ -116,7 +116,7 @@
                     -  Tapez : CREATE DATABASE forum CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
      
                 b- Importer le fichier forum.sql dans cette base
-                    - Dans ton terminal (pas dans MySQL, mais dans ton système), va dans ton projet et tape : mysql -u root -p forum < data_base_sql/forum.sql
+                    - Dans ton terminal (pas dans MySQL, mais dans ton système), va dans ton projet et tape : mysql -u root -p forum < data_base_sql/forum.sql (" Au niveau de [-u root], vous allez laisser [root] ssi votre username mysql est [root] dans le cas contraire vous le remplasserez par votre username mysql")
                 c- Configurer la connexion à la base 
                     - Ouvrir le fichier 'config.example.php' qui est dans le dossier 'config'
                     - A l'intérieur de ce fichier Modifier si necesaire les variable $username et $password avec vos identifiants MySQL
