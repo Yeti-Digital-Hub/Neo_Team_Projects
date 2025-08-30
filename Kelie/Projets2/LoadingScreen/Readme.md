@@ -21,7 +21,7 @@ Aucune utilisation de framewook ou bibliothèque externe.
 # INSTRUCTIONS D'EXECUTION
  Cloner le depot: bash
     git clone https://github.com/Yeti-Digital-Hub/Neo_Team_Projects.git
-    cd LoadingScreen (??????????????)
+    cd Neo_Team_Projects
 
 
 ---
