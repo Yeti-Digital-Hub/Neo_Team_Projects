@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+.navbar .logo{
+    color: #fff;
+    font-size: 1.5rem;  /**/
+    font-weight: bold;
+    text-decoration: none;
+}
+.navbar ul li {
+    margin: 0 15px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    /* display: flex; */
+    
+}
+.navbar ul li a:hover{
+    color: #00bcd4;
+}
