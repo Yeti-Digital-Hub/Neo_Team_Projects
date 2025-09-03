@@ -73,7 +73,7 @@
         <h1>Welcome dashboard</h1>
         <div class="contenair">
             <i class="fa-solid fa-user-circle"></i>
-            <p><?= $_SESSION['email'] ?></p>
+            <p><?= $_SESSION['email_login'] ?></p>
             <a href="logout.php">Se déconnecter</a>
         </div>
     </body>
