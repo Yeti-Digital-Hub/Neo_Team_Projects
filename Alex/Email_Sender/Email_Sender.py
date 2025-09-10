@@ -1,31 +1,48 @@
-import smtplib  # Module pour gérer l'envoi de mails via SMTP
+# import des modules nécessaires ; smtplib pour l'envoi d'emails, email.message pour la gestion des messages, mimetypes pour les types de fichiers, pathlib pour la gestion des chemins de fichiers
+import smtplib
+from email.message import EmailMessage
+import mimetypes
+from pathlib import Path
 
-# Demande à l'utilisateur son adresse email (expéditeur)
+# Demande à l'utilisateur les informations nécessaires pour envoyer un email
 email = input("Sender Email: ")
-
-# Demande à l'utilisateur l'adresse email du destinataire
 receiver_email = input("Receiver Email: ")
-
-# Demande le sujet de l'email
 subject = input("Subject: ")
-
-# Demande le contenu du message
 message = input("Message: ")
 
-# Construction du texte complet du mail avec le sujet et le corps séparés par deux sauts de ligne
-text = f"Subject: {subject}\n\n{message}"
+msg = EmailMessage()
+msg["From"] = email
+msg["To"] = receiver_email
+msg["Subject"] = subject
+msg.set_content(message)
+# Gestion des pièces jointes ( si l'utilisateur ne veut pas en ajouter, il suffit d'appuyer sur Entrée )
+attachments = []
+while True:
+    filepath = input("Chemin du fichier à joindre (Entrée pour terminer) : ").strip()
+    if not filepath:
+        break
+    attachments.append(filepath)
 
-# Création d'une connexion SMTP au serveur Gmail sur le port 587 (utilisé pour TLS)
-server = smtplib.SMTP("smtp.gmail.com", 587)
+for filepath in attachments:
+    path = Path(filepath)
+    if not path.is_file():
+        print(f"⚠️ Fichier introuvable : {filepath} - Ignoré")
+        continue
 
-# Passage en mode sécurisé TLS (chiffrement de la connexion)
+    mime_type, _ = mimetypes.guess_type(filepath)
+    if mime_type is None:
+        mime_type = "application/octet-stream"
+    maintype, subtype = mime_type.split("/", 1)
+
+    with open(filepath, "rb") as f:
+        file_data = f.read()
+        filename = path.name
+        msg.add_attachment(file_data, maintype=maintype, subtype=subtype, filename=filename)
+    print(f"✔️ Pièce jointe ajoutée : {filename}")
+# Envoi de l'email via le serveur SMTP de Gmail
+server = smtplib.SMTP("smtp.gmail.com", 587) # Connexion au serveur SMTP de Gmail
 server.starttls()
-
-# Authentification avec l'adresse email et le mot de passe d'application (à remplacer par ton vrai mdp d'app)
-server.login(email, "lisihqualczmerfd")
-
-# Envoi de l'email : expéditeur, destinataire, contenu texte
-server.sendmail(email, receiver_email, text)
-
-# Confirmation dans la console
+server.login(email, "lisihqualczmerfd")  # Remplace par ton mot de passe d'application sécurisé ( du moins il est conseillé de le faire , ca sera plus sécurisé )
+server.send_message(msg)
 print("The Email has been sent to " + receiver_email)
+server.quit()
