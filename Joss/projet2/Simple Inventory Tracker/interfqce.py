@@ -52,7 +52,7 @@ def creer_inventaire():
 
 
     def inventaire():
-        
+        print("ooo")
         
 
     enregistrer=tk.Button(fenetre,text='enregistrer',command=inventaire)

@@ -50,7 +50,8 @@ Pour realiser notre systeme on a utilise les technologies suivantes :
 
 # COMMENT EXECUTR LE PROGRAMME 
 
-    Pour executer le code il faut avoir le code un interpreteur ou un IDE, puis l'escuter simplement 
+    Pour executer le code il faut avoir le code un interpreteur ou un IDE, puis l'escuter simplement le fichier interface graphique
+    NB: avant d'executer le fichier interface rassurer vous d'avoir ouver seulement le dossier mot de passe
 
 # INTERVENANT
 

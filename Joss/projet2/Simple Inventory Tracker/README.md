@@ -27,7 +27,7 @@
 - Des modules rel que :JSON 
 
 # COMMENT EXECUTER LE CODE 
-    Pour executer notre syteme d'inventaire nous devons au pealable creer un fichier JSON et ecrire "{}" puis executer le code 
+    Pour executer notre syteme d'inventaire nous devons au pealable creer un fichier JSON et ecrire "{}" puis executer le code du fichier code.py
 
 # INTERVENANT
 

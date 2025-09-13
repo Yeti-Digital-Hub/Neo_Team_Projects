@@ -7,7 +7,6 @@ def enregistrer(nom,prenom,mot_de_pass):
 
     data = []
 
-
     with open ("data.json","r",encoding= "utf-8") as file:
         data = json.load(file)
 
@@ -28,4 +27,8 @@ def enregistrer(nom,prenom,mot_de_pass):
 
 
 
+nom= print("entrer le nom ")
+prenom = print("entrer  le prenom")
+mot_de_passe = print("entrer le mot de passe ")
 
+enregistrer(nom,prenom,mot_de_passe)
