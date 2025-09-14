@@ -29,7 +29,8 @@ pour realiser notre jeux de morpion on aura principalement besion de :
 
 # COMMENT EXECUTER LE CODE DU TERMINAL TCHAT
 
-pour executer le code il faut au prealable cree un fichier base.csv et commence a le remplir par les titres des colones (nom, date, message).
+pour executer le code il faut au prealable cree un fichier base.csv et commence a le remplir par les titres des colones (nom, date, message), 
+puis appuier sur Run Programme Python File in edicated Terminal
 
 # NB
     Pour executer ce programme il faut ouvrir seleument ce dossier si non le fichier base.csv va se creer dans le dossier GITTIME2

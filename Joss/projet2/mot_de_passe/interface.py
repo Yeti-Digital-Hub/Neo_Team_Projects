@@ -62,7 +62,7 @@ def connexion():
     fenetre.geometry('300x300')
     fenetre.title('connexion')
     fenetre['bg']='gray'
-    fenetre.resizable(height=True , width= True)
+    fenetre.resizable(height=True , width= True)   
     # cette partie est pour le nom de l'utilisateur 
     nom_utilisateur = tk.StringVar()
     nom = tk.Label(fenetre,text= "Nom ", fg='black')
@@ -119,7 +119,6 @@ def connexion():
         if i== len(data):
                 mot ="desole maos votre compte n'existe pas"
                 label['text']= mot
-
 
         data[0]["nom"]
     # boutton de connexion

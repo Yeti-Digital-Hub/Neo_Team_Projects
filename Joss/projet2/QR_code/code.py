@@ -1,10 +1,6 @@
 import qrcode 
 import tkinter as tk
-
-img= qrcode.make('imag.png')
-img.save('qrcode.png')
-
-import tkinter as tk 
+import fonction as ft
 
 
 fenetre= tk.Tk()
@@ -13,7 +9,7 @@ fenetre.title('lien')
 fenetre['bg']='black' 
 fenetre.geometry('300x150')
 
-message= tk.Label(fenetre,text=" entre l'URL de ce que vous voulez coder",fg='red',font=('arial',9))
+message= tk.Label(fenetre,text=" entre l'URL ou le texte a coder ",fg='red',font=('arial',9))
 message['bg']='black'
 message.place(x=50,y=50)
 
@@ -23,6 +19,8 @@ URL.place(x=75,y=75)
 
 
 def qrcodex():
+    url = URL.get()
+    ft.image(url)
     fenetre = tk.Tk()
     fenetre.geometry ('1800x1800')
     fenetre.title('connecte')
