@@ -4,7 +4,7 @@ import json
 from datetime import datetime
 
 CHAT_FILE = "chat.txt"
-DATA_FILE = "data.json"
+DATA_FILE = "data.json"    
 
 # ----- Gestion utilisateurs -----
 def load_users():
