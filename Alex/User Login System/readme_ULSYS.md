@@ -30,7 +30,7 @@ Neo_Team_Projects/
     └── User_Login_System/
         ├── login.py      # script principal (inscription / connexion / chat)
         ├── users.json    # stockage des comptes (créé automatiquement)
-        └── chat.txt      # historique du chat (optionnel, partagé avec Terminal_Chat)
+        └── chat.txt      # historique du chat (optionnel, partagé avec Terminal_Chat, sera aussi crée automatiquement)
         └── readme_ULSYS  # fichier readme du projet 
 ```
 
