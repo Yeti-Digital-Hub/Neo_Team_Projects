@@ -1,62 +1,65 @@
 import yt_dlp
-import time
-from tqdm import tqdm
-import sys
+import os
 
-class ProgressBar:
-    def __init__(self):
-        self.pbar = None
-        self.total = 0
+def list_formats(url):
+    """Liste les formats progressifs (vidéo+audio combinés)"""
+    ydl_opts = {}
+    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+        info = ydl.extract_info(url, download=False)
+        formats = info.get('formats', [])
+        print("\n--- Formats disponibles (vidéo+audio combinés) ---")
+        for f in formats:
+            if f.get('vcodec') != 'none' and f.get('acodec') != 'none':
+                print(f"{f['format_id']:>5} | {f['ext']} | {f.get('resolution','N/A'):<10} | {f.get('filesize','N/A')} bytes")
+        return info['title']
 
-    def progress_hook(self, d):
-        if d['status'] == 'downloading':
-            if not self.pbar:
-                self.total = d.get('total_bytes') or d.get('total_bytes_estimate') or 0
-                self.pbar = tqdm(total=self.total, unit='B', unit_scale=True, desc='Téléchargement')
+def download_video(url, choice, output_dir="downloads"):
+    """Télécharge la vidéo selon le choix"""
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
 
-            downloaded = d.get('downloaded_bytes', 0)
-            self.pbar.update(downloaded - self.pbar.n)
+    if choice.lower() == "b":
+        # meilleur format progressif
+        ydl_opts = {
+            "format": "best[ext=mp4][vcodec!=none][acodec!=none]",
+            "outtmpl": os.path.join(output_dir, "%(title)s.%(ext)s")
+        }
+    elif choice.lower() == "c":
+        # audio seulement
+        ydl_opts = {
+            "format": "bestaudio/best",
+            "outtmpl": os.path.join(output_dir, "%(title)s.%(ext)s"),
+            "postprocessors": [{
+                "key": "FFmpegExtractAudio",
+                "preferredcodec": "mp3",
+                "preferredquality": "192"
+            }]
+        }
+    else:
+        # format choisi manuellement
+        ydl_opts = {
+            "format": choice,
+            "outtmpl": os.path.join(output_dir, "%(title)s.%(ext)s")
+        }
 
-        elif d['status'] == 'finished':
-            if self.pbar:
-                self.pbar.close()
-                self.pbar = None
-            print("\n✅ Téléchargement terminé, traitement en cours...")
-
-def download_video(url):
-    ydl_opts = {
-        'format': 'bestvideo+bestaudio/best',
-        'outtmpl': '%(title)s.%(ext)s',
-    }
-
-    pbar = ProgressBar()
-    ydl_opts['progress_hooks'] = [pbar.progress_hook]
-
-    try:
-        print("🔎 Vérification de l'URL...")
-        start = time.time()
-        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-            info = ydl.extract_info(url, download=True)
-        end = time.time()
-
-        print(f"\n🎬 Titre : {info.get('title', 'N/A')}")
-        print(f"⏱ Durée : {info.get('duration', 0)} secondes")
-        print(f"📁 Fichier sauvegardé : {ydl.prepare_filename(info)}")
-        print(f"⏳ Temps total : {round(end - start, 2)} secondes")
-
-    except yt_dlp.utils.DownloadError as e:
-        print(f"❌ Erreur de téléchargement : {e}")
-    except KeyboardInterrupt:
-        print("\n❌ Téléchargement interrompu par l'utilisateur.")
-    except Exception as e:
-        print(f"❌ Erreur inattendue : {e}")
+    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+        ydl.download([url])
 
 if __name__ == "__main__":
-    try:
-        url = input("🔗 Entrez l'adresse du lien YouTube : ").strip()
-        if not url.startswith("http"):
-            print("❌ URL invalide.")
-            sys.exit(1)
-        download_video(url)
-    except KeyboardInterrupt:
-        print("\n❌ Interruption manuelle. Bye !")
+    url = input("👉 Entre l'URL YouTube : ").strip()
+
+    print("\nOptions de téléchargement :")
+    print("[A] Choisir un format manuellement")
+    print("[B] Meilleure qualité (vidéo+audio combinés, pas besoin de ffmpeg)")
+    print("[C] Audio seulement (MP3, nécessite ffmpeg si tu veux mp3)")
+
+    mode = input("\nChoisis A, B ou C : ").strip().lower()
+
+    if mode == "a":
+        title = list_formats(url)
+        fmt = input("\nEntre l'ID du format à télécharger : ").strip()
+        download_video(url, fmt)
+    elif mode in ["b", "c"]:
+        download_video(url, mode)
+    else:
+        print("⚠️ Choix invalide, abandon.")
