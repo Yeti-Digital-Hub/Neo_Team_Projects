@@ -1,0 +1,169 @@
+
+# COMMUNIQUÉ OFFICIEL – LANCEMENT DES PROJETS INDIVIDUELS DE 3 MOIS
+
+Salut Alex 👋🏽
+
+Avant tout, félicitations à chacun d’entre vous pour votre implication et votre progression jusqu’ici.Vous avez prouvé votre sérieux, votre curiosité et votre capacité à a évoluer.
+
+Aujourd’hui, une nouvelle phase commence :
+
+> Vous allez vous lancer dans un projet individuel de 3 mois destiné à affiner vos hard skills et à renforcer vos soft skills à travers une expérience complète, proche d’un vrai cycle de conception.
+
+---
+
+## 🎯 Objectif global
+
+L’objectif est de vous permettre de :
+
+- Consolider vos compétences techniques (hard skills),
+
+- Développer votre autonomie et votre capacité à résoudre des problèmes concrets,
+
+- Travailler votre sens de la communication et de l’écoute à travers des retours utilisateurs,
+
+Et prouver que vous êtes prêts à poursuivre l’aventure avec YETI dès le début de l’année prochaine.
+
+---
+
+## 🧩 Étapes à réaliser avant le démarrage
+
+Avant toute ligne de code, chaque membre devra passer par une phase d’analyse et de préparation structurée.C’est une étape obligatoire, car elle fait partie intégrante de votre apprentissage.
+
+Voici les étapes à suivre :
+
+1. Choisir une idée de projet (libre ou en concertation avec votre Mentor, si besoin).
+
+2. Identifier le problème ou le besoin utilisateur que ce projet résout.
+
+> 💡 Par exemple : un utilisateur veut suivre ses dépenses, trouver un service, gérer ses tâches, etc.
+
+3. Aller sur le terrain (physiquement ou virtuellement) pour échanger avec au moins 10 à 15 utilisateurs potentiels.
+
+Écoutez leurs difficultés, leurs attentes, leurs frustrations.
+
+- Notez les points récurrents.
+
+- Reformulez pour bien comprendre le vrai besoin.
+
+Nb : Cela peut être un projet non latent , ce qui veut dire que vous n'êtes pas obligé de consulter des utilisateurs mais voulez plutôt travailler un skills en particulier parmi ceux qui seront cité , l'objectif étant toujours de répondre à une problématique précise 
+
+4. Rédiger une courte synthèse (1 page max) présentant :
+
+- Le problème observé,
+
+- Le profil des utilisateurs interrogés,
+
+- Les fonctionnalités clés à développer.
+
+5. Soumettre cette synthèse sur le repo (dans un sous-dossier /notes_recherche/) avant de commencer la conception technique.
+
+
+🎯 Cette phase de recherche vous aidera à développer votre sens de la communication, de l’analyse et de l’empathie utilisateur, des soft skills clés pour tout bon concepteur.
+
+---
+
+## 🧠 Technologies à explorer
+
+Chaque projet devra obligatoirement vous permettre de renforcer au moins une ou plusieurs des domaines suivants :
+
+🌍 Géolocalisation
+
+💬 Chatbot / Automatisation conversationnelle
+
+🎨 Animation d’interface utilisateur
+
+ 📍 Realisation de MockUp visuel ( obligatoire )
+
+📄 Prévisualisation et génération de fichiers PDF
+
+📱 Web responsive design ( obligatoire )
+
+💳 Intégration d’une API de paiement
+
+✅ Tests et qualité du code
+
+🧰 Outils de versionnement (Git, GitHub)
+
+🔐 Authentification
+
+🧾 Validation avancée de formulaires
+
+---
+
+## ⚙️ Soft Skills à mettre en avant
+
+Chaque projet devra intégrer au moins 3 soft skills, parmi les suivantes :
+
+- Communication & écoute active (durant la phase utilisateur)
+
+- Gestion du temps et organisation personnelle
+
+- Créativité et esprit d’innovation
+
+- Rigueur et sens du détail
+
+- Résolution de problème
+
+- Documentation claire et professionnelle
+
+- Autonomie et sens de l’engagement
+
+- Travail collaboratif (même dans un contexte individuel, via feedback ou peer review)
+
+💡 Exemple :
+
+> Si ton projet est une plateforme de réservation, tu pourrais intégrer :
+
+Une API de géolocalisation,
+
+Un système d’authentification,
+
+Une interface animée et responsive,
+Et côté soft skills : écoute active, rigueur, documentation claire.
+
+---
+
+## 📂 Livraison & Organisation
+
+Le projet devra être déposé dans le repo principal de l’équipe :
+
+Neo_team_projets/Alex/Projet_Final_2025/
+
+Le dossier doit contenir :
+
+- Un README.md clair et structuré,
+
+- Le code source,
+
+- Un dossier /notes_recherche/ avec la synthèse utilisateur,
+
+Et tout autre élément utile (captures, mini rapport, productBacklog , etc.).
+
+---
+
+## 🗓️ Durée & Échéance
+
+🕒 Durée totale : 3 mois
+
+📅 Clôture prévue : [20 Décembre 2025]
+
+Cette phase est déterminante : elle décidera de la sélection finale parmi ceux qui poursuivrons l’aventure YETI 2026.
+
+---
+
+💬 Communication et accompagnement
+
+Pour toute question, aide méthodologique ou validation d’idée,
+➡️ le groupe WhatsApp de la Neo reste ouvert et disponible.Vous pouvez aussi contacter/consulter directement le reste de l'équipe pour améliorer vos idées.
+
+---
+
+## 🔥 Mot des Mentors
+
+Ce projet n’est pas une simple mission : c’est une mise à l’épreuve de votre maturité technique, de votre esprit d’analyse et de votre engagement personnel.
+Soyez créatifs, curieux et disciplinés.
+Apprenez à écouter les utilisateurs, car la technologie n’a de valeur que lorsqu’elle résout un vrai problème. On ne vous demande pas de réaliser le prochain Facebook ou WhatsApp mais tout simplement réfléchir a un projet minimalist et réaliste 
+
+> « Le code, c’est la logique. Mais la valeur, c’est la compréhension humaine. » 💡
+
+---
