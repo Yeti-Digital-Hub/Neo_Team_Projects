@@ -1,0 +1,5 @@
+
+
+# Ignorer le fichier de connexion à la bd avec mes identifiant
+config/config.php
+

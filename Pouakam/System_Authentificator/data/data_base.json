@@ -1,0 +1,27 @@
+[
+    [
+        "darc@yahoo.com",
+        "darc1234",
+        "$2y$12$yZYItakzmfCVyN1zbfmDx.wAS84uBV0yc3x4oqfN5ZoBazm0RuRda"
+    ],
+    [
+        "backend@gmail.com",
+        "1234",
+        "$2y$12$yp6NEgMiIgk469V7WJUlmewMsKFB01js9CJCMR.qFWZwN.GlAEUPq"
+    ],
+    [
+        "alice@example.com",
+        "alice1234",
+        "$2y$12$DuQfCu1pu3uK867fLWrP2.lAKwVYAhp\/Lol1ucp6nJfyDyTvVJR86"
+    ],
+    [
+        "bob@example.com",
+        "bobsecure",
+        "$2y$12$MJeJzWGHg2t89A3EzjocUOBVdPy9v2TkIy6WimbpoQuI7yW.QapXi"
+    ],
+    [
+        "caroline@example.com",
+        "caropasword2025",
+        "$2y$12$Ljwoha41THRvK4BAWQxvou9pmzF25h1iNw1JuTJwkWu1HuPLFQYOe"
+    ]
+]

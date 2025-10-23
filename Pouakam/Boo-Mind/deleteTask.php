@@ -8,7 +8,7 @@
             storeTasks($_SESSION['taches']);
             // Redirection pour éviter la suppression multiple si on recharge la page
             header("Location: " . strtok($_SERVER["REQUEST_URI"], '?'));
-            exit();
+            exit;
         }
     }
 ?>
