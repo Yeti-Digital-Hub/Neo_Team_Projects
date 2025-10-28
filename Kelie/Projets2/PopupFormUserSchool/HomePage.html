@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-Up Formulaire</title>
+    <link rel="stylesheet" href="BackgroundCSS.css">
+</head>
+<body>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Logo</a>
+                    <ul>
+                        <li><a href="#">Voir plus sur nos programmes et services</a></li>
+                        <li><a href="#">Lien2</a></li>
+                        <!--li><a href="#">Lien3</a></li>
+                        <li><a href="#">Lien4</a></li-->
+                        <li>
+                            <button class="btn" id="displayform">Se Connecter</button>
+                        </li>
+                    </ul>                      
+            </nav>
+            <section>
+                <div class="sec-container">
+                    <div class="form-wrapper"><!--form-wrapper permet de regrouper le formulaire dans un seul bloc, l'organiser et styliser-->
+                        <div class="card">
+                            <div class="card-header">
+                                     <div class="form-header active" id="forLogin">Se Connecter</div>
+                                     <div class="form-header" id="forRegister">S'inscrire</div>
+                            </div>
+                            <div class="card-body" id="formContainer">
+                                     <form id="formLogin" action="" method="post" >
+                                             <input type="text" class="form-control" placeholder="Entrez votre nom complet"/>
+                                             <input type="password" class="form-control" placeholder="Mot de passe"/>
+                                             <button class="formButton">Connexion</button>
+                                     </form>
+                                     <form id="formRegister" class="toggleform">
+                                             <input type="text" class="form-control" placeholder="@utilisateur"/>
+                                             <input type="password" class="form-control" placeholder="@Mot de passe"/>
+                                             <input type="password" class="form-control" placeholder="@Confirmer mot de passe"/>
+                                    <!--input type="text" class="form-controle" placeholder="Entrez votre prénom"-->
+                                    <!--input type="date" class="form-controle" choisir le jour/mois/année de naissance-->
+                                    <!--input type="sex" class="form-controle" choisir son sexe-->
+                                    <!--input type="text" class="form-controle" placeholder="Entrez votre niveau scolaire">
+                                    <input type="text" class="form-controle" placeholder="Entrez votre Spécialité"-->
+                                             <button class="formButton">Inscription</button>
+                                     </form>
+                            </div>
+                            </div>
+                        </div>
+
+                    </div>
+            </section>
+        </div>
+
+        <script src="TraitementJS.js">
+
+        </script>     
+        
+</body>
+</html>
