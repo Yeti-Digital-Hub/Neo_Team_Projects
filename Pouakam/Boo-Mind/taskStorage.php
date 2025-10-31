@@ -10,15 +10,20 @@
     //fonction pour le stockage des taches...
     function storeTasks($tasks) {
         $tasks = json_encode($tasks, JSON_PRETTY_PRINT);
-        file_put_contents('dataBase.json', $tasks);
+        file_put_contents("dataBase.json", $tasks);
     }
 
     // initilisation de la variable $_SESSION['taches']...
-    if(file_exists('dataBase.json')) {
-        $_SESSION['taches'] = json_decode(file_get_contents('dataBase.json'), true);
-    } else{
-        $_SESSION['taches'] = array();
-    }
+
+        if(file_exists("dataBase.json"))
+        {
+            $_SESSION['taches'] = json_decode(file_get_contents("dataBase.json"), true);
+        }
+        else
+        {
+            $_SESSION['taches'] = [];
+        }
+
     
     // filtrage du champs de texte de la tache et ajout des taches dans ma base de donnée (dataBase.json)...
     if(isset($_POST['addTaskBtn'])) {

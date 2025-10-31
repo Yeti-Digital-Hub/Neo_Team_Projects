@@ -65,7 +65,7 @@ Chaque projet de Pouakam est rangé dans un **sous-dossier propre**, avec l’ob
 
 - 🎯 L’objectif du projet  
 - 🧰 Les technologies utilisées  
-- 🛠️ Les instructions pour exécuter le projet  
+- 🛠️ Les instructions pour exécuter le projet 
 - 👤 Les membres impliqués  
 
 ---

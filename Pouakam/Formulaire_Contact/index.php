@@ -1,3 +1,6 @@
+<?php
+    require_once('../Debug.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -6,12 +9,19 @@
         <title>Formulaire Contact</title>
         <!-- importation de la biliothèque bootstrap-icons...-->
         <link rel="stylesheet" href="assets/icons/bootstrap-icons.css">
-        <link rel="stylesheet" href="assets/Folder_style/style.css">
+        <link rel="stylesheet" href="files_style/style-index.css?v=1.1">
     </head>
     <body>
+        <header class="header">
+            <div class="dashboard-title"><i class="bi bi-facebook"></i></div>
+            <div class="admin-info">
+                <div class="avatar">U</div>
+                <div class="admin-name">Utilisateur</div>
+            </div>
+        </header>
         <!-- Logique du système...-->
         <?php
-            require_once("includes/traitement-data-form.php");
+            require_once('includes/traitement-data-form.php');
         ?>
         <!-- formulaire de contact...-->
         <form action="#" method="post">
@@ -25,11 +35,6 @@
                     <div class="group">
                         <label for="label-name">Name</label>
                         <input type="text" name="name" id="label-name" placeholder="Enter your name" autocomplete="off">
-                        <i class="bi bi-person"></i>
-                    </div>
-                    <div class="group">
-                        <label for="label-surname">Surname</label>
-                        <input type="text" name="surname" id="label-surname" placeholder="Enter your surname" autocomplete="off">
                         <i class="bi bi-person"></i>
                     </div>
                     <div class="group">

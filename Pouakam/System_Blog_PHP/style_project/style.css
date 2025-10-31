@@ -1,0 +1,309 @@
+:root {
+    --bodyBgcolor: rgb(17, 17, 36);
+    --testMain: #fff;
+    --colorHover: rgba(241, 211, 79, 0.15);
+    --titleColor: #f1dc4f;
+    --bgThematique: rgba(37, 37, 75, 0.9);
+    --borderHeaderThematique: #383d4e;
+    --textThematique: rgba(117, 117, 187, 0.9);
+    --borderColorHover: rgba(50, 135, 233, 0.842);
+    --weightLabel: 300;
+    --sizeLabel: 1.3rem;
+}
+
+/*
+    mise en forme du fichier index.php
+*/
+html, body {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--bodyBgcolor);
+    color: var(--testMain);
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden; 
+}
+header {
+    width: 100%;
+    display: flex;
+    gap: 500px;
+    border-bottom: 1px solid var(--borderHeaderThematique);
+    padding: 20px;
+    overflow: hidden;
+}
+.title-blog {
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    font-size: 2rem;
+    font-weight: 900;
+    position: relative;
+    bottom: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+}
+.title-blog span {
+    color: var(--titleColor);
+    font-size: 3.2rem;
+    font-weight: 900;
+    position: relative;
+    top: 6px;
+}
+header nav ul {
+    display: flex;
+    gap: 20px
+}
+header nav ul {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+header nav li {
+    list-style-type: none;
+    float: left;
+}
+header nav li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 30px;
+    font-weight: 600;
+    font-size: 1.1rem; 
+    color: var(--testMain);
+}
+nav li a.active {
+    border-bottom: 4px solid var(--titleColor);
+    background-color: var(--colorHover);
+    border-radius: 6px;
+}
+nav li a.active {
+    padding: 15px 30px 20px 30px;
+}
+header nav li a i {
+    margin-right: 10px;
+}
+.card-thematique-blog {
+    max-width: 100%;
+    margin-bottom: 60px;
+    background-color: var(--bgThematique);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid var(--borderHeaderThematique);
+}
+.thematique-blog {
+    max-width: 90%;
+    margin: 0px auto;
+    font-size: 1.7rem;
+    font-weight: 200;
+    word-spacing: 7px;
+    color: var(--textThematique);
+}
+.card-thematique-blog .thematique-blog .capital-letter {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.card-thematique-blog .thematique-blog .name-boogie {
+    font-size: 2.1rem;
+    font-weight: 900;
+    font-style: normal;
+    text-shadow: 2px 2px 20px var(--titleColor);
+    color: var(--titleColor);
+}
+.view-posts {
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 40px;
+    margin: 0px auto;
+    margin-top: 100px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--testMain);
+}
+.view-posts .card-posts {
+    border: 2px solid var(--borderHeaderThematique);
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 750px;
+}
+.view-posts .card-posts .card-img-posts {
+    border: 1px solid var(--borderColorHover);
+    background-color: var(--bgThematique);
+    border-radius: 8px;
+    width: 450px;
+    height: 250px;
+    margin: 0px auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.view-posts .card-posts .card-img-posts .img-posts {
+    width: 170px;
+    margin: 40px 0px 40px 0px;
+    height: 150px;
+}
+.view-posts .card-posts .title-post {
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: var(--textThematique);
+    text-align: center;
+    margin: 0px;
+    padding: 10px 0px;
+}
+.view-posts .data-posts {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.view-posts .card-posts .data-autor-posts {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    font-weight: 200;
+    color: var(--textThematique);
+}
+.view-posts .card-posts .data-autor-posts .autor {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-right: 9px;
+}
+.view-posts .card-posts .content-post {
+    font-size: 1.2rem;
+    font-weight: 200;
+    line-height: 1.5;
+    color: var(--testMain);
+    padding: 0px 20px;
+    text-align: justify;
+}
+footer {
+    margin-top: 100px;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bgThematique);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+footer p {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: var(--textThematique);
+}
+footer p.name-boogie {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--titleColor);   
+    text-shadow: 2px 2px 20px var(--titleColor);
+}
+
+/*
+    mise en forme du fichier add_article.php
+*/
+.main-add-article {
+    margin: 70px 200px 70px 200px ;
+}
+.main-add-article h2 {
+    margin: 0px;
+    font-size: 40px;
+    color: var(--textThematique);
+    font-weight: bolder;
+    cursor: pointer;
+}
+.main-add-article .hr-publier-article {
+    margin-top: 5px;
+    margin-bottom: 50px;
+    border: 1px solid var(--borderColorHover);
+    font-weight: 100;
+}
+.main-add-article .form-add-article {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+.main-add-article .form-add-article .card-title-article {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: var(--weightLabel);
+    font-size: var(--sizeLabel); 
+    color: var(--textThematique);
+}
+.main-add-article .form-add-article .card-contenu-article {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: var(--weightLabel);
+    font-size: var(--sizeLabel);
+    color: var(--textThematique);
+}
+.main-add-article .form-add-article .card-img-article {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: var(--weightLabel);
+    font-size: var(--sizeLabel); 
+    color: var(--textThematique);
+}
+.main-add-article .form-add-article .card-title-article input {
+    width: 50%;
+    padding: 15px;
+    background-color: var(--bodyBgcolor);
+    color: var(--testMain);
+    font-weight: var(--weightLabel);
+    font-size: var(--sizeLabel);
+    border-radius: 7px;
+    border: 1px solid var(--borderColorHover);
+}
+.main-add-article .form-add-article .card-title-article input:hover {
+    border: 1px solid var(--borderColorHover);
+    box-shadow: 2px 2px 20px var(--borderColorHover);
+}
+.main-add-article .form-add-article .card-contenu-article textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    background-color: var(--bodyBgcolor);
+    color: var(--testMain);
+    font-weight: var(--weightLabel);
+    font-size: var(--sizeLabel);
+    border-radius: 7px;
+    border: 1px solid var(--borderColorHover);
+    resize: none;
+}
+.main-add-article .form-add-article .card-contenu-article textarea:hover {
+    border: 1px solid var(--borderColorHover);
+    box-shadow: 2px 2px 20px var(--borderColorHover);
+}
+.main-add-article .form-add-article .card-img-article input {
+    width: 50%;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.842);
+    color: #000;
+    font-weight: var(--weightLabel);
+    font-size: 1.2rem;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.main-add-article .card-btn-publier .publier-article {
+    width: 15%;
+    background-color: var(--borderColorHover);
+    border: none;
+    color: var(--testMain);
+    padding: 15px;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border-radius: 7px;
+}
+.main-add-article .card-btn-publier .publier-article:hover {
+    background-color: rgb(85, 165, 255);
+    box-shadow: 2px 2px 20px var(--borderColorHover);
+}
