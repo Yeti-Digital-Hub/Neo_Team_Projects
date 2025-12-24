@@ -1,0 +1,13 @@
+:root {
+    /* Brand Colors Palettes */
+    --primary-color: #F6BD60;
+    --secondary-color: #476EA1;
+    --title-text-color: #212121;
+    --body-text-color: #3B3E45;
+    --background-color: #FFFFFF;
+    --bg-darken: #F8F8F8;
+    --shadow-color: #848484;
+    --focus-color: #643296;
+    --stroke-color: #7B61FF;
+    --focus-btn-color: #FF37BB;
+}
