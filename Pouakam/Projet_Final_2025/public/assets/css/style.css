@@ -1,5 +1,5 @@
+/* Brand Colors Palettes */
 :root {
-    /* Brand Colors Palettes */
     --primary-color: #F6BD60;
     --secondary-color: #476EA1;
     --title-text-color: #212121;
@@ -11,3 +11,14 @@
     --stroke-color: #7B61FF;
     --focus-btn-color: #FF37BB;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+
+
+
