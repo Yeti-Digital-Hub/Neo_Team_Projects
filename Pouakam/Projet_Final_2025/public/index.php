@@ -3,11 +3,11 @@
     session_start();
 
     require_once('../Debug.php');
+    require_once('../app/config/function_project.php');
     require_once('../app/controllers/controller_login.php');
     require_once('../app/controllers/controller_register.php');
     require_once('../app/controllers/controller_dashboard_student.php');
     require_once('../app/controllers/controller_forget_password.php');
-
     
     $action = $_GET['action'] ?? 'login';
 

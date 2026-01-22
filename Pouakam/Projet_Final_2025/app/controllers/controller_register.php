@@ -21,20 +21,33 @@
                     
                     if(strlen($password) >= 8) {
 
-                        $passwordUser = password_hash($password, PASSWORD_DEFAULT);
+                        //check the form password (Regex)
+                        if(preg_match('/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\w_]).{8,}$/', $password)){
 
-                        $logiRegisteUser = logic_register_user($username, $email, $passwordUser);
+                            $passwordUser = password_hash($password, PASSWORD_DEFAULT);
 
-                        if($logiRegisteUser['success']) {
-                            $success_msg = $logiRegisteUser['save'];
+                            $logiRegisteUser = logic_register_user($username, $email, $passwordUser);
 
-                        } else {
-                            $error_msg = $logiRegisteUser['error'];
+                            if($logiRegisteUser['success']) {
+                                $success_msg = $logiRegisteUser['save'];
+
+                            } else {
+                                $error_msg = $logiRegisteUser['error'];
+                            }
+
+                        }else {
+                            $error_mdp = [
+                                1,
+                                $username,
+                                $email,
+                                $password,
+                                $confirmPassword
+                            ];
                         }
 
                     } else {
                         $error_mdp = [
-                            1,
+                            2,
                             $username,
                             $email,
                             $password,
@@ -43,7 +56,7 @@
                     }
                 } else {
                     $error_mdp = [
-                        2,
+                        3,
                         $username,
                         $email,
                         $password,

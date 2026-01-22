@@ -1,21 +1,6 @@
 <?php
 
     require_once('../app/models/model_login.php');
-
-        
-    /**
-     * filter email and password enter by user
-     *
-     * @param  string $data enter of user
-     * @return string $data enter of user filter
-     */
-    function filter_data($data) {
-        $data = htmlspecialchars($data);
-        $data = stripslashes($data);
-        $data = trim($data);
-
-        return $data;
-    }
     
     /**
      * this function is the controller of the sigin in

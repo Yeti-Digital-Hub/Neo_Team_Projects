@@ -5,7 +5,7 @@
 <main>
     <?php if (!empty($error_msg)): ?>
         <div class="alert alert-danger">
-            <?= htmlspecialchars($error_msg) ?>
+            <?= htmlspecialchars_decode($error_msg) ?>
         </div>
     <?php endif; ?>
     <h1>Sign In</h1>
@@ -27,7 +27,7 @@
         <p>D’ont have account, create your account here <a href="index.php?action=register">Sign up</a></p>
     </section>
 </main>
-<script src="assets/js/script_show_password.js"></script>
+<script src="assets/js/script_show_password_login.js"></script>
 <?php 
     $content = ob_get_clean(); 
     require_once('layout.php'); 
