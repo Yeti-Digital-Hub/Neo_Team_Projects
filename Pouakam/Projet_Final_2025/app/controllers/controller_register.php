@@ -22,7 +22,7 @@
                     if(strlen($password) >= 8) {
 
                         //check the form password (Regex)
-                        if(preg_match('/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\w_]).{8,}$/', $password)){
+                        if(preg_match('/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/', $password)){
 
                             $passwordUser = password_hash($password, PASSWORD_DEFAULT);
 
