@@ -8,6 +8,7 @@
     require_once('../app/controllers/controller_register.php');
     require_once('../app/controllers/controller_dashboard_student.php');
     require_once('../app/controllers/controller_forget_password.php');
+    require_once('../app/controllers/controller_reset_password.php');
     
     $action = $_GET['action'] ?? 'login';
 
@@ -28,6 +29,9 @@
             break;
         case 'forget_password' :
             forget_password();
+            break;
+        case 'reset_password' :
+            reset_password();
             break;
         default :
             echo "Page introuvable";

@@ -1,6 +1,15 @@
 <?php 
     $title = "Connexion"; 
     ob_start(); 
+
+    if (isset($_GET['reset']) && $_GET['reset'] === 'success') {
+        echo "
+            <div class='alert alert-success'>
+                Your password has been successfully reset. You can now log in with your new password.
+            </div>
+            ";
+    }
+
 ?>
 <main>
     <?php if (!empty($error_msg)): ?>

@@ -35,7 +35,7 @@
                                 $error_msg = $logiRegisteUser['error'];
                             }
 
-                        }else {
+                        } else {
                             $error_mdp = [
                                 1,
                                 $username,

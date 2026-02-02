@@ -11,13 +11,21 @@
     --stroke-color: #7B61FF;
     --focus-btn-color: #FF37BB;
 }
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
+
+
+
+
+
+
+
+
+
 
 
 
