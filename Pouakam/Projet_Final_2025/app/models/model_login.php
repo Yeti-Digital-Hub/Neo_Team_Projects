@@ -33,7 +33,7 @@
 
         return [
             'success' => false, 
-            'error' => 'Please check your email and/or password (incorrect login details). *'
+            'error' => 'Veuillez vérifier votre email et/ou votre mot de passe (identifiants de connexion incorrects). ❌❌'
         ];
         
     }

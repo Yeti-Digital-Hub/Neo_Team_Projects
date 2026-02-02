@@ -8,13 +8,6 @@
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
-        <!-- Splash Screen 
-        <?php if (!empty($showSplash)) : ?>
-                <div id="splash">
-                    Mon splash screen…
-                </div>
-        <?php endif; ?>-->
-
         <?= $content ?>
     </body>
 </html>

@@ -18,15 +18,203 @@
     font-family: "Inter", sans-serif;
 }
 
+/* style of login form */
+
+/* Conteneur formulaire */
+.form-group label {
+    font-size: 0.95rem;
+    color: #3B3E45;
+    margin-bottom: 4px;
+}
+
+.login-page {
+    padding: 1rem; /* marge sur mobile */
+    background-color: var(--bg-darken);
+}
+
+.login-card {
+    width: 100%;
+    max-width: 550px; /* desktop */
+    border-radius: 12px;
+    background-color: var(--background-color);
+}
+
+/* Ligne d’input */
+.input-line {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #A9A9A9;
+    padding: 6px 0;
+}
+
+/* Icônes */
+.input-icon {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* Input */
+.input-line input {
+    border: none;
+    outline: none;
+    flex: 1;
+    text-indent: 15px;
+    font-size: 0.95rem;
+    background: transparent;
+    color: #3B3E45;
+}
+
+/* Bouton œil */
+.toggle-password {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 10px;
+}
+
+/* Focus */
+.input-line:focus-within {
+    border-bottom-color: var(--primary-color);
+}
+
+/*btn*/
+.form-actions .btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    background-color: #f6b756;
+    color: #fff;
+}
+
+/*btn forgot-password*/
+.forgot-password a {
+    background: none;
+    border: none;
+    color: var(--secondary-color);
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-decoration: none;
+    padding: 0;
+}
+
+.input-line {
+    width: 100%;
+}
+
+.input-line input {
+    min-width: 0; /* IMPORTANT pour flexbox mobile */
+}
+
+@media (max-width: 576px) {
+    .form-actions .btn {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+}
+
+.login-footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+.login-footer p {
+    margin-bottom: 0.3rem;
+}
+
+.register-link {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+@media (max-width: 360px) {
+    .login-card {
+        padding: 1.2rem !important;
+    }
+
+    .login-header h1 {
+        font-size: 1.4rem;
+    }
+}
+
+.login-footer {
+    margin-top: 3rem;
+}
+
+/* conteneur horizontal */
+.footer-content {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* texte */
+.footer-text p {
+    margin-bottom: 0.2rem;
+    font-size: 0.9rem;
+    color: var(--body-text-color);
+}
+
+.footer-text a {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+
+/* style of register form */
+/* Reset CSS */
+.register-footer {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+.register-footer p {
+    margin-bottom: 0.3rem;
+}
+.register-footer a {
+    margin-bottom: 0.3rem;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+.register h1 {
+    text-align: center;
+}
+.register p {
+    text-align: center;
+    color: var(--body-text-color);
+    margin-bottom: 1.5rem;
+}
 
 
 
-
-
-
-
-
-
-
-
-
+/* style of forget password form */
+/* Conteneur principal */
+.auth-header {
+    background-color: var(--primary-color);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+}
+.auth-header h1 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+@media (max-width: 360px) {
+    .auth-header h1 {
+        font-size: 1.4rem;
+    }
+    .register-footer p {
+        font-size: 1.4rem;
+    }
+}

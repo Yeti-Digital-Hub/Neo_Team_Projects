@@ -12,14 +12,14 @@
         $token = $_GET['token'] ?? null;
 
         if (!$token) {
-            die("Token manquant");
+            die("Token manquant ❌❌");
         }
         $tokenHash = hash('sha256', $token);
 
         $logicResetPassword = logic_reset_password($tokenHash);
 
         if (!$logicResetPassword) {
-            die("Token invalide ou expiré");
+            die("Token invalide ou expiré ❌❌");
         }
 
         // Traitement du formulaire
@@ -83,7 +83,7 @@
                 }
 
             } else {
-                $error_msg = 'Please fill in all fields. *';
+                $error_msg = 'Veuillez remplir tous les champs. ❌❌';
             }
         }
 

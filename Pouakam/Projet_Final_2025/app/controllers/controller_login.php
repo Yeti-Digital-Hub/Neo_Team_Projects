@@ -37,7 +37,7 @@
                             header('Location: index.php?action=dashboard_student');
                             exit();
                         } else {
-                            $error_msg = 'Une erreur est survenu *';
+                            $error_msg = 'Une erreur est survenu ❌❌';
                         }
                     } else {
                         $error_msg = $login['error'];
@@ -46,7 +46,7 @@
                 }
                 
             } else {
-                $error_msg = 'Please fill in all fields. *';
+                $error_msg = 'Veuillez remplir tous les champs. ❌❌';
             }
 
             

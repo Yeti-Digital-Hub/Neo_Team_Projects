@@ -64,7 +64,7 @@
                     ];
                 }
             } else {
-                $error_msg = 'Please fill in all fields. *';
+                $error_msg = 'Veuillez remplir tous les champs. ❌❌';
             }
         }
 

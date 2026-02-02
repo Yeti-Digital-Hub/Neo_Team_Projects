@@ -46,7 +46,7 @@
                 } else {
                     return [
                         'success' => true, 
-                        'message' => 'nous avons envoyé un lien de réinitialisation de mot de passe par email 🎉'
+                        'message' => 'nous avons envoyé un lien de réinitialisation de mot de passe par email ✅✅'
                     ];
                 }
             }
@@ -54,7 +54,7 @@
         else {
             return [
                 'success' => false, 
-                'error' => 'No account found with that email address.'
+                'error' => 'Aucun compte n\'a été trouvé avec cette adresse e-mail. ❌❌'
             ];
         }
     }

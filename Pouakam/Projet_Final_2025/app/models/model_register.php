@@ -25,7 +25,7 @@
         if($query->fetch() > 0) {
             return [
                 'success' => false,
-                'error' => 'Sorry, this email address already exists. *'
+                'error' => 'Désolé, cette adresse e-mail existe déjà. *'
             ];
         } else {
             //insert user informations in data base
@@ -35,12 +35,12 @@
             if($conn) {
                 return [
                     'success' => true,
-                    'save' => 'Information successfully saved, click here to login. *'
+                    'save' => 'Informations enregistrées avec succès, cliquez ici pour vous connecter. ✅✅'
                 ];
             } else {
                 return [
                     'success' => false,
-                    'error' => 'An error occurred while saving your information, please try again. *'
+                    'error' => 'Une erreur est survenue lors de l\'enregistrement de vos informations, veuillez réessayer. ❌❌'
                 ];
             }
         }

@@ -27,7 +27,7 @@
         $mail->Port = 587;
 
         // Sender information
-        $mail->setFrom('backendvanelle@gmail.com', 'Backend Vanelle');
+        $mail->setFrom('backendvanelle@gmail.com', 'Menu Link');
 
         // Multiple recipient email addresses and names
         // Primary recipients
