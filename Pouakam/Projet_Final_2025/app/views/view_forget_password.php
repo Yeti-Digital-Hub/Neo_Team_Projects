@@ -3,28 +3,26 @@
     ob_start();
 ?>
 <main class="login-page d-flex align-items-center justify-content-center min-vh-100">
-
     <section class="login-card">
     <!-- HEADER -->
-        <header class="auth-header py-5">
+        <header class=" container auth-header py-5">
             <h1 class="text-light">Mot de passe oublié ?</h1>
             <p class="auth-subtitle">
                 Ne vous inquiéter pas cela peut arriver a n’importe qui 
             </p>
         </header>
-
         <!-- MESSAGES BACKEND -->
         <section class="px-4 px-md-5 pt-4 pt-md-5">
             <?php if (!empty($error_msg)): ?>
-                <div class="alert alert-danger">
-                    <?= htmlspecialchars_decode($error_msg) ?>
-                </div>
+            <div class="alert alert-danger">
+                <?= htmlspecialchars_decode($error_msg) ?>
+            </div>
             <?php endif; ?>
 
             <?php if (!empty($success_msg)): ?>
-                <div class="alert alert-success">
-                    <?= htmlspecialchars_decode($success_msg) ?>
-                </div>
+                    <div class="alert alert-success">
+                        <?= htmlspecialchars_decode($success_msg) ?>
+                    </div>
             <?php endif; ?>
         </section>
 

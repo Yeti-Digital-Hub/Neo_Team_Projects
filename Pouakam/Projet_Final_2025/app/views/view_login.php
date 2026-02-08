@@ -15,16 +15,16 @@
                     ";
             }
         ?>
-        <!-- title login -->
-        <header class="login-header mt-0 mb-4">
-            <h1 class="text-dark">Connexion</h1>
-        </header>
         <!-- error message (backend) -->
         <?php if (!empty($error_msg)): ?>
             <div class="alert alert-danger" role="alert">
                 <?= htmlspecialchars_decode($error_msg) ?>
             </div>
         <?php endif; ?>
+        <!-- title login -->
+        <header class="login-header mt-0 mb-4">
+            <h1 class="text-dark">Connexion</h1>
+        </header>
 
         <!-- Form of login-->
         <form action="" method="post" autocomplete="off" class="login-form">

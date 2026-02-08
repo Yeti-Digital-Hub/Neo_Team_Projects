@@ -3,28 +3,18 @@
     ob_start();
 ?>
 <main class="login-page d-flex align-items-center justify-content-center min-vh-100">
-
     <section class="login-card p-4 p-md-5">
-
-        <!-- TITRE -->
-        <header class="register mb-4">
-            <h1 class="text-dark">Inscription</h1>
-            <p class="text-muted">Créer un compte</p>
-        </header>
-
         <!-- MESSAGES BACKEND -->
         <?php if (!empty($error_msg)): ?>
             <div class="alert alert-danger" role="alert">
                 <?= htmlspecialchars_decode($error_msg) ?>
             </div>
         <?php endif; ?>
-
         <?php if (!empty($success_msg)): ?>
             <div class="alert alert-success" role="alert">
                 <?= htmlspecialchars_decode($success_msg) ?>
             </div>
         <?php endif; ?>
-
         <?php if (!empty($error_mdp) && $error_mdp[0] == 1): ?>
             <div class="alert alert-danger">
                 Mot de passe invalide (majuscule, minuscule, chiffre, caractère spécial). ❌❌
@@ -38,6 +28,11 @@
                 Les deux mots de passe ne correspondent pas ❌❌.
             </div>
         <?php endif; ?>
+        <!-- TITRE -->
+        <header class="register mb-4">
+            <h1 class="text-dark">Inscription</h1>
+            <p class="text-muted">Créer un compte</p>
+        </header>
 
         <!-- FORMULAIRE -->
         <form action="" method="post" autocomplete="off" class="login-form mt-4">
@@ -91,7 +86,7 @@
 
             <!-- PASSWORD -->
             <div class="mb-3">
-                <label for="password">Mot de passe</label>
+                <label for="passwordInput">Mot de passe</label>
                 <div class="input-line">
                     <span class="input-icon">
                         <!-- SVG password -->
@@ -135,7 +130,7 @@
 
             <!-- CONFIRM PASSWORD -->
             <div class="mb-4">
-                <label for="confirmPassword">Confirmer le mot de passe</label>
+                <label for="confirmPasswordInput">Confirmer le mot de passe</label>
                 <div class="input-line">
                     <span class="input-icon">
                         <!-- SVG password -->

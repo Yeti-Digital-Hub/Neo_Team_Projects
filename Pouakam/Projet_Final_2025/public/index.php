@@ -4,13 +4,14 @@
 
     require_once('../Debug.php');
     require_once('../app/config/function_project.php');
+    require_once('../app/controllers/controller_landing_page.php');
     require_once('../app/controllers/controller_login.php');
     require_once('../app/controllers/controller_register.php');
     require_once('../app/controllers/controller_dashboard_student.php');
     require_once('../app/controllers/controller_forget_password.php');
     require_once('../app/controllers/controller_reset_password.php');
     
-    $action = $_GET['action'] ?? 'login';
+    $action = $_GET['action'] ?? 'landing_page';
 
     /**
      * routing operation (routeur)
@@ -18,6 +19,9 @@
      * @var string $action recover the GET param URL (user action)
      */
     switch($action) {
+        case 'landing_page' :
+            landing_page();
+            break;
         case 'login' :
             login();
             break;
