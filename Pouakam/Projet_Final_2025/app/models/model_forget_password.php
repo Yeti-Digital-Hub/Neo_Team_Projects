@@ -16,7 +16,7 @@
         $conn = connect_db();
 
         // check if the email is exits
-        $stmt = $conn->prepare('SELECT id, name FROM users WHERE email = ?');
+        $stmt = $conn->prepare("SELECT id, name FROM users WHERE email = ? and role = 'student' ");
         $stmt->execute([$email]);
 
         if($stmt->rowCount() >0) {

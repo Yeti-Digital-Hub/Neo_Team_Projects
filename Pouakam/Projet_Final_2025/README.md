@@ -1,7 +1,7 @@
 # Projet Principal : Création d'une application web de gestion de cantine universitaire...
 
 ## 🎯 Objectif Principale: 
-    C'est application web qui digitalise les processus métiers d'une cantine universitaire : Cas de l'ESIGn 
+    C'est application web qui digitalise les processus métiers d'une cantine universitaire : Cas de l'ESIGN 
 
 ## 🖥️ Environnement de travail
     Linux: Ubuntu
@@ -12,7 +12,9 @@
     - CSS
     - BOOTSTRAP 5
     - PHP
+    - JavaScript
     - SQL
+    - Swiper JS
     - SVG(Pour les icons)
     - PHPMailer
     - Composer (pour installation de PHPMailer)

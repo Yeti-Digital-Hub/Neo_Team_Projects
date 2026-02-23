@@ -34,10 +34,10 @@
 
                         // check role before of redirection
                         if($_SESSION['user_role'] == 'student') {
-                            header('Location: index.php?action=dashboard_student');
+                            header('Location: index.php?action=home_page');
                             exit();
                         } else {
-                            $error_msg = 'Une erreur est survenu ❌❌';
+                            $error_msg = 'Désolé ce compte si requiert des droits administrateurs. ❌❌';
                         }
                     } else {
                         $error_msg = $login['error'];

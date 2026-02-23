@@ -7,7 +7,7 @@
     require_once('../app/controllers/controller_landing_page.php');
     require_once('../app/controllers/controller_login.php');
     require_once('../app/controllers/controller_register.php');
-    require_once('../app/controllers/controller_dashboard_student.php');
+    require_once('../app/controllers/controller_home_page.php');
     require_once('../app/controllers/controller_forget_password.php');
     require_once('../app/controllers/controller_reset_password.php');
     
@@ -28,8 +28,8 @@
         case 'register' :
             register();
             break;
-        case 'dashboard_student' :
-            dashboard_student();
+        case 'home_page' :
+            home_page();
             break;
         case 'forget_password' :
             forget_password();

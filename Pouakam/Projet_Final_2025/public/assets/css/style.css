@@ -45,8 +45,8 @@ html, body {
 }
 @media screen and (max-width: 430px) {
     .login-card {
-        position: relative;
-        top: -150px;
+        margin-bottom: 20%;
+        align-self: center;
     }
 }
 /* Ligne d’input */
@@ -220,7 +220,7 @@ html, body {
 }
 .auth-header h1 {
     color: #fff;
-    font-size: 32px;
+    font-size: 30px;
     margin-bottom: 0.5rem;
     font-weight: 700;
 }
@@ -248,7 +248,7 @@ html, body {
 }
 @media screen and (max-width: 430px) {
     .alert {
-        font-size: 0.9rem;
+        font-size: 14px;
     }
 }
 
@@ -431,5 +431,164 @@ html, body {
         padding: 15px;
         border-radius: 5px !important;
     }
-    
+    header .navbar-toggler:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    header .btn-close:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    /*Style homePage*/
+    main .first-block-home {
+        display: flex;
+        justify-content: space-between;
+        color: #424849;
+        font-family: "Instrument Sans", sans-serif;
+    }
+    main .first-block-home .text1-first-block-home {
+        font-size: 32px;
+        font-weight: light;
+    }
+    main .first-block-home .text1-first-block-home span {
+        font-weight: 600;
+    }
+    main .first-block-home .text2-first-block-home {
+        font-size: 13px;
+        color: #C3C4C6;
+        position: relative;
+        bottom: 7px;
+    }
+    main .second-block-home .section1 {
+        display: flex;
+        justify-content: space-between;
+        font-family: "Instrument Sans", sans-serif;
+    }
+    main .second-block-home .section1 h1 {
+        font-size: 32px;
+    }
+    main .second-block-home .section1 ul {
+        list-style: none;
+        display: inline-flex;
+        gap: 20px;
+        font-size: 13px;
+        align-self: center;
+    }
+    main .second-block-home .section1 ul .active {
+        border: 1px solid var(--primary-color);
+        padding: 9px;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+    }
+    main .second-block-home .section1 ul .defauld {
+        position: relative;
+        top: 10px;
+    }
+    main .second-block-home .section2 {
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    main .second-block-home .section2:focus-within {
+        border: 1px solid var(--primary-color);
+    }
+    main .second-block-home .section2 input {
+        border: none;
+        outline: none;
+        width: 100%;
+        text-indent: 10px;
+    }
+    main .second-block-home .section2 span {
+        align-self: center;
+    }
+    main .second-block-home .section2 .filter-icon {
+        cursor: pointer;
+    }
+    main .second-block-home .section3 {
+        display: flex;
+        gap: 9px;
+        justify-content: space-between;
+        font-family: "Instrument Sans", sans-serif;
+        color: #C3C4C6;
+        font-weight: 500;
+    }
+    main .second-block-home .section3 svg {
+        width: 38px;
+        height: 38px;
+    }
+    .custom-tab {
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        align-items: center;
+        width: 87px;
+        height: 87px;
+        border-radius: 10px;
+    }
+    .custom-tab.active {
+        background-color: var(--primary-color); 
+        color: #fff;
+        svg[class="custom-tab-icon"] {
+            fill: #fff;
+            filter: brightness(0) invert(1);
+        }
+    }
+    svg[class="custom-tab-icon"] {
+        fill: #C3C4C6;
+    }
+    .swiper {
+        width: 100%;
+        padding: 40px 0;
+        overscroll-behavior: contain;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        transition: transform 0.4s ease, opacity 0.4s ease;
+    }
+
+    .food-card {
+        width: 90%;
+        max-width: 600px;
+        border-radius: 28px;
+        overflow: hidden;
+        background: white;
+        border: none;
+         /* Ajout d'une ombre pour un effet de profondeur */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .food-card .card-body {
+        display: flex;
+        justify-content: space-between;
+    }
+    .food-card .label svg{
+        position: relative;
+        left: 87%;
+        bottom: 45px;
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 100%;
+    }
+    .food-card img {
+        width: 544px;
+        height: 322px;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+
+    .swiper-slide-active {
+        z-index: 10;
+    }
+
+    .swiper-slide-prev,
+    .swiper-slide-next {
+        z-index: 5;
+    }
 }

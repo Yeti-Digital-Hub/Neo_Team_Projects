@@ -17,7 +17,7 @@
         <?php endif; ?>
         <?php if (!empty($error_mdp) && $error_mdp[0] == 1): ?>
             <div class="alert alert-danger">
-                Mot de passe invalide (majuscule, minuscule, chiffre, caractère spécial). ❌❌
+                Votre mot de passe entrez doit contenir au moins (une majuscule, une minuscule, un chiffre et un caractère spécial). ❌❌
             </div>
         <?php elseif (!empty($error_mdp) && $error_mdp[0] == 2): ?>
             <div class="alert alert-warning">
@@ -25,7 +25,7 @@
             </div>
         <?php elseif (!empty($error_mdp) && $error_mdp[0] == 3): ?>
             <div class="alert alert-danger">
-                Les deux mots de passe ne correspondent pas ❌❌.
+                Les deux mots de passe entrez ne correspondent pas ❌❌.
             </div>
         <?php endif; ?>
         <!-- TITRE -->
@@ -187,6 +187,7 @@
                 Vous avez déjà un compte ?
                 <a href="index.php?action=login">Se connecter</a>
             </p>
+            <a href="index.php?action=landing_page"><-- Retour</a>
         </footer>
 
     </section>
