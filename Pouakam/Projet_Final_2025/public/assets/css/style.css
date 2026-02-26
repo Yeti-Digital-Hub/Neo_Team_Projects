@@ -591,4 +591,25 @@ html, body {
     .swiper-slide-next {
         z-index: 5;
     }
+
+    /*style of container historique*/
+    .container1-historic {
+        position: relative;
+        right: 7px;
+    }
+    .container2-historic {
+        position: relative;
+        bottom: 31px;
+        z-index: 1;
+    }
+    .circle-tick {
+        width: 30px;
+        height: 30px;
+        background-color: #F8F8F8;
+        border-radius: 200px;
+        position: relative;
+        top: 110px;
+        right: 15px;
+        z-index: 100;
+    }
 }
