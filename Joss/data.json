@@ -1,0 +1,43 @@
+{
+    "eleves": {
+        "garcon": [
+            {
+                "nom": "bikoum",
+                "prenom": "joss",
+                "classe": "cp"
+            },
+            {
+                "nom": "onana",
+                "prenom": "juinior",
+                "classe": "cp"
+            }
+        ],
+        "filles": [
+            {
+                "nom": "bikoum",
+                "prenom": "joss",
+                "classe": "cp"
+            },
+            {
+                "nom": "onana",
+                "prenom": "juinior",
+                "classe": "cp"
+            }
+        ],
+        "fille_garcon": "Onana_paul"
+    },
+    "membre_administration": {
+        "enseignant": [
+            {
+                "nom": "Mr bikoum",
+                "prenom": "joss",
+                "classe": "cp"
+            },
+            {
+                "nom": "Mr onana",
+                "prenom": "juinior",
+                "classe": "cp"
+            }
+        ]
+    }
+}
