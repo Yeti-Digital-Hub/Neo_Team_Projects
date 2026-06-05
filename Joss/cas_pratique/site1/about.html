@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>universite website</title>
+</head>
+text_box
+<body>
+    <section class="sub_header">
+        <nav>
+            <a href="index.html"><img src="image/logo.png"></a>
+            <div class="nav_link" id="navlink">
+                <img src="image/fermeture.jpg" class="fas fas-" onclick="hidemenu()">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="block.html">bloG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <img src="image/barre_de_menu.jpg" class="fas fas-" onclick="showmenu()"">
+        </nav>
+        <h1>About Us</h1>
+
+    </section>
+
+    <!------About Us content------------>
+    <section class="About_Us">
+        <div class="row">
+            <div class="About_col">
+                <h1>we are the world's largest University</h1>
+                <p>Chez les escargots tous les individus produisent à la fois des cellules
+                    reproductrices mâles et femelles.Lors de l’accouplement,chaque escargot échange 
+                    ses spermatozoïdes avec ceux de son partenaire grâce à leurs organes reproducteurs.
+                    de cette manière,les ovules des escargots sont fécondés par des spermatozoïdes de l’autre et 
+                    inversement ;chaque individu pond en suite une centaine d’œufs dans la terre.Des jeunes escargots en sortiront trois semaines plus tard
+                </p>
+                <a href="" class="hero_btn    red_btn">EXPLORE NOW</a>
+
+            </div>
+            <div class="About_col">
+                <img src="image/bascket.jpg">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!---footer--->
+
+    <SECTIO class="footer">
+        <h4>About us</h4>
+        <p>
+            L’association HappyDog organise une course de chiens pour collecter des fonds. Les
+            adhérents peuvent inscrire <br>leur chien en déboursant 10€. Les non-adhérents
+        </p>
+        <div class="icons">
+            <img class="fa " src="image/facebook.jpg">
+            <img class="fa " src="image/twiter.jpg">
+            <img class="fa " src="image/telegram.jpg">
+            <img class="fa " src="image/whatsapp.jpg">
+
+
+        </div>
+        <p>Made With <img class="fa" src="image/coeur.jpg"> Easy Tutor</p>
+
+    </SECTIO>
+    <!---java scripts--->
+    <SCRIPT>
+        var navlink = document.getElementById("navlink");
+
+        function hidemenu() {
+            navlink.style.right = "-200px";
+        }
+
+        function showmenu() {
+            navlink.style.right = "0";
+        }
+    </SCRIPT>
+
+</body>
+
+</html>

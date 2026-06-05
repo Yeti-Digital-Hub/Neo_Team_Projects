@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>universite website</title>
+</head>
+
+<body>
+    <section class="sub_header">
+        <nav>
+            <a href="index.html"><img src="image/logo.png"></a>
+            <div class="nav_link" id="navlink">
+                <img src="image/fermeture.jpg" class="fas fas-" onclick="hidemenu()">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="block.html">bloG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+
+                </ul>
+            </div>
+            <img src="image/barre_de_menu.jpg" class="fas fas-" onclick="showmenu()"">
+        </nav>
+        <h1>contact Us</contacth1>
+
+    </section>
+
+    <!---------contact Us--------->
+    <section class="location">
+
+        <!--i class="fa fa_home"><img src="image/oui.jpg" -->
+            <img src="image/CARTE.jpg">
+
+    
+    </section>
+
+    <section class="contact_us">
+        <div class="row">
+            <div>
+                <div class="contact_col">
+                    <div>
+                        <i class="fa fa_home"><img src="image/MAISON.jpg"></i>
+                        <span>
+                            <h5>XYZ Road ABC Building</h5>
+                            <p>bongalore, Karnataka, in</p>
+                        </span>
+                    </div>
+
+                </div>
+                <div class="contact_col">
+                    <div>
+                        <i class="fa fa_TEL"><img src="image/TELEPHONE.jpg"></i>
+                        <span>
+                            <h5>+1 0123456789</h5>
+                            <p>monday to saturday, 10AM to 6MP</p>
+                        </span>
+                    </div>
+
+                </div>
+                <div class="contact_col">
+                    <div>
+                        <i class="fa fa_MESSAEGE"><img src="image/MESSAGE.jpg"></i>
+                        <span>
+                            <h5>otsongmajunior@gmail.com</h5>
+                            <p>Email us your query</p>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contact_col">
+
+                <form action="">
+                    <input type="text" placeholder="enter your name "  trequired>
+                    <input type="text" placeholder="enter your Email Adress "  trequired>
+                    <input type="text" placeholder="enter subject"  trequired>
+                    <textarea rows="8" placeholder=""></textarea>                    
+                    <button type="submit" class="hero_bnt red_bnt">Send message</button>
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+    <!---footer--->
+
+    <SECTIO class="footer">
+        <h4>About us</h4>
+        <p>
+            L’association HappyDog organise une course de chiens pour collecter des fonds. Les
+            adhérents peuvent inscrire <br>leur chien en déboursant 10€. Les non-adhérents
+        </p>
+        <div class="icons">
+            <img class="fa " src="image/facebook.jpg">
+            <img class="fa " src="image/twiter.jpg">
+            <img class="fa " src="image/telegram.jpg">
+            <img class="fa " src="image/whatsapp.jpg">
+
+
+        </div>
+        <p>Made With <img class="fa" src="image/coeur.jpg"> Easy Tutor</p>
+
+    </SECTIO>
+    <!---java scripts--->
+    <SCRIPT>
+        var navlink = document.getElementById("navlink");
+
+        function hidemenu() {
+            navlink.style.right = "-200px";
+        }
+
+        function showmenu() {
+            navlink.style.right = "0";
+        }
+    </SCRIPT>
+
+</body>
+
+</html>
