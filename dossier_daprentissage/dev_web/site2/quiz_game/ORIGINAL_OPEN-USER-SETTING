@@ -1,0 +1,34 @@
+{
+    "editor.inlineSuggest.showToolbar": "never",
+    "editor.inlineSuggest.syntaxHighlightingEnabled": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "python.defaultInterpreterPath": "C:\\Users\\OTT\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "workbench.startupEditor": "false",
+
+
+    
+    "workbench.iconTheme": "eq-material-theme-icons-deepforest",
+    "workbench.colorTheme": "One Dark Pro",
+    "git.openRepositoryInParentFolders": "always",
+    "explorer.confirmDelete": false,
+    "window.menuBarVisibility": "compact",
+    "editor.accessibilitySupport": "on",
+    "git.confirmSync": false,
+    "files.autoSave": "afterDelay",
+    "livePreview.defaultPreviewPath": "c:/Users/OTT/Documents/tuto.html",
+    "editor.formatOnSave": true,
+    "workbench.editor.empty.hint": "hidden",
+    "[php]": {
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+        "editor.formatOnSave": true
+    },
+
+    "php.validate.enable": true,
+    "php.validate.run": "onType",
+    "php.validate.executablePath": "C:/xampp/php/php.exe",
+
+    "intelephense.environment.phpVersion": "8.4",
+    "intelephense.files.maxSize": 5000000,
+    "intelephense.diagnostics.undefinedFunctions": false
+
+}

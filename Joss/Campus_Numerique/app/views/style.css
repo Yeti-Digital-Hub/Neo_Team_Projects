@@ -247,8 +247,13 @@ body {
         padding: 2vh 5vw  2vh 5vw;
         justify-content:space-between;
     }
-    .nav_name p {
+    .nav_name p{
+        margin: 1.64vh;
+        margin-left:0;
+        margin-right: 0;
+        padding-top: ;
         font-size: 5vw;
+        width: 47.6vw;
 
     }
     .nav_name p span{
