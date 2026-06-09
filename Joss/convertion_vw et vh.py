@@ -1,7 +1,7 @@
-px =int(input("entre la dimention a convertir" ))
+px =float(input("entre la dimention a convertir" ))
 unite= input("entrer l'unite vers la quel la dimention doit etre convert")
 
-def convertir(px:int,unite:chr):
+def convertir(px:float,unite:chr):
 
     if unite == "vw":  
             

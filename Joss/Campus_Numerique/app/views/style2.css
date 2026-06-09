@@ -13,7 +13,7 @@ body {
 
 @media (max-width:412px) {
     .Header{
-        height: 520px;
+        height: 57.55vh;
         background-color: #ffffff;
 
     }
@@ -24,7 +24,6 @@ body {
         padding-top: 1.64vh;
         padding-left: 5.8vw;
         padding-right: 5.8vw;
-        background-color: #431f1f;
     }
     .frame_33 p {
         padding-bottom: 0.5vh;
@@ -179,7 +178,7 @@ body {
         top: 6.5645vh;
     }
     
-
+/****************************** Atous_text*************************************/
 
     .text_box{
         display:flex;
@@ -243,30 +242,113 @@ body {
         border-color: #7843CF;
         
     }
-
-    .Header .Carre {
-        margin-top: 20px;
-        position: absolute;
-        right: 50%;                                                                                     
-        left: 50%;
-        width: 9vw;
-        height: 9vw;
+    .Carre{
+        display:grid;
+        grid-template-columns:repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        width:5.83vw;
+        height: 2.63vh;
+        margin-top: 2vh;
+        margin-left: 49%;
+        margin-bottom: 1.8vh;
 
     }
-    .Header .Carre > span:nth-child(1){
+    .Carre > span:nth-child(1){
+        background-color: #000000;
+    } 
+        .Carre > span:nth-child(4){
+        background-color: #7843CF;
+    } 
+    .Atous_text {
+        box-sizing: border-box;
+        width: 100vw;
+        height: 91.47vh;
+        background: #F5F5F5;
+        padding: 8vw;
+        padding-right: 2.4vh;
+        padding-top: 3.2vh;
+        padding-bottom: 3.2vh;
+        display: flex;
+        flex-direction: column;
+        gap: 4.0vh;
+
+    }
+    .Atous{
+        display: flex;
+        flex-direction: column;
+        gap: 3.5vh;
+
+    }
+    .Atous .Text {
+        display: flex;
+        gap: 2.67vw;
+        font-weight: bold;
+
+    }
+    .Atous_text .Intro_atous h1{
+        font-size: clamp(12px, 4.9vw, 20px);
+        width: 71.6vw;
+    }
+    .Intro_atous{
+
+    }
+    .Atous_text .Intro_atous p {
+        font-size: clamp(10px, 3.4vw, 14px);
+        width: 86.65vw;
+        margin-top: 2.4vh;
+        text-align:justify;
+        background-color: #bb1313;
+    }
+    .Atous .Text img {
+        height: 3.28vh;
+        width: 7.28vw;
+
+    }
+    .Atous .Text h2 {
+        padding-top: 1.2vh;
+        height: 2.4vh;
+        font-size: clamp(11px, 4.1vw, 17px);
+    }
+    .Atous .Titre {
+        display: flex;
+        flex-direction: column;
+        gap: 0.9vh;
+    }
+    .Atous .Titre p {
+        font-weight: 100;
+        width: 64.32vw;
+        font-size: clamp(10px, 3.4vw, 14px);
+
+    } 
+    .exemple{
+        width: 200px;
+        height: 100px;
+        background-color: #120c0c;
+        margin-left: 20px;
+    }
+/*--------------------maintant je modifie de maniere particliere chaque titre H2  */
+    .Atous .App_actif img{
+        
+    }
+
+
+
+
+
+  /*  .Header .Carre > span:nth-child(1){
         position: absolute;
         background-color: #000000;
-        width: 4.5vw;
-        height:  4.5vw;
+        width: 4vw;
+        height:  4vw;
     }
     .Header .Carre > span:nth-child(4){
         position: absolute;
         background-color: #7843CF;
-        width:  4.5vw;
-        height:  4.5vw;
+        width:  4vw;
+        height:  4vw;
         right: 0;
         bottom: 0;
-    }
+    }*/
 
 
 }
