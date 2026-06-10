@@ -246,11 +246,16 @@ body {
         display:grid;
         grid-template-columns:repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        width:5.83vw;
-        height: 2.63vh;
         margin-top: 2vh;
         margin-left: 49%;
-        margin-bottom: 1.8vh;
+        width: 5.83vw;
+        background-color: #420f0f;
+        margin-bottom: 99px;
+
+    }
+    .Carre span{
+        width:2.9vw;
+        height: 1.32vh;
 
     }
     .Carre > span:nth-child(1){
@@ -262,7 +267,6 @@ body {
     .Atous_text {
         box-sizing: border-box;
         width: 100vw;
-        height: 91.47vh;
         background: #F5F5F5;
         padding: 8vw;
         padding-right: 2.4vh;
@@ -271,6 +275,8 @@ body {
         display: flex;
         flex-direction: column;
         gap: 4.0vh;
+        background-color: #ca5a5a;
+
 
     }
     .Atous{
@@ -297,7 +303,6 @@ body {
         width: 86.65vw;
         margin-top: 2.4vh;
         text-align:justify;
-        background-color: #bb1313;
     }
     .Atous .Text img {
         height: 3.28vh;
