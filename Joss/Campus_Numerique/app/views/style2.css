@@ -249,7 +249,6 @@ body {
         margin-top: 2vh;
         margin-left: 49%;
         width: 5.83vw;
-        background-color: #420f0f;
         margin-bottom: 99px;
 
     }
@@ -275,7 +274,6 @@ body {
         display: flex;
         flex-direction: column;
         gap: 4.0vh;
-        background-color: #ca5a5a;
 
 
     }
@@ -292,14 +290,14 @@ body {
 
     }
     .Atous_text .Intro_atous h1{
-        font-size: clamp(12px, 4.9vw, 20px);
+        font-size: clamp(12px, 4.9vw, 20px); /*-----------------font size 20px ------------------------*/
         width: 71.6vw;
     }
     .Intro_atous{
 
     }
     .Atous_text .Intro_atous p {
-        font-size: clamp(10px, 3.4vw, 14px);
+        font-size: clamp(10px, 3.4vw, 14px); /*------------------------font size 14px-------------------------*/
         width: 86.65vw;
         margin-top: 2.4vh;
         text-align:justify;
@@ -312,7 +310,7 @@ body {
     .Atous .Text h2 {
         padding-top: 1.2vh;
         height: 2.4vh;
-        font-size: clamp(11px, 4.1vw, 17px);
+        font-size: clamp(11px, 4.1vw, 17px);/*-------------font size 17px--------------*/
     }
     .Atous .Titre {
         display: flex;
@@ -331,29 +329,114 @@ body {
         background-color: #120c0c;
         margin-left: 20px;
     }
-/*--------------------maintant je modifie de maniere particliere chaque titre H2  */
-    .Atous .App_actif img{
+/*--------------------------Curriculum--------------------------------*/
+
+    .Curriculum{
+        width: 100vw;
+        box-sizing: border-box;
+        padding: 4.3vh 50px 2.52vh 6.1vw;
+    }
+    .Curriculum > h2:nth-child(1){
+        color: #7843CF;
+        font-size: 3.9vw;
+        margin-left: 0.247vw;
+        margin-bottom: 1.64vh;
+    }
+    .Curriculum > h2:nth-child(2){
+        font-size: 4.9vw;
+        width: 81.55vw;
+        margin-bottom: 1.42vh;
+        margin-left: 0.247vw;
+        height: 78px;
+    }
+    .Curriculum p{
+        width: 87.86vw;
+        text-align:left;
+        font-size: clamp(10px, 3.4vw, 14px);
+        margin-right: 5.58vw;
+        margin-bottom: 2.84vh;
+    }
+
+/*------------------strol list -------------------------*/
+    .Curriculum .Strol Ul {
+        box-sizing: border-box;
+        list-style: none;
+        display: flex;
+        gap: 0px;
+        margin-bottom: 4.4vh;        
+        overflow-x: auto;          /* active le scroll horizontal */
+        -webkit-overflow-scrolling: touch; /* fluidité sur mobile */
+        scrollbar-width: none;      /* Firefox */
+        width: 100vw;
+
         
+
+    }
+    .Curriculum .Strol Ul li{
+        white-space: nowrap;
+        padding: 1.1vh 2.43vw 1.1vh 2.43vw;
+        box-sizing: border-box;
+        border-radius: 5%;
+        font-size: clamp(10px, 3.4vw, 14px);
+
+
+    }
+
+    .Curriculum .Strol ul .Activate{ 
+        color: #7843CF;
+        font-weight: bold;
+        background-color: #dfcff8;
+
+    }
+    .Curriculum h1{
+        font-size: clamp(11px, 4.1vw, 17px);/*-------------font size 17px--------------*/
+        width: 62.14vw;
+        white-space: nowrap;
+        height: 2.4vh;
+        margin-bottom: 1.86vh;
+
+    }
+    .Curriculum .Pratique {
+        border: #000000 solid 1px;
+        border-radius: 10px;
+        width: 87.4vw;
+        height: 40.6vh;
+        box-sizing: border-box;
+        padding-top: 3.1vh;
+        padding-left: 10vw;
+        padding-bottom: 3.1vh;;
+    }
+    .Curriculum .Pratique span{
+        width: 45.4vw;
+        font-size: clamp(9.5px, 3.4vw, 13px);
+
+    }
+    .Curriculum .Pratique ul {
+        margin-top: 3vh;
+        list-style: none;
+        display:flex;
+        flex-direction: column;
+        gap: 2.1vh;
+        font-size: clamp(10px, 3.4vw, 14px);
+        padding-left: 5vw;
+
+
+    }
+
+    .Curriculum .Pratique ul li{
+        height: 2vh;
+        width: 61.7vw;
+    }
+    .Curriculum .Pratique ul > li:nth-child(2){
+        height: 4vh;
+    }
+    .Curriculum .Pratique ul > li:nth-child(3){
+        height: 4vh;
     }
 
 
 
 
-
-  /*  .Header .Carre > span:nth-child(1){
-        position: absolute;
-        background-color: #000000;
-        width: 4vw;
-        height:  4vw;
-    }
-    .Header .Carre > span:nth-child(4){
-        position: absolute;
-        background-color: #7843CF;
-        width:  4vw;
-        height:  4vw;
-        right: 0;
-        bottom: 0;
-    }*/
 
 
 }
