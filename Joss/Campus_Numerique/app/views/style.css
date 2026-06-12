@@ -555,7 +555,8 @@ body {
         border-radius: 10px;
 
     }
-    .Curriculum .Strol ul li .activate{ /*---------------------activate -------------------------------*/
+    .Curriculum .Strol ul .Activate{ 
+ /*---------------------activate -------------------------------*/
 
         background-color: #F5F5F5;
         color: #7843CF;

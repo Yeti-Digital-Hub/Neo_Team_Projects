@@ -450,14 +450,14 @@ body {
 
     }
     .Frame_57 .Cn img{
-        height: clamp(25px, 4.2vh, 4.5vh);
-        width: clamp(27px, 6vh, 6.34vh); 
+        height: clamp(25px, 4.5vh, 4.5vh);
+        width: clamp(38px, 6vh, 6.34vh); 
         align-items: center;
     }
 
     .Frame_57 .Telecharger{
         height: clamp(25px, 4.2vh, 4.5vh);
-        width: clamp(186px, 52vw, 52.91vw);
+        width: clamp(185px, 52vw, 52.91vw);
         padding-left: 2.4vw;
         padding-right: 2.4vw;
         padding-top: 1.09vh;
@@ -469,8 +469,7 @@ body {
 
     }
     .Frame_57 .Postuler{
-        width:24vw;
-        width: clamp(87.4px, 23vw, 24vw);
+        width: clamp(86.5px, 23vw, 24vw);
         height: clamp(25px, 4.2vh, 4.5vh);
         padding-left: 2.4vw;
         padding-right: 2.4vw;
@@ -484,53 +483,68 @@ body {
     }
     .Frame_72{
         width: 100vw;
-        height: 50.9vh;
+        height: clamp(279px, 71vh, 52.3vh);
         display: flex;
+        box-sizing: border-box;
+        padding-inline:4.1vw ;
+        padding-bottom: 3.5vh;
+        padding-top: 2.2vh;
         flex-direction: column;
         
     }
     .Frame_72 span{
         background-color: #f6e8cd;
-        width: 17vw;
+        width: 91px;
         color: #EDA622;
-        padding-inline: 2vw;
+        padding-inline: 10px;
         border-radius: 20px;
-        font-size: 3.4vw;
-        margin: 20px;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        font-size: clamp(11px, 3.9vw, 16px);/*-------------font size 17px--------------*/
+        padding-top: 4px;
+        padding-bottom: 4px;
+        box-sizing: border-box;
+        margin-bottom: 3.2vh;
+
+        
     }
     .Frame_72 .img{
         background-color: #7b797d;
-        width: 80vw;
-        height: 40vh;
-        margin: 20px;
+        width: 92vw;
+        height: 39vh;
     }
     .Frame_62 {
+        height: 988px;
         padding-inline: 6.8vw;
+        padding-top: 3.4vh;
+        padding-left: 5.83vw;
+        box-sizing: border-box;
+
+        
     }
     .Frame_62 h1{
-        font-size: 5.6vw;
         font-weight: bold;
-        width: 73.3vw;
-        text-align: center;
+        width: 74.5vw;
+        font-size: clamp(13.2px, 5.3vw, 24px); /*-----------------font size 24px ------------------------*/
+        margin-bottom: 4.2vh;
+        margin-left: 7.3vh;
 
     }
     .Frame_62 p{
         font-size: 3.4vw;
         width: 86.6vw;
         height: 6vh;
-        text-align: center;
-        margin-top: 5.4vh;
-        margin-bottom: 4.4vh;
+        margin-bottom: 5.36vh;
+
+
     }
     .Frame_62 > span{
-        width: 34.23vw;
+        width:141px;
         height: 3.9;
         padding-inline: 2.43vw;
         left: 0px;
         font-size: 4.13vw;
-        background-color: #ceb9ef
+        background-color: #ceb9ef;
+        position: absolute;
+        left: 0px;
     }
     
     
